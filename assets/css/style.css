@@ -12,58 +12,71 @@ body {
     /*background-color: black;*/
     font-family: "Poppins", sans-serif;
 }
+
 /*FORMATAÇÕES GERAIS*/
-header{
+header {
     width: 1193px;
     height: 59px;
     margin: auto;
     margin-top: 49px;
 }
-main{
+
+main {
     width: 1193px;
     margin: auto;
 }
-footer{
+
+footer {
     width: 1193px;
     height: 59px;
     margin: auto;
     margin-top: 49px;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+a:hover {
     color: #D9D9D9;
     transition: .3s;
 }
+
 /*FORMATAÇÃO HEADER*/
-header ul{
+header ul {
     display: flex;
     float: right;
 }
-header ul li{
+
+header ul li {
     margin-right: 67px;
 }
-header nav p{
+
+header nav p {
     float: left;
     align-items: baseline;
-    justify-content: baseline; 
+    justify-content: baseline;
 }
+
 header span {
     float: right;
 }
-header span img{
+
+header span img {
     margin-right: 20px;
 }
+
 /*FORMATAÇÃO APRESENTAÇÃO*/
-#presentation h1{
+#presentation h1 {
     margin-top: 265px;
 }
-#presentation img{
+
+#presentation img {
     float: right;
     width: 349px;
     height: 349px;
@@ -72,39 +85,46 @@ header span img{
 }
 
 /*FORMATAÇÃO TECH STACKS*/
-#stacks{
+#stacks {
     margin-top: 180px;
 }
-#stacks h2{
+
+#stacks h2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#stacks div{
+
+#stacks div {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
 }
-#stacks div img{
+
+#stacks div img {
     margin-right: auto;
 }
 
 /*FORMATAÇÃO PROJETOS*/
-#projects{
+#projects {
     margin-top: 214px;
+    font-size: 14px;
 }
-#projects h2{
+
+#projects h2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#box-projects{
+
+#box-projects {
     width: 1210px;
     height: 835px;
     margin-top: 80px;
-} 
-#box-projects div{
+}
+
+#box-projects div {
     width: 280px;
     height: 367px;
     border: 2px solid #D9D9D9;
@@ -114,56 +134,132 @@ header span img{
     justify-content: center;
     flex-direction: column;
 }
-#box1, #box2, #box3{
+
+#box1, #box2, #box3 {
     float: right;
     display: flex;
     align-items: center;
     margin-right: 50px;
 }
-#box1{
+
+#box1 {
     margin-right: 130px;
 }
-#box4, #box5, #box6{
+
+#box1 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+
+#box1 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+#box2 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+#box2 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+#box3 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+#box3 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+#box4, #box5, #box6 {
     float: right;
     display: flex;
     align-items: center;
     margin-right: 50px;
     margin-top: 100px;
 }
-#box4{
+
+#box4 {
     margin-right: 130px;
 }
 
+#box4 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+#box4 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+#box5 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+#box5 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+#box6 img {
+    margin-top: -110px;
+    border-radius: 10px;
+    border: 1px solid salmon;
+}
+#box6 p {
+    text-align: justify;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
 /*FORMATAÇÃO FOOTER*/
-footer span img{
+footer span img {
     margin-right: 20px;
 }
-#contact-information{
+
+#contact-information {
     float: right;
     display: flex;
     margin-top: -28px;
     margin-right: 15px;
 }
-#contact-information li{
+
+#contact-information li {
     margin-right: 30px;
 }
-#contact span img{
+
+#contact span img {
     float: right;
-    margin-bottom: 250px;
+    margin-bottom: 98px;
     margin-top: -25px;
 }
-#divider{
+
+#divider {
     width: 1180px;
     height: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #D9D9D9;
 }
-#end-nav{
+
+#end-nav {
     float: right;
     display: flex;
     margin-right: -165px;
 }
-#end-nav li{
+
+#end-nav li {
     margin-right: 67px;
 }
