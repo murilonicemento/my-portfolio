@@ -12,8 +12,9 @@ html{
 body {
     width: 100vw;
     height: 100vh;
-    /*background-color: black;*/
+    background-color: black;
     font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 /*FORMATAÇÕES GERAIS*/
@@ -42,12 +43,15 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
-    color: #D9D9D9;
+    color: red;
     transition: .3s;
+}
+i{
+    color: white;
 }
 
 /*FORMATAÇÃO HEADER*/
@@ -70,7 +74,7 @@ header span {
     float: right;
 }
 
-header span img {
+header span i {
     margin-right: 20px;
 }
 
@@ -119,6 +123,7 @@ header span img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 174px;
 }
 
 #box-projects {
@@ -243,10 +248,11 @@ footer span img {
     margin-right: 30px;
 }
 
-#contact span img {
+#contact .icons i {
     float: right;
-    margin-bottom: 98px;
     margin-top: -25px;
+    margin-right: 20px;
+    margin-bottom: 98px;
 }
 
 #divider {
@@ -260,7 +266,7 @@ footer span img {
 #end-nav {
     float: right;
     display: flex;
-    margin-right: -165px;
+    margin-right: -159px;
 }
 
 #end-nav li {
