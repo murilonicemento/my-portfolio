@@ -5,16 +5,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
-    color: white;
+    color: var(--font-color);
+}
+
+.light-theme {
+    --background-color: black;
+    --font-color: white;
+    --divider-color: #D9D9D9;
+    --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+}
+
+.dark-theme {
+    --background-color: white;
+    --font-color: black;
+    --divider-color: #9D9D9D;
+    --svg-color: invert(0%) sepia(92%) saturate(31%) hue-rotate(295deg) brightness(97%) contrast(101%);
 }
 
 /*FORMATAÇÕES GERAIS*/
@@ -43,15 +58,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
 }
 
 a:hover {
-    color: red;
+    color: var(--divider-color);
     transition: .3s;
-}
-i{
-    color: white;
 }
 
 /*FORMATAÇÃO HEADER*/
@@ -74,13 +86,31 @@ header span {
     float: right;
 }
 
-header span i {
+header span img {
+    width: 19px;
+    margin-top: -8px;
     margin-right: 20px;
+    filter: var(--svg-color);
+}
+
+header button {
+    width: 35px;
+    background-color: var(--background-color);
+    border: none;
+    cursor: pointer;
+}
+
+header button img {
+    width: 35px;
+    margin-bottom: -7px;
 }
 
 /*FORMATAÇÃO APRESENTAÇÃO*/
-#presentation h1 {
+#presentation p {
+    width: 650px;
     margin-top: 265px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #presentation img {
@@ -135,7 +165,7 @@ header span i {
 #box-projects div {
     width: 280px;
     height: 367px;
-    border: 2px solid #D9D9D9;
+    border: 2px solid var(--divider-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -165,11 +195,13 @@ header span i {
     padding-right: 18px;
     padding-left: 18px;
 }
+
 #box2 img {
     margin-top: -110px;
     border-radius: 10px;
     border: 1px solid salmon;
 }
+
 #box2 p {
     text-align: justify;
     padding-right: 18px;
@@ -181,6 +213,7 @@ header span i {
     border-radius: 10px;
     border: 1px solid salmon;
 }
+
 #box3 p {
     text-align: justify;
     padding-right: 18px;
@@ -204,6 +237,7 @@ header span i {
     border-radius: 10px;
     border: 1px solid salmon;
 }
+
 #box4 p {
     text-align: justify;
     padding-right: 18px;
@@ -215,6 +249,7 @@ header span i {
     border-radius: 10px;
     border: 1px solid salmon;
 }
+
 #box5 p {
     text-align: justify;
     padding-right: 18px;
@@ -226,6 +261,7 @@ header span i {
     border-radius: 10px;
     border: 1px solid salmon;
 }
+
 #box6 p {
     text-align: justify;
     padding-right: 18px;
@@ -248,11 +284,13 @@ footer span img {
     margin-right: 30px;
 }
 
-#contact .icons i {
+#contact .icons img {
     float: right;
-    margin-top: -25px;
+    width: 19px;
+    margin-top: -28px;
     margin-right: 20px;
     margin-bottom: 98px;
+    filter: var(--svg-color);
 }
 
 #divider {
@@ -260,7 +298,7 @@ footer span img {
     height: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--divider-color);
 }
 
 #end-nav {

@@ -9,7 +9,7 @@
     <title>Portfólio</title>
 </head>
 
-<body id="home">
+<body class="light-theme" id="home">
     <!--INÍCIO HEADER-->
     <header>
         <!--INÍCIO NAV-->
@@ -17,15 +17,19 @@
             <p>&lt;/murilo&gt;</p>
             <span class="icons">
                 <a href="https://github.com/murilonicemento" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                    <img src="assets/img/github.svg" alt="">
                 </a>
                 <a href="https://www.instagram.com/murilonasciment22/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+                    <img src="assets/img/instagram.svg" alt="">
                 </a>
                 <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <img src="assets/img/linkedin.svg" alt="">
                 </a>
+                <button>
+                    <img src="assets/img/sun.svg" alt="Sol" onclick="switchTheme()">
+                </button>
             </span>
+            
             <ul>
                 <li>
                     <a href="#home">Home</a>
@@ -51,10 +55,10 @@
     <main>
         <section id="presentation">
             <div style="clear: both;"></div>
-            <h1>Oi 👋,<br /> meu nome é Murilo Nascimento.<br /> Sou estudante de Engenharia de Software<br /> e
+            <p>Olá 👋,<br /> meu nome é Murilo Nascimento.<br /> Sou estudante de Engenharia de Software<br /> e
                 Desenvolvimento
-                Web.</h1>
-            <div style="clear: both;"></div>
+                Web.</p>
+                <div style="clear: both;"></div>
             <img src="assets/img/foto-perfil.jpg" alt="Foto de Perfil">
         </section>
         <div style="clear: both;"></div>
@@ -125,13 +129,13 @@
         <p>&lt;/murilo&gt;</p>
         <span class="icons">
             <a href="https://github.com/murilonicemento" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+                <img src="assets/img/github.svg" alt="GITHUB ICON">
             </a>
             <a href="https://www.instagram.com/murilonasciment22/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+                <img src="assets/img/instagram.svg" alt="INSTAGRAM ICON">
             </a>
             <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank">
-                <i class="fa-brands fa-github"></i>
+                <img src="assets/img/linkedin.svg" alt="LINKEDIN ICON">
             </a>
         </span>
         <ul id="contact-information">
@@ -163,8 +167,10 @@
         <span>Made with <i class="fa-solid fa-heart" style="color: red;"></i> by Murilo Nascimento</span>
     </footer>
     <!--FIM FOOTER-->
-    <!--SCRIPT FONT AWESOME-->
+    <!--SCRIPTS-->
     <script src="https://kit.fontawesome.com/052b10b1cc.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
