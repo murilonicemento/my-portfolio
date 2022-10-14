@@ -112,7 +112,29 @@ header button img {
     font-size: 30px;
     font-weight: bold;
 }
-
+#presentation a{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: firebrick;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid firebrick;
+    border-radius: 7px;
+}
+/* #download{
+    display: flex;
+    width: 20px;
+    height: 20px;
+} */
+#presentation a i{
+    margin-left: 8px;
+    margin-top: -4.5px;
+}
 #presentation img {
     float: right;
     width: 349px;
