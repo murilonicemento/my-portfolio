@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
@@ -20,14 +19,18 @@ body {
 
 .dark-theme {
     --background-color: black;
+    --hover-background-color: white;
     --font-color: white;
+    --hover-font-color: black;
     --divider-color: #D9D9D9;
     --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
 }
 
 .light-theme {
     --background-color: white;
+    --hover-background-color: black;
     --font-color: black;
+    --hover-font-color: white;
     --divider-color: #9D9D9D;
     --svg-color: invert(0%) sepia(92%) saturate(31%) hue-rotate(295deg) brightness(97%) contrast(101%);
 }
@@ -112,35 +115,39 @@ header button img {
     font-size: 30px;
     font-weight: bold;
 }
-#presentation a{
+
+#presentation a {
     width: 200px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    background-color: firebrick;
     font-size: 19px;
     font-weight: bold;
+    color: var(--font-color);
     text-transform: uppercase;
-    border: 1px solid firebrick;
+    border: 1px solid var(--divider-color);
     border-radius: 7px;
 }
-/* #download{
-    display: flex;
-    width: 20px;
-    height: 20px;
-} */
-#presentation a i{
+
+#presentation a:hover {
+    background-color: var(--hover-background-color);
+    color: var(--hover-font-color);
+    transition: .5s;
+}
+
+#presentation a i {
     margin-left: 8px;
     margin-top: -4.5px;
 }
+
 #presentation img {
     float: right;
     width: 349px;
     height: 349px;
     border-radius: 50%;
-    margin-top: -245px;
+    margin-top: -340px;
 }
 
 /*FORMATAÇÃO TECH STACKS*/

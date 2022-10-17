@@ -6,15 +6,3 @@ function switchTheme() {
     document.getElementById("moon").setAttribute("src", src);
 }
 // EFEITO MÁQUINA DE ESCREVER
-const presentation = document.querySelector("#presentation p");
-
-function typeWrite(element) {
-    const textArray = element.textContent.split("");
-    element.textContent = ""
-    textArray.forEach((word, i) => {
-        setTimeout(() => {
-            element.textContent += word;
-        }, 75 * i)
-    });
-}
-typeWrite(presentation);
