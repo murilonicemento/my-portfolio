@@ -2,7 +2,7 @@
 Developer Portfolio
 
 ## Deploy da aplicação
-https://portmur.netlify.app/
+https://my-portfolio-chi-nine.vercel.app/
 
 ## Tecnologias utilizadas
 + HTML5

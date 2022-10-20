@@ -65,33 +65,33 @@
             <img src="assets/img/foto-perfil.jpg" alt="Foto de Perfil">
         </section>
         <div style="clear: both;"></div>
-        <section id="stacks">
+        <section id="stacks" data-anime="left">
             <h2>Tech Stacks</h2><br>
             <div>
                 <img src="assets/img/html5.svg" alt="HTML5" width="120px" height="120px" id="html">
                 <dialog id="modalhtml">
-                    <p>Linguagem de Marcação de Hipertexto (em inglês: HyperText Markup Language) é a linguagem usado para descrever e definir o conteúdo de uma página Web.</p>
+                    <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web."Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web.</p>
                     <button onclick="closeModal()">
                         Fechar
                     </button>
                 </dialog>
                 <img src="assets/img/css3.svg" alt="CSS3" width="120px" height="120px" id="css">
                 <dialog id="modalcss">
-                    <p>As Folhas de Estilo em Cascata (em inglês: Cascading Style Sheets) são usadas para descrever a aparência do conteúdo Web.</p>
+                    <p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias. CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as especificação da W3C.</p>
                     <button onclick="closeModal()">
                         Fechar
                     </button>
                 </dialog>
                 <img src="assets/img/javascript.svg" alt="JAVASCRIPT" width="120px" height="120px" id="js">
                 <dialog id="modaljs">
-                    <p>JavaScript é uma linguagem de programação utilizada para adicionar interatividade ao website.</p>
+                    <p>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
                     <button onclick="closeModal()">
                         Fechar
                     </button>
                 </dialog>
                 <img src="assets/img/php.svg" alt="PHP" width="120px" height="120px" id="php">
                 <dialog id="modalphp">
-                    <p>O PHP é uma linguagem de programação voltada originalmente para desenvolvimento de sites e aplicações web. Por ser de código aberto e de fácil aprendizado, é uma das mais populares do mundo.O PHP foi criado em 1995 pelo programador canadense Rasmus Lerdorf. A sigla é um acrônimo para PHP: Hypertext Preprocessor. A linguagem tornou-se popular por ter uma sintaxe mais simples, e por mesclar o código executado no lado do servidor com HTML, facilitando a criação de páginas com conteúdo dinâmico.</p>
+                    <p>O PHP é uma linguagem de programação voltada originalmente para desenvolvimento de sites e aplicações web. Por ser de código aberto e de fácil aprendizado, é uma das mais populares do mundo. O PHP foi criado em 1995 pelo programador canadense Rasmus Lerdorf. A sigla é um acrônimo para PHP: Hypertext Preprocessor. A linguagem tornou-se popular por ter uma sintaxe mais simples, e por mesclar o código executado no lado do servidor com HTML, facilitando a criação de páginas com conteúdo dinâmico.</p>
                     <button onclick="closeModal()">
                         Fechar
                     </button>
@@ -112,23 +112,24 @@
                 </dialog>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" data-anime="left">
             <h2>Meus Projetos</h2>
             <div id="box-projects">
                 <div id="box1">
-
-                    <h4>Museu Nacional</h4>
-                    <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
-                    <p style="margin-left: -80px;">Tech Stacks: HTML, CSS</p>
+                    <div>
+                        <h4>Museu Nacional</h4>
+                    <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo no módulo de HTML e CSS.</p>
+                    <p style="margin-left: -80px;">Tech Stacks: HTML e CSS</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -40px;"><a
                             href="https://musenac.netlify.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/museu-nacional" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
                 <div id="box2">
-
-                    <h4>RocketPay</h4>
+                    <div>
+                        <h4>RocketPay</h4>
                     <p>Projeto criado através da plataforma Rocketseat no evento Explorer Lab - JavaScript DOM.</p>
                     <p>Tech Stacks: HTML, CSS e JavaScript</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -20px;"><a
@@ -136,52 +137,57 @@
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/rocketpay" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
                 <div id="box3">
-
-                    <h4>Landing Page Stranger Things</h4>
+                    <div>
+                        <h4>Landing Page Stranger Things</h4>
                     <p>Projeto criado através da plataforma Digital Innovation One (DIO).</p>
-                    <p>Tech Stacks: HTML, CSS, JavaScript</p>
+                    <p>Tech Stacks: HTML, CSS, JavaScript e Firebase</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -40px;"><a
                             href="https://musenac.netlify.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/museu-nacional" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
                 <br>
                 <div id="box4">
-
-                    <h4>Cowntdown</h4>
-                    <p>Projeto criado através da plataforma Digital Innovation One (DIO).</p>
-                    <p>Tech Stacks: HTML, CSS JavaScript</p>
+                    <div>
+                        <h4>Cowntdown</h4>
+                    <p>Projeto criado através da plataforma Rocketseat na trilha Discover.</p>
+                    <p>Tech Stacks: HTML, CSS e JavaScript</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -40px;"><a
                             href="https://cowdow.netlify.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/countdown" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
                 <div id="box5">
-
-                    <h4>App Calculadora</h4>
+                    <div>
+                        <h4>App Calculadora</h4>
                     <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
-                    <p>Tech Stacks: HTML, CSS, Bootstrap, JavaScript</p>
+                    <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -20px;"><a
                             href="https://appcal.netlify.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/app-calculadora" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
                 <div id="box6">
-
-                    <h4>App Mata-mosquito</h4>
+                    <div>
+                        <h4>App Mata-mosquito</h4>
                     <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.
                     <p>
-                    <p>Tech Stacks: HTML, CSS, Bootstrap, JavaScript</p>
+                    <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -20px;"><a
                             href="https://app-matmosq.netlify.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
                             href="https://github.com/murilonicemento/app-mata-mosquito" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
+                    </div>
                 </div>
             </div>
 

@@ -60,7 +60,6 @@ vscode.onclick = () => {
     modalVscode.showModal()
 }
 
-
 function closeModal() {
     modalHtml.close();
     modalCss.close();
@@ -68,4 +67,25 @@ function closeModal() {
     modalPhp.close();
     modalGit.close();
     modalVscode.close();
+}
+
+// ANIMAÇÃO SCROLL
+const target = document.querySelectorAll("[data-anime]");
+const animationClass = "animate";
+
+function animationScroll(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3 / 4));
+    target.forEach((element) => {
+        if((windowTop) > element.offsetTop){
+            element.classList.add(animationClass);
+        }else {
+            element.classList.remove(animationClass);
+        }
+    });
+}
+animationScroll();
+if(target.length){
+    window.addEventListener("scroll", () => {
+        animationScroll();
+    });
 }

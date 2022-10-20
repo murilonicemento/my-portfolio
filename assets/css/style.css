@@ -206,7 +206,7 @@ header button img {
 }
 
 #stacks div img {
-    margin-right: auto;
+    margin: auto;
 }
 #stacks button{
     width: 100px;
@@ -267,6 +267,11 @@ header button img {
 #box1 {
     margin-right: 130px;
 }
+#box1 div{
+    height: 200px;
+    margin-bottom: -115px;
+    border: none;
+}
 
 #box1 img {
     margin-top: -110px;
@@ -279,6 +284,11 @@ header button img {
     padding-right: 18px;
     padding-left: 18px;
 }
+#box2 div{
+    height: 200px;
+    margin-bottom: -130px;
+    border: none;
+}
 
 #box2 img {
     margin-top: -110px;
@@ -290,6 +300,11 @@ header button img {
     text-align: justify;
     padding-right: 18px;
     padding-left: 18px;
+}
+#box3 div{
+    height: 200px;
+    margin-bottom: -130px;
+    border: none;
 }
 
 #box3 img {
@@ -316,7 +331,11 @@ header button img {
 #box4 {
     margin-right: 130px;
 }
-
+#box4 div{
+    height: 200px;
+    margin-bottom: -115px;
+    border: none;
+}
 #box4 img {
     margin-top: -110px;
     border-radius: 10px;
@@ -334,13 +353,21 @@ header button img {
     border-radius: 10px;
     border: 1px solid salmon;
 }
-
+#box5 div{
+    height: 200px;
+    margin-bottom: -130px;
+    border: none;
+}
 #box5 p {
     text-align: justify;
     padding-right: 18px;
     padding-left: 18px;
 }
-
+#box6 div{
+    height: 200px;
+    margin-bottom: -130px;
+    border: none;
+}
 #box6 img {
     margin-top: -110px;
     border-radius: 10px;
@@ -388,7 +415,7 @@ footer>p {
 
 #divider {
     width: 1180px;
-    height: 1px;
+    height: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--divider-color);
@@ -402,4 +429,17 @@ footer>p {
 
 #end-nav li {
     margin-right: 67px;
+}
+
+/*ANIMAÇÃO*/
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+/* [data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+} */
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
