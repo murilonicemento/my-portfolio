@@ -14,7 +14,7 @@
     <header>
         <!--INÍCIO NAV-->
         <nav>
-            <p>&lt;/murilo&gt;</p>
+            <p>&lt;/MN&gt;</p>
             <span class="icons">
                 <a href="https://github.com/murilonicemento" target="_blank">
                     <img src="assets/img/github.svg" alt="">
@@ -54,9 +54,10 @@
     <main>
         <section id="presentation">
             <div style="clear: both;"></div>
-            <p>Olá 👋,<br /> meu nome é Murilo Nascimento.<br /> Sou estudante de Engenharia de Software<br /> e
+            <p>Olá 👋,<br /> meu nome é <span>Murilo Nascimento</span><br /> Sou estudante de Engenharia de
+                Software<br /> e
                 Desenvolvimento
-                Web.
+                Web
             </p>
             <a href="curriculo.pdf" download>Download CV <i class="fa-solid fa-download"></i></a>
             <!-- <img src="assets/img/download.svg" alt="download image" id="download"> -->
@@ -67,20 +68,55 @@
         <section id="stacks">
             <h2>Tech Stacks</h2><br>
             <div>
-                <img src="assets/img/html5.svg" alt="HTML5" width="120px" height="120px">
-                <img src="assets/img/css3.svg" alt="CSS3" width="120px" height="120px">
-                <img src="assets/img/javascript.svg" alt="JAVASCRIPT" width="120px" height="120px">
-                <img src="assets/img/php.svg" alt="PHP" width="120px" height="120px">
-                <img src="assets/img/git.svg" alt="JAVASCRIPT" width="120px" height="120px">
-                <img src="assets/img/vscode.svg" alt="VSCODE" width="120px" height="120px">
+                <img src="assets/img/html5.svg" alt="HTML5" width="120px" height="120px" id="html">
+                <dialog id="modalhtml">
+                    <p>Linguagem de Marcação de Hipertexto (em inglês: HyperText Markup Language) é a linguagem usado para descrever e definir o conteúdo de uma página Web.</p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
+                <img src="assets/img/css3.svg" alt="CSS3" width="120px" height="120px" id="css">
+                <dialog id="modalcss">
+                    <p>As Folhas de Estilo em Cascata (em inglês: Cascading Style Sheets) são usadas para descrever a aparência do conteúdo Web.</p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
+                <img src="assets/img/javascript.svg" alt="JAVASCRIPT" width="120px" height="120px" id="js">
+                <dialog id="modaljs">
+                    <p>JavaScript é uma linguagem de programação utilizada para adicionar interatividade ao website.</p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
+                <img src="assets/img/php.svg" alt="PHP" width="120px" height="120px" id="php">
+                <dialog id="modalphp">
+                    <p>O PHP é uma linguagem de programação voltada originalmente para desenvolvimento de sites e aplicações web. Por ser de código aberto e de fácil aprendizado, é uma das mais populares do mundo.O PHP foi criado em 1995 pelo programador canadense Rasmus Lerdorf. A sigla é um acrônimo para PHP: Hypertext Preprocessor. A linguagem tornou-se popular por ter uma sintaxe mais simples, e por mesclar o código executado no lado do servidor com HTML, facilitando a criação de páginas com conteúdo dinâmico.</p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
+                <img src="assets/img/git.svg" alt="GIT" width="120px" height="120px" id="git">
+                <dialog id="modalgit">
+                    <p>Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.</p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
+                <img src="assets/img/vscode.svg" alt="VSCODE" width="120px" height="120px" id="vscode"> 
+                <dialog id="modalvscode">
+                    <p>O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado em sua área de trabalho e está disponível para Windows, macOS e Linux. Ele vem com suporte integrado para JavaScript, TypeScript e Node.js e possui um rico ecossistema de extensões para outras linguagens e ambientes de execução (como C++, C#, Java, Python, PHP, Go, .NET). </p>
+                    <button onclick="closeModal()">
+                        Fechar
+                    </button>
+                </dialog>
             </div>
         </section>
         <section id="projects">
             <h2>Meus Projetos</h2>
             <div id="box-projects">
                 <div id="box1">
-                    <img src="assets/img/museu-nacional.JPG" alt="Foto projeto Museu Nacional" width="280px"
-                        height="254.23px">
+
                     <h4>Museu Nacional</h4>
                     <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
                     <p style="margin-left: -80px;">Tech Stacks: HTML, CSS</p>
@@ -91,19 +127,18 @@
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
                 </div>
                 <div id="box2">
-                    <img src="" alt="Foto projeto Orçamento Pessoal" width="280px" height="254.23px">
-                    <h4>Orçamento Pessoal</h4>
-                    <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
-                    <p>Tech Stacks: HTML, CSS, Bootstrap, JavaScript</p>
+
+                    <h4>RocketPay</h4>
+                    <p>Projeto criado através da plataforma Rocketseat no evento Explorer Lab - JavaScript DOM.</p>
+                    <p>Tech Stacks: HTML, CSS e JavaScript</p>
                     <p style="margin-left: -20px; margin-top: 20px; margin-bottom: -20px;"><a
-                            href="https://persbudgt-app.netlify.app/" target="_blank" style="margin-right: 25px;"><i
+                            href="https://rocketpay-topaz.vercel.app/" target="_blank" style="margin-right: 25px;"><i
                                 class="fa-solid fa-link" style="margin-right: 5px;"></i>Live Preview</a> <a
-                            href="https://github.com/murilonicemento/app-orcamento-pessoal" target="_blank"><i
+                            href="https://github.com/murilonicemento/rocketpay" target="_blank"><i
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
                 </div>
                 <div id="box3">
-                    <img src="assets/img/stranger-things.JPG" alt="Foto projeto Landing Page Stranger Things"
-                        width="280px" height="254.23px">
+
                     <h4>Landing Page Stranger Things</h4>
                     <p>Projeto criado através da plataforma Digital Innovation One (DIO).</p>
                     <p>Tech Stacks: HTML, CSS, JavaScript</p>
@@ -115,7 +150,7 @@
                 </div>
                 <br>
                 <div id="box4">
-                    <img src="" alt="Foto projeto Cowntdown" width="280px" height="254.23ppx">
+
                     <h4>Cowntdown</h4>
                     <p>Projeto criado através da plataforma Digital Innovation One (DIO).</p>
                     <p>Tech Stacks: HTML, CSS JavaScript</p>
@@ -126,8 +161,7 @@
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
                 </div>
                 <div id="box5">
-                    <img src="assets/img/calculadora.JPG" alt="Foto projeto Calculadora" width="280px"
-                        height="254.23px">
+
                     <h4>App Calculadora</h4>
                     <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
                     <p>Tech Stacks: HTML, CSS, Bootstrap, JavaScript</p>
@@ -138,7 +172,7 @@
                                 class="fa-brands fa-github" style="margin-right: 5px;"></i>View Code</a></p>
                 </div>
                 <div id="box6">
-                    <img src="" alt="Foto projeto Mata-mosquito" width="280px" height="254.23px">
+
                     <h4>App Mata-mosquito</h4>
                     <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.
                     <p>
@@ -156,7 +190,7 @@
     <!--FIM MAIN-->
     <!--INÍCIO FOOTER-->
     <footer id="contact">
-        <p>&lt;/murilo&gt;</p>
+        <p>&lt;/MN&gt;</p>
         <span class="icons">
             <a href="https://github.com/murilonicemento" target="_blank">
                 <img src="assets/img/github.svg" alt="GITHUB ICON">
@@ -170,8 +204,8 @@
         </span>
         <ul id="contact-information">
             <li>
-                <a href="https://web.whatsapp.com/send?phone=5571992697201" target="_blank"><i
-                        class="fa-brands fa-whatsapp"></i> +55 99269 - 7201</a>
+                <a href="https://web.whatsapp.com/send?phone=5531981141827" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i> +55 (31) 98114 - 1827</a>
             </li>
             <li>
                 <a href="mailto: murilo_nascimento22@outlook.com?subject=subjecttext"><i

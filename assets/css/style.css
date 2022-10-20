@@ -17,23 +17,29 @@ body {
     color: var(--font-color);
 }
 
-.dark-theme {
-    --background-color: black;
-    --hover-background-color: white;
-    --font-color: white;
-    --hover-font-color: black;
-    --divider-color: #D9D9D9;
-    --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
-}
-
 .light-theme {
     --background-color: white;
-    --hover-background-color: black;
+    --hover-background-color: linear-gradient(black, black) padding-box, var(--gradient) border-box;
     --font-color: black;
     --hover-font-color: white;
     --divider-color: #9D9D9D;
     --svg-color: invert(0%) sepia(92%) saturate(31%) hue-rotate(295deg) brightness(97%) contrast(101%);
+    --gradient: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
+    --link-cv-gradient: linear-gradient(white, white) padding-box, var(--gradient) border-box;
 }
+
+.dark-theme {
+    --background-color: black;
+    --hover-background-color: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+    --font-color: white;
+    --hover-font-color: black;
+    --divider-color: #D9D9D9;
+    --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+    --gradient: linear-gradient(to right, rgb(149 114 252), rgb(67 231 173), rgb(226 212 92));
+    --link-cv-gradient: linear-gradient(black, black) padding-box, var(--gradient) border-box;
+}
+
+
 
 /*FORMATAÇÕES GERAIS*/
 header {
@@ -53,6 +59,16 @@ footer {
     height: 59px;
     margin: auto;
     margin-top: 49px;
+}
+
+dialog{
+    width: 500px;
+    height: 500px;
+    background-color: var(--divider-color);
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
 }
 
 ul {
@@ -83,6 +99,11 @@ header nav p {
     float: left;
     align-items: baseline;
     justify-content: baseline;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 header span {
@@ -116,6 +137,13 @@ header button img {
     font-weight: bold;
 }
 
+#presentation p span {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 #presentation a {
     width: 200px;
     height: 50px;
@@ -127,12 +155,19 @@ header button img {
     font-weight: bold;
     color: var(--font-color);
     text-transform: uppercase;
-    border: 1px solid var(--divider-color);
+    background: var(--link-cv-gradient);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
     border-radius: 7px;
 }
 
 #presentation a:hover {
-    background-color: var(--hover-background-color);
+    background: var(--hover-background-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 7px;
     color: var(--hover-font-color);
     transition: .5s;
 }
@@ -146,6 +181,7 @@ header button img {
     float: right;
     width: 349px;
     height: 349px;
+    border: 5px solid var(--gradient);
     border-radius: 50%;
     margin-top: -340px;
 }
@@ -159,6 +195,7 @@ header button img {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 35px;
 }
 
 #stacks div {
@@ -171,6 +208,22 @@ header button img {
 #stacks div img {
     margin-right: auto;
 }
+#stacks button{
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    border: 1px solid;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+#stacks dialog p{
+    margin: 10px 15px 10px 15px;
+    text-align: justify;
+}
 
 /*FORMATAÇÃO PROJETOS*/
 #projects {
@@ -182,6 +235,7 @@ header button img {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 35px;
     margin-bottom: 174px;
 }
 
@@ -194,7 +248,7 @@ header button img {
 #box-projects div {
     width: 280px;
     height: 367px;
-    border: 2px solid var(--divider-color);
+    border: 1px solid var(--divider-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -207,6 +261,7 @@ header button img {
     display: flex;
     align-items: center;
     margin-right: 50px;
+    box-shadow: 4px 4px 4px #888;
 }
 
 #box1 {
@@ -255,6 +310,7 @@ header button img {
     align-items: center;
     margin-right: 50px;
     margin-top: 100px;
+    box-shadow: 4px 4px 4px #888;
 }
 
 #box4 {
@@ -300,6 +356,14 @@ header button img {
 /*FORMATAÇÃO FOOTER*/
 footer span img {
     margin-right: 20px;
+}
+
+footer>p {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 #contact-information {
