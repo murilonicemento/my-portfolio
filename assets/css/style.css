@@ -274,11 +274,14 @@ header button img {
 }
 
 #box1 img {
+    width: 278px;
+    height: 170px;
     margin-top: -110px;
     border-radius: 10px;
-    border: 1px solid salmon;
 }
-
+#box1 h4{
+    margin-top: -55px;
+}
 #box1 p {
     text-align: justify;
     padding-right: 18px;
@@ -291,11 +294,14 @@ header button img {
 }
 
 #box2 img {
-    margin-top: -110px;
+    width: 278px;
+    height: 170px;
+    margin-top: -130px;
     border-radius: 10px;
-    border: 1px solid salmon;
 }
-
+#box2 h4{
+    margin-top: -30px;
+}
 #box2 p {
     text-align: justify;
     padding-right: 18px;
@@ -303,16 +309,18 @@ header button img {
 }
 #box3 div{
     height: 200px;
-    margin-bottom: -130px;
+    margin-bottom: -250px;
     border: none;
 }
 
 #box3 img {
-    margin-top: -110px;
+    width: 280px;
+    margin-top: -250px;
     border-radius: 10px;
-    border: 1px solid salmon;
 }
-
+#box3 h4{
+    margin-top: -50px;
+}
 #box3 p {
     text-align: justify;
     padding-right: 18px;
@@ -337,11 +345,14 @@ header button img {
     border: none;
 }
 #box4 img {
+    width: 279px;
+    height: 169px;
     margin-top: -110px;
     border-radius: 10px;
-    border: 1px solid salmon;
 }
-
+#box4 h4{
+    margin-top: -50px;
+}
 #box4 p {
     text-align: justify;
     padding-right: 18px;
@@ -349,14 +360,18 @@ header button img {
 }
 
 #box5 img {
-    margin-top: -110px;
+    width: 280px;
+    height: 170px;
+    margin-top: -130px;
     border-radius: 10px;
-    border: 1px solid salmon;
 }
 #box5 div{
     height: 200px;
     margin-bottom: -130px;
     border: none;
+}
+#box5 h4{
+    margin-top: -30px;
 }
 #box5 p {
     text-align: justify;
@@ -434,7 +449,7 @@ footer>p {
 /*ANIMAÇÃO*/
 [data-anime]{
     opacity: 0;
-    transition: .3s;
+    transition: .7s;
 }
 /* [data-anime="left"]{
     transform: translate3d(-50px, 0, 0);
