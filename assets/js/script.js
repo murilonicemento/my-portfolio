@@ -73,18 +73,18 @@ function closeModal() {
 const target = document.querySelectorAll("[data-anime]");
 const animationClass = "animate";
 
-function animationScroll(){
+function animationScroll() {
     const windowTop = window.pageYOffset + ((window.innerHeight * 3 / 4));
     target.forEach((element) => {
-        if((windowTop) > element.offsetTop){
+        if ((windowTop) > element.offsetTop) {
             element.classList.add(animationClass);
-        }else {
+        } else {
             element.classList.remove(animationClass);
         }
     });
 }
 animationScroll();
-if(target.length){
+if (target.length) {
     window.addEventListener("scroll", () => {
         animationScroll();
     });

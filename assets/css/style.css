@@ -26,6 +26,9 @@ body {
     --svg-color: invert(0%) sepia(92%) saturate(31%) hue-rotate(295deg) brightness(97%) contrast(101%);
     --gradient: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
     --link-cv-gradient: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+    --box-shadow: 0px 6px 10px 0px hsla(0, 0%, 0%, 0.14),
+        0px 1px 18px 0px hsla(0, 0%, 0%, 0.12),
+        0px 3px 5px -1px hsla(0, 0%, 0%, 0.2);
 }
 
 .dark-theme {
@@ -37,6 +40,9 @@ body {
     --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
     --gradient: linear-gradient(to right, rgb(149 114 252), rgb(67 231 173), rgb(226 212 92));
     --link-cv-gradient: linear-gradient(black, black) padding-box, var(--gradient) border-box;
+    --box-shadow: 0px 24px 38px 3px hsla(0, 0%, 0%, 0.14),
+        0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
+        0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
 }
 
 
@@ -61,10 +67,10 @@ footer {
     margin-top: 49px;
 }
 
-dialog{
+dialog {
     width: 500px;
     height: 500px;
-    background-color: var(--divider-color);
+    background-color: #D9D9D9;
     margin: auto;
     border: none;
     border-radius: 10px;
@@ -181,7 +187,6 @@ header button img {
     float: right;
     width: 349px;
     height: 349px;
-    border: 5px solid var(--gradient);
     border-radius: 50%;
     margin-top: -340px;
 }
@@ -208,19 +213,35 @@ header button img {
 #stacks div img {
     margin: auto;
 }
-#stacks button{
+
+#stacks button {
     width: 100px;
     height: 40px;
-    background-color: burlywood;
     border: 1px solid;
     border-radius: 7px;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: bold;
+    color: var(--font-color);
     text-transform: uppercase;
     margin-left: 15px;
+    background: var(--link-cv-gradient);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 7px;
 }
-#stacks dialog p{
+#stacks button:hover{
+    background: var(--hover-background-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 7px;
+    color: var(--hover-font-color);
+    transition: .5s;
+}
+
+#stacks dialog p {
     margin: 10px 15px 10px 15px;
     text-align: justify;
 }
@@ -261,13 +282,14 @@ header button img {
     display: flex;
     align-items: center;
     margin-right: 50px;
-    box-shadow: 4px 4px 4px #888;
+    box-shadow: var(--box-shadow);
 }
 
 #box1 {
     margin-right: 130px;
 }
-#box1 div{
+
+#box1 div {
     height: 200px;
     margin-bottom: -115px;
     border: none;
@@ -279,15 +301,18 @@ header button img {
     margin-top: -110px;
     border-radius: 10px;
 }
-#box1 h4{
+
+#box1 h4 {
     margin-top: -55px;
 }
+
 #box1 p {
     text-align: justify;
     padding-right: 18px;
     padding-left: 18px;
 }
-#box2 div{
+
+#box2 div {
     height: 200px;
     margin-bottom: -130px;
     border: none;
@@ -299,15 +324,18 @@ header button img {
     margin-top: -130px;
     border-radius: 10px;
 }
-#box2 h4{
+
+#box2 h4 {
     margin-top: -30px;
 }
+
 #box2 p {
     text-align: justify;
     padding-right: 18px;
     padding-left: 18px;
 }
-#box3 div{
+
+#box3 div {
     height: 200px;
     margin-bottom: -250px;
     border: none;
@@ -318,9 +346,11 @@ header button img {
     margin-top: -250px;
     border-radius: 10px;
 }
-#box3 h4{
+
+#box3 h4 {
     margin-top: -50px;
 }
+
 #box3 p {
     text-align: justify;
     padding-right: 18px;
@@ -333,26 +363,30 @@ header button img {
     align-items: center;
     margin-right: 50px;
     margin-top: 100px;
-    box-shadow: 4px 4px 4px #888;
+    box-shadow: var(--box-shadow);
 }
 
 #box4 {
     margin-right: 130px;
 }
-#box4 div{
+
+#box4 div {
     height: 200px;
     margin-bottom: -115px;
     border: none;
 }
+
 #box4 img {
     width: 279px;
-    height: 169px;
+    height: 172px;
     margin-top: -110px;
     border-radius: 10px;
 }
-#box4 h4{
+
+#box4 h4 {
     margin-top: -50px;
 }
+
 #box4 p {
     text-align: justify;
     padding-right: 18px;
@@ -365,28 +399,38 @@ header button img {
     margin-top: -130px;
     border-radius: 10px;
 }
-#box5 div{
+
+#box5 div {
     height: 200px;
     margin-bottom: -130px;
     border: none;
 }
-#box5 h4{
+
+#box5 h4 {
     margin-top: -30px;
 }
+
 #box5 p {
     text-align: justify;
     padding-right: 18px;
     padding-left: 18px;
 }
-#box6 div{
+
+#box6 div {
     height: 200px;
     margin-bottom: -130px;
     border: none;
 }
+
 #box6 img {
-    margin-top: -110px;
+    width: 280px;
+    height: 170px;
+    margin-top: -130px;
     border-radius: 10px;
-    border: 1px solid salmon;
+}
+
+#box6 h4 {
+    margin-top: -30px;
 }
 
 #box6 p {
@@ -447,14 +491,15 @@ footer>p {
 }
 
 /*ANIMAÇÃO*/
-[data-anime]{
+[data-anime] {
     opacity: 0;
     transition: .7s;
 }
+
 /* [data-anime="left"]{
     transform: translate3d(-50px, 0, 0);
 } */
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
