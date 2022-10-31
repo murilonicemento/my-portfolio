@@ -27,7 +27,7 @@ body {
     --gradient: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
     --link-cv-gradient: linear-gradient(white, white) padding-box, var(--gradient) border-box;
     --box-shadow: 0 0.375rem 0.625rem 0 hsla(0, 0%, 0%, 0.14),
-        0  0.625rem 1.125rem 0 hsla(0, 0%, 0%, 0.12),
+        0 0.625rem 1.125rem 0 hsla(0, 0%, 0%, 0.12),
         0 0.188rem 0.313rem -0.063rem hsla(0, 0%, 0%, 0.2);
 }
 
@@ -95,11 +95,10 @@ a:hover {
 header ul {
     display: flex;
     float: right;
-}
-
-header ul li {
+    gap: 4.188rem;
     margin-right: 4.188rem;
 }
+
 
 header nav p {
     float: left;
@@ -274,8 +273,8 @@ header button img {
 }
 
 .projects-content {
-    height: 12.5rem!important;
-    border: none!important;
+    height: 12.5rem !important;
+    border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
 }
@@ -294,7 +293,8 @@ header button img {
 .projects-content p:nth-child(4) {
     margin-top: 1.25rem;
 }
-#projects img{
+
+#projects img {
     width: 17.375rem;
     height: 10.625rem;
     border-radius: 0.625rem;
@@ -344,11 +344,8 @@ footer>p {
 #end-nav {
     float: right;
     display: flex;
-    margin-right: -9.938rem;
-}
-
-#end-nav li {
-    margin-right: 4.188rem;
+    margin-right: -6rem;
+    gap: 4.188rem;
 }
 
 /*ANIMAÇÃO*/
