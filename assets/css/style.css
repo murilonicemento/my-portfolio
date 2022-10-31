@@ -26,9 +26,9 @@ body {
     --svg-color: invert(0%) sepia(92%) saturate(31%) hue-rotate(295deg) brightness(97%) contrast(101%);
     --gradient: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
     --link-cv-gradient: linear-gradient(white, white) padding-box, var(--gradient) border-box;
-    --box-shadow: 0px 6px 10px 0px hsla(0, 0%, 0%, 0.14),
-        0px 1px 18px 0px hsla(0, 0%, 0%, 0.12),
-        0px 3px 5px -1px hsla(0, 0%, 0%, 0.2);
+    --box-shadow: 0 0.375rem 0.625rem 0 hsla(0, 0%, 0%, 0.14),
+        0  0.625rem 1.125rem 0 hsla(0, 0%, 0%, 0.12),
+        0 0.188rem 0.313rem -0.063rem hsla(0, 0%, 0%, 0.2);
 }
 
 .dark-theme {
@@ -40,40 +40,40 @@ body {
     --svg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
     --gradient: linear-gradient(to right, rgb(149 114 252), rgb(67 231 173), rgb(226 212 92));
     --link-cv-gradient: linear-gradient(black, black) padding-box, var(--gradient) border-box;
-    --box-shadow: 0px 24px 38px 3px hsla(0, 0%, 0%, 0.14),
-        0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
-        0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
+    --box-shadow: 0 1.5rem 2.375rem 0.188rem hsla(0, 0%, 0%, 0.14),
+        0 0.563rem 2.875rem 0.5rem hsla(0, 0%, 0%, 0.12),
+        0 0.688rem 0.938rem -0.438rem hsla(0, 0%, 0%, 0.2);
 }
 
 
 
 /*FORMATAÇÕES GERAIS*/
 header {
-    width: 1193px;
-    height: 59px;
+    width: 74.563rem;
+    height: 3.688rem;
     margin: auto;
-    margin-top: 49px;
+    margin-top: 3.063rem;
 }
 
 main {
-    width: 1193px;
+    width: 74.563rem;
     margin: auto;
 }
 
 footer {
-    width: 1193px;
-    height: 59px;
+    width: 74.563rem;
+    height: 3.688rem;
     margin: auto;
-    margin-top: 49px;
+    margin-top: 3.063rem;
 }
 
 dialog {
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
     background-color: #D9D9D9;
     margin: auto;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625;
     box-shadow: 0 0 1em rgb(0 0 0 / .3);
 }
 
@@ -98,7 +98,7 @@ header ul {
 }
 
 header ul li {
-    margin-right: 67px;
+    margin-right: 4.188rem;
 }
 
 header nav p {
@@ -117,29 +117,29 @@ header span {
 }
 
 header span img {
-    width: 19px;
-    margin-top: -8px;
-    margin-right: 20px;
+    width: 1.188rem;
+    margin-top: -0.5rem;
+    margin-right: 1.25rem;
     filter: var(--svg-color);
 }
 
 header button {
-    width: 35px;
+    width: 2.188rem;
     background-color: var(--background-color);
     border: none;
     cursor: pointer;
 }
 
 header button img {
-    width: 35px;
-    margin-bottom: -7px;
+    width: 2.188rem;
+    margin-bottom: -0.438rem;
 }
 
 /*FORMATAÇÃO APRESENTAÇÃO*/
 #presentation p {
-    width: 650px;
-    margin-top: 265px;
-    font-size: 30px;
+    width: 40.625rem;
+    margin-top: 16.563rem;
+    font-size: 1.875rem;
     font-weight: bold;
 }
 
@@ -151,63 +151,63 @@ header button img {
 }
 
 #presentation a {
-    width: 200px;
-    height: 50px;
+    width: 12.5rem;
+    height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    font-size: 19px;
+    margin-top: 1.563rem;
+    font-size: 1.188rem;
     font-weight: bold;
     color: var(--font-color);
     text-transform: uppercase;
     background: var(--link-cv-gradient);
-    border-width: 2px;
+    border-width: 0.125rem;
     border-style: solid;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 0.438rem;
 }
 
 #presentation a:hover {
     background: var(--hover-background-color);
-    border-width: 2px;
+    border-width: 0.125rem;
     border-style: solid;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 0.438rem;
     color: var(--hover-font-color);
     transition: .5s;
 }
 
 #presentation a i {
-    margin-left: 8px;
-    margin-top: -4.5px;
+    margin-left: 0.5rem;
+    margin-top: -0.281rem;
 }
 
 #presentation img {
     float: right;
-    width: 349px;
-    height: 349px;
+    width: 21.813rem;
+    height: 21.813rem;
     border-radius: 50%;
-    margin-top: -340px;
+    margin-top: -21.25rem;
 }
 
 /*FORMATAÇÃO TECH STACKS*/
 #stacks {
-    margin-top: 180px;
+    margin-top: 11.25rem;
 }
 
 #stacks h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 2.188rem;
 }
 
 #stacks div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 #stacks div img {
@@ -215,233 +215,94 @@ header button img {
 }
 
 #stacks button {
-    width: 100px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 7px;
+    width: 6.25rem;
+    height: 2.5rem;
+    border: 0.063rem solid;
+    border-radius: 0.438rem;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     color: var(--font-color);
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 0.938rem;
     background: var(--link-cv-gradient);
-    border-width: 2px;
+    border-width: 0.125rem;
     border-style: solid;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 0.438rem;
 }
-#stacks button:hover{
+
+#stacks button:hover {
     background: var(--hover-background-color);
-    border-width: 2px;
+    border-width: 0.125rem;
     border-style: solid;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 0.438rem;
     color: var(--hover-font-color);
     transition: .5s;
 }
 
 #stacks dialog p {
-    margin: 10px 15px 10px 15px;
+    margin: 0.625rem 0.938rem 0.625rem 0.938rem;
     text-align: justify;
 }
 
 /*FORMATAÇÃO PROJETOS*/
 #projects {
-    margin-top: 214px;
-    font-size: 14px;
-}
-
-#projects h2 {
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
-    margin-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 3.125rem;
 }
 
-#box-projects {
-    width: 1210px;
-    height: 835px;
-    margin-top: 80px;
-}
-
-#box-projects div {
-    width: 280px;
-    height: 367px;
-    border: 1px solid var(--divider-color);
-    border-radius: 10px;
+#projects-title {
+    margin-top: 13.375rem;
+    margin-bottom: 6.25rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    font-size: 2.188rem;
 }
 
-#box1, #box2, #box3 {
-    float: right;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
+#projects div {
+    width: 17.5rem;
+    height: 22.938rem;
+    border: 0.063rem solid var(--divider-color);
+    border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
 }
 
-#box1 {
-    margin-right: 130px;
+.projects-content {
+    height: 12.5rem!important;
+    border: none!important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
-#box1 div {
-    height: 200px;
-    margin-bottom: -115px;
-    border: none;
-}
-
-#box1 img {
-    width: 278px;
-    height: 170px;
-    margin-top: -110px;
-    border-radius: 10px;
-}
-
-#box1 h4 {
-    margin-top: -55px;
-}
-
-#box1 p {
-    text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
-}
-
-#box2 div {
-    height: 200px;
-    margin-bottom: -130px;
-    border: none;
-}
-
-#box2 img {
-    width: 278px;
-    height: 170px;
-    margin-top: -130px;
-    border-radius: 10px;
-}
-
-#box2 h4 {
-    margin-top: -30px;
-}
-
-#box2 p {
-    text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
-}
-
-#box3 div {
-    height: 200px;
-    margin-bottom: -250px;
-    border: none;
-}
-
-#box3 img {
-    width: 280px;
-    margin-top: -250px;
-    border-radius: 10px;
-}
-
-#box3 h4 {
-    margin-top: -50px;
-}
-
-#box3 p {
-    text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
-}
-
-#box4, #box5, #box6 {
-    float: right;
+.projects-content h4 {
     display: flex;
-    align-items: center;
-    margin-right: 50px;
-    margin-top: 100px;
-    box-shadow: var(--box-shadow);
+    justify-content: center;
 }
 
-#box4 {
-    margin-right: 130px;
-}
-
-#box4 div {
-    height: 200px;
-    margin-bottom: -115px;
-    border: none;
-}
-
-#box4 img {
-    width: 279px;
-    height: 172px;
-    margin-top: -110px;
-    border-radius: 10px;
-}
-
-#box4 h4 {
-    margin-top: -50px;
-}
-
-#box4 p {
+.projects-content p {
+    margin: 0 1rem 0 1rem;
     text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
+    font-size: .875rem;
 }
 
-#box5 img {
-    width: 280px;
-    height: 170px;
-    margin-top: -130px;
-    border-radius: 10px;
+.projects-content p:nth-child(4) {
+    margin-top: 1.25rem;
 }
-
-#box5 div {
-    height: 200px;
-    margin-bottom: -130px;
-    border: none;
-}
-
-#box5 h4 {
-    margin-top: -30px;
-}
-
-#box5 p {
-    text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
-}
-
-#box6 div {
-    height: 200px;
-    margin-bottom: -130px;
-    border: none;
-}
-
-#box6 img {
-    width: 280px;
-    height: 170px;
-    margin-top: -130px;
-    border-radius: 10px;
-}
-
-#box6 h4 {
-    margin-top: -30px;
-}
-
-#box6 p {
-    text-align: justify;
-    padding-right: 18px;
-    padding-left: 18px;
+#projects img{
+    width: 17.375rem;
+    height: 10.625rem;
+    border-radius: 0.625rem;
 }
 
 /*FORMATAÇÃO FOOTER*/
 footer span img {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 footer>p {
@@ -455,39 +316,39 @@ footer>p {
 #contact-information {
     float: right;
     display: flex;
-    margin-top: -28px;
-    margin-right: 15px;
+    margin-top: -1.75rem;
+    margin-right: 0.938rem;
 }
 
 #contact-information li {
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 
 #contact .icons img {
     float: right;
-    width: 19px;
-    margin-top: -28px;
-    margin-right: 20px;
-    margin-bottom: 98px;
+    width: 1.188rem;
+    margin-top: -1.75rem;
+    margin-right: 1.25rem;
+    margin-bottom: 6.125rem;
     filter: var(--svg-color);
 }
 
 #divider {
-    width: 1180px;
-    height: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--divider-color);
+    width: 73.75rem;
+    height: 0;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 0.063rem solid var(--divider-color);
 }
 
 #end-nav {
     float: right;
     display: flex;
-    margin-right: -159px;
+    margin-right: -9.938rem;
 }
 
 #end-nav li {
-    margin-right: 67px;
+    margin-right: 4.188rem;
 }
 
 /*ANIMAÇÃO*/
@@ -501,5 +362,5 @@ footer>p {
 } */
 [data-anime].animate {
     opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0);
 }
