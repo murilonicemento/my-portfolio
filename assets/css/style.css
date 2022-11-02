@@ -199,6 +199,7 @@ header button img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 6.25rem;
     font-size: 2.188rem;
 }
 
@@ -249,34 +250,31 @@ header button img {
 /*FORMATAÇÃO PROJETOS*/
 #projects {
     height: auto;
+}
+
+#projects h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 3.125rem;
-}
-
-#projects-title {
     margin-top: 13.375rem;
     margin-bottom: 6.25rem;
-    display: flex;
-    justify-content: center;
     font-size: 2.188rem;
 }
 
-#projects div {
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    justify-content: center;
+}
+
+.card {
     width: 17.5rem;
     height: 22.938rem;
+    display: flex;
     border: 0.063rem solid var(--divider-color);
     border-radius: 0.625rem;
     box-shadow: var(--box-shadow);
-}
-
-.projects-content {
-    height: 12.5rem !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
 }
 
 .projects-content h4 {
@@ -290,7 +288,7 @@ header button img {
     font-size: .875rem;
 }
 
-.projects-content p:nth-child(4) {
+.projects-content p:nth-child(5) {
     margin-top: 1.25rem;
 }
 
