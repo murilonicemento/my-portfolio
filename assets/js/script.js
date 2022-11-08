@@ -9,21 +9,21 @@ function switchTheme() {
 const html = document.querySelector("#html");
 const css = document.querySelector("#css");
 const js = document.querySelector("#js");
-const php = document.querySelector("#php");
+const node = document.querySelector("#node");
 const git = document.querySelector("#git");
 const vscode = document.querySelector("#vscode");
 
 const modalHtml = document.querySelector("#modalhtml");
 const modalCss = document.querySelector("#modalcss");
 const modalJs = document.querySelector("#modaljs");
-const modalPhp = document.querySelector("#modalphp");
+const modalNode = document.querySelector("#modalnode");
 const modalGit = document.querySelector("#modalgit");
 const modalVscode = document.querySelector("#modalvscode");
 
 const buttonCloseHtml = document.querySelector("#modalhtml button");
 const buttonCloseCss = document.querySelector("#modalcss button");
 const buttonCloseJs = document.querySelector("#modaljs button");
-const buttonClosePhp = document.querySelector("#modalphp button");
+const buttonCloseNode = document.querySelector("#modalnode button");
 const buttonCloseGit = document.querySelector("#modalgit button");
 const buttonCloseVscode = document.querySelector("#modalvscode button");
 
@@ -31,13 +31,13 @@ const buttonCloseVscode = document.querySelector("#modalvscode button");
 html.style.cursor = "pointer";
 css.style.cursor = "pointer";
 js.style.cursor = "pointer";
-php.style.cursor = "pointer";
+node.style.cursor = "pointer";
 git.style.cursor = "pointer";
 vscode.style.cursor = "pointer";
 buttonCloseHtml.style.cursor = "pointer";
 buttonCloseCss.style.cursor = "pointer";
 buttonCloseJs.style.cursor = "pointer";
-buttonClosePhp.style.cursor = "pointer";
+buttonCloseNode.style.cursor = "pointer";
 buttonCloseGit.style.cursor = "pointer";
 buttonCloseVscode.style.cursor = "pointer";
 
@@ -50,8 +50,8 @@ css.onclick = () => {
 js.onclick = () => {
     modalJs.showModal()
 }
-php.onclick = () => {
-    modalPhp.showModal()
+node.onclick = () => {
+    modalNode.showModal()
 }
 git.onclick = () => {
     modalGit.showModal()
@@ -64,7 +64,7 @@ function closeModal() {
     modalHtml.close();
     modalCss.close();
     modalJs.close();
-    modalPhp.close();
+    modalNode.close();
     modalGit.close();
     modalVscode.close();
 }

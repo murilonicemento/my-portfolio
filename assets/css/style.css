@@ -15,6 +15,8 @@ body {
     background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
     color: var(--font-color);
+    transition: background  0.2s linear;
+
 }
 
 .light-theme {
@@ -123,7 +125,7 @@ header span img {
 }
 
 header button {
-    width: 2.188rem;
+    width: 0;
     background-color: var(--background-color);
     border: none;
     cursor: pointer;
@@ -212,6 +214,22 @@ header button img {
 
 #stacks div img {
     margin: auto;
+    animation: float 3s linear infinite;
+}
+#stacks div img:nth-child(2){
+    animation-delay: .2s;
+}
+#stacks div img:nth-child(3){
+    animation-delay: .4s;
+}
+#stacks div img:nth-child(4){
+    animation-delay: .6s;
+}
+#stacks div img:nth-child(5){
+    animation-delay: .8s;
+}
+#stacks div img:nth-child(6){
+    animation-delay: 1s;
 }
 
 #stacks button {
@@ -358,4 +376,13 @@ footer>p {
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-23px);
+    }
 }
