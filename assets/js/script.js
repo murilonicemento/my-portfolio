@@ -6,67 +6,41 @@ function switchTheme() {
     document.getElementById("moon").setAttribute("src", src);
 }
 // DIALOG TECH STACKS
-const html = document.querySelector("#html");
-const css = document.querySelector("#css");
-const js = document.querySelector("#js");
-const node = document.querySelector("#node");
-const git = document.querySelector("#git");
-const vscode = document.querySelector("#vscode");
-
-const modalHtml = document.querySelector("#modalhtml");
-const modalCss = document.querySelector("#modalcss");
-const modalJs = document.querySelector("#modaljs");
-const modalNode = document.querySelector("#modalnode");
-const modalGit = document.querySelector("#modalgit");
-const modalVscode = document.querySelector("#modalvscode");
-
-const buttonCloseHtml = document.querySelector("#modalhtml button");
-const buttonCloseCss = document.querySelector("#modalcss button");
-const buttonCloseJs = document.querySelector("#modaljs button");
-const buttonCloseNode = document.querySelector("#modalnode button");
-const buttonCloseGit = document.querySelector("#modalgit button");
-const buttonCloseVscode = document.querySelector("#modalvscode button");
-
-
-html.style.cursor = "pointer";
-css.style.cursor = "pointer";
-js.style.cursor = "pointer";
-node.style.cursor = "pointer";
-git.style.cursor = "pointer";
-vscode.style.cursor = "pointer";
-buttonCloseHtml.style.cursor = "pointer";
-buttonCloseCss.style.cursor = "pointer";
-buttonCloseJs.style.cursor = "pointer";
-buttonCloseNode.style.cursor = "pointer";
-buttonCloseGit.style.cursor = "pointer";
-buttonCloseVscode.style.cursor = "pointer";
-
-html.onclick = () => {
-    modalHtml.showModal()
+const modal = {
+    html: document.querySelector("#html"),
+    css: document.querySelector("#css"),
+    js: document.querySelector("#js"),
+    node: document.querySelector("#node"),
+    git: document.querySelector("#git"),
+    vscode: document.querySelector("#vscode")
 }
-css.onclick = () => {
-    modalCss.showModal()
+
+modal.html.onclick = () => {
+    document.querySelector("#modalhtml").showModal()
 }
-js.onclick = () => {
-    modalJs.showModal()
+modal.css.onclick = () => {
+    document.querySelector("#modalcss").showModal()
 }
-node.onclick = () => {
-    modalNode.showModal()
+modal.js.onclick = () => {
+    document.querySelector("#modaljs").showModal()
 }
-git.onclick = () => {
-    modalGit.showModal()
+modal.node.onclick = () => {
+    document.querySelector("#modalnode").showModal()
 }
-vscode.onclick = () => {
-    modalVscode.showModal()
+modal.git.onclick = () => {
+    document.querySelector("#modalgit").showModal()
+}
+modal.vscode.onclick = () => {
+    document.querySelector("#modalvscode").showModal()
 }
 
 function closeModal() {
-    modalHtml.close();
-    modalCss.close();
-    modalJs.close();
-    modalNode.close();
-    modalGit.close();
-    modalVscode.close();
+    document.querySelector("#modalhtml").close()
+    document.querySelector("#modalcss").close()
+    document.querySelector("#modaljs").close()
+    document.querySelector("#modalnode").close()
+    document.querySelector("#modalgit").close()
+    document.querySelector("#modalvscode").close()
 }
 
 // ANIMAÇÃO SCROLL
