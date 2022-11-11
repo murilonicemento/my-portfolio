@@ -219,7 +219,7 @@ header button img {
 
 #stacks div img {
     margin: auto;
-    animation: float 3s linear infinite;
+    animation: float 4s ease-in-out infinite;
     cursor: pointer;
 }
 
@@ -231,7 +231,7 @@ header button img {
     animation-delay: .4s;
 }
 
-#stacks div img:nth-child(4) {
+/* #stacks div img:nth-child(4) {
     animation-delay: .6s;
 }
 
@@ -241,7 +241,7 @@ header button img {
 
 #stacks div img:nth-child(6) {
     animation-delay: 1s;
-}
+} */
 
 #stacks button {
     width: 6.25rem;
@@ -395,6 +395,6 @@ footer>p {
     }
 
     50% {
-        transform: translateY(-23px);
+        transform: translateY(-30px);
     }
 }
