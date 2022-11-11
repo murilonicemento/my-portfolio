@@ -124,7 +124,7 @@ header span {
 
 header span img {
     width: 1.188rem;
-    margin-top: -0.5rem;
+    margin-top: -3rem;
     margin-right: 1.25rem;
     filter: var(--svg-color);
 }
@@ -138,7 +138,7 @@ header button {
 
 header button img {
     width: 2.188rem;
-    margin-bottom: -0.438rem;
+    margin-bottom: 2.6rem;
 }
 
 /*FORMATAÇÃO APRESENTAÇÃO*/
@@ -354,9 +354,9 @@ footer>p {
 #contact .icons img {
     float: right;
     width: 1.188rem;
-    margin-top: -1.75rem;
-    margin-right: 1.25rem;
-    margin-bottom: 6.125rem;
+    margin-top: -4.8rem;
+    gap: 1.25rem;
+    margin-bottom: 3.063rem;
     filter: var(--svg-color);
 }
 
