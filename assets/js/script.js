@@ -2,8 +2,18 @@
 function switchTheme() {
     document.body.classList.toggle("light-theme");
     document.body.classList.toggle("dark-theme");
-    const src = document.body.classList.contains("light-theme") ? "assets/img/moon.svg" : "assets/img/sun.svg";
-    document.getElementById("moon").setAttribute("src", src);
+
+    const srcButton = document.body.classList.contains("light-theme") ? "assets/img/moon.svg" : "assets/img/sun.svg";
+    document.getElementById("moon").setAttribute("src", srcButton);
+
+    const srcHtml = document.body.classList.contains("light-theme") ? "assets/img/html5.svg" : "assets/img/html5-dark.svg";
+    document.getElementById("html").setAttribute("src", srcHtml);
+
+    const srcCss = document.body.classList.contains("light-theme") ? "assets/img/css3.svg" : "assets/img/css3-dark.svg";
+    document.getElementById("css").setAttribute("src", srcCss);
+
+    const srcGit = document.body.classList.contains("light-theme") ? "assets/img/git.svg" : "assets/img/git-dark.svg";
+    document.getElementById("git").setAttribute("src", srcGit);
 }
 // DIALOG TECH STACKS
 const modal = {
@@ -13,23 +23,28 @@ const modal = {
     node: document.querySelector("#node"),
     git: document.querySelector("#git"),
     vscode: document.querySelector("#vscode")
-}
+};
 
 modal.html.onclick = () => {
     document.querySelector("#modalhtml").showModal()
 }
+
 modal.css.onclick = () => {
     document.querySelector("#modalcss").showModal()
 }
+
 modal.js.onclick = () => {
     document.querySelector("#modaljs").showModal()
 }
+
 modal.node.onclick = () => {
     document.querySelector("#modalnode").showModal()
 }
+
 modal.git.onclick = () => {
     document.querySelector("#modalgit").showModal()
 }
+
 modal.vscode.onclick = () => {
     document.querySelector("#modalvscode").showModal()
 }
@@ -58,6 +73,7 @@ function animationScroll() {
     });
 }
 animationScroll();
+
 if (target.length) {
     window.addEventListener("scroll", () => {
         animationScroll();
