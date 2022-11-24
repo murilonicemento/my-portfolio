@@ -15,6 +15,15 @@ function switchTheme() {
     const srcGit = document.body.classList.contains("light-theme") ? "assets/img/git.svg" : "assets/img/git-dark.svg";
     document.getElementById("git").setAttribute("src", srcGit);
 }
+
+// ATUALIZAÇÃO DA PÁGINA AO CLICAR NA LOGO
+const logo = document.querySelector("header nav p:first-child");
+logo.style.cursor = "pointer";
+
+logo.addEventListener("click", () => {
+    window.location.reload();
+})
+
 // DIALOG TECH STACKS
 const modal = {
     html: document.querySelector("#html"),
