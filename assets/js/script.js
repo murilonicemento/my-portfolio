@@ -17,7 +17,7 @@ function switchTheme() {
 }
 
 // PREFERÊNCIAS DO USUÁRIO EM RELAÇÃO AO TEMA
-const query = window.matchMedia("(prefers-color-scheme: dark)");
+const query = window.matchMedia("(prefers-color-scheme: dark-theme)");
 
 query.matches // true se prefere o dark mode
 
