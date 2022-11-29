@@ -17,13 +17,22 @@ function switchTheme() {
 }
 
 // PREFERÊNCIAS DO USUÁRIO EM RELAÇÃO AO TEMA
-const query = window.matchMedia("(prefers-color-scheme: dark-theme)");
+const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-query.matches // true se prefere o dark mode
+// Altera o tema
+function changeTheme(event) {
+  if( event.matches ) {
+    // O tema é o dark
+  } else {
+    // O tema é o light
+  }
+}
 
-query.addEventListener("change", res => {
-    res.matches // chama as mudanças
-})
+// Escuta a mudança de tema no sistema
+prefersColorScheme.addListener(changeTheme);
+
+// Altera o tema conforme o tema do usuário
+changeTheme(prefersColorScheme);
 
 // ATUALIZAÇÃO DA PÁGINA AO CLICAR NA LOGO
 const logo = document.querySelector("header nav p:first-child");
