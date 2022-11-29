@@ -1,7 +1,7 @@
 // MUDANÇA DE TEMA
 function switchTheme() {
-    document.body.classList.toggle("light-theme");
     document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
 
     const srcButton = document.body.classList.contains("light-theme") ? "assets/img/moon.svg" : "assets/img/sun.svg";
     document.getElementById("moon").setAttribute("src", srcButton);
@@ -16,25 +16,6 @@ function switchTheme() {
     document.getElementById("git").setAttribute("src", srcGit);
 }
 
-// PREFERÊNCIAS DO USUÁRIO EM RELAÇÃO AO TEMA
-const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-// Altera o tema
-function changeTheme(event) {
-  if( event.matches ) {
-    // O tema é o dark
-    document.body.classList.toggle("dark-theme");
-  } else {
-    // O tema é o light
-    document.body.classList.toggle("light-theme");
-  }
-}
-
-// Escuta a mudança de tema no sistema
-prefersColorScheme.addListener(changeTheme);
-
-// Altera o tema conforme o tema do usuário
-changeTheme(prefersColorScheme);
 
 // ATUALIZAÇÃO DA PÁGINA AO CLICAR NA LOGO
 const logo = document.querySelector("header nav p:first-child");
