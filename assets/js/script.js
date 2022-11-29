@@ -16,6 +16,15 @@ function switchTheme() {
     document.getElementById("git").setAttribute("src", srcGit);
 }
 
+// PREFERÊNCIAS DO USUÁRIO EM RELAÇÃO AO TEMA
+const query = window.matchMedia("(prefers-color-scheme: dark)");
+
+query.matches // true se prefere o dark mode
+
+query.addEventListener("change", res => {
+    res.matches // chama as mudanças
+})
+
 // ATUALIZAÇÃO DA PÁGINA AO CLICAR NA LOGO
 const logo = document.querySelector("header nav p:first-child");
 logo.style.cursor = "pointer";
