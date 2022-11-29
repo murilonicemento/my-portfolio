@@ -23,8 +23,10 @@ const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 function changeTheme(event) {
   if( event.matches ) {
     // O tema é o dark
+    document.body.classList.toggle("dark-theme");
   } else {
     // O tema é o light
+    document.body.classList.toggle("light-theme");
   }
 }
 
