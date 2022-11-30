@@ -11,6 +11,9 @@ function switchTheme() {
 
     const srcCss = document.body.classList.contains("light-theme") ? "assets/img/css3.svg" : "assets/img/css3-dark.svg";
     document.getElementById("css").setAttribute("src", srcCss);
+    
+    const srcNodejs = document.body.classList.contains("light-theme") ? "assets/img/nodejs.svg" : "assets/img/nodejs-dark.svg";
+    document.getElementById("node").setAttribute("src", srcNodejs);
 
     const srcGit = document.body.classList.contains("light-theme") ? "assets/img/git.svg" : "assets/img/git-dark.svg";
     document.getElementById("git").setAttribute("src", srcGit);
