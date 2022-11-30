@@ -291,10 +291,12 @@ header button img {
 }
 
 #cards {
+    max-width: 942px;
     display: flex;
     flex-wrap: wrap;
-    gap: 3.125rem;
     justify-content: center;
+    gap: 3.125rem;
+    margin: auto;
 }
 
 .card {
