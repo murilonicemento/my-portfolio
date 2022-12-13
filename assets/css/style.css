@@ -402,7 +402,7 @@ footer>p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     /*FORMATAÇÃO HEADER*/
     header {
         width: 400px;
