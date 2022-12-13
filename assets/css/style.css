@@ -122,9 +122,11 @@ header span {
 
 header span img {
     width: 1.188rem;
-    margin-top: -3rem;
+    height: auto;
+    margin-top: -6px;
     margin-right: 1.25rem;
     filter: var(--svg-color);
+    /* border: 2px solid blue; */
 }
 
 header button {
@@ -136,7 +138,7 @@ header button {
 
 header button img {
     width: 2.188rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: -5px;
 }
 
 /*FORMATAÇÃO APRESENTAÇÃO*/
