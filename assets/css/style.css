@@ -400,28 +400,36 @@ footer>p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     /*FORMATAÇÃO HEADER*/
+    header {
+        width: 400px;
+    }
     header ul {
         display: none;
     }
 
     header nav p {
-        margin-left: 60px;
+        margin-left: 15px;
     }
 
     header span {
-        float: left;
-        margin-left: 520px;
+        float: right;
+        margin-right: 50px;
     }
 
     /*FORMATAÇÃO APRESENTAÇÃO*/
+    main {
+        width: 400px;
+    }
     #presentation p {
-        margin-left: 60px;
+        width: 380px;
+        margin-left: 15px;
     }
 
     #presentation a {
-        margin-left: 60px;
+        margin: auto;
+        margin-top: 40px;
     }
 
     #presentation img {
@@ -429,55 +437,57 @@ footer>p {
     }
 
     /*FORMATAÇÃO TECH STACKS*/
-    #stacks h2 {
-        display: block;
-        margin-left: 330px;
-    }
-
     #stacks div {
-        width: 700px;
+        width: 400px;
         height: 500px;
         display: flex;
-        gap: 150px;
+        gap: 5px;
         flex-wrap: wrap;
         margin-top: 5rem;
-        margin-left: 60px;
+    }
+
+    #stacks div img {
+        width: 100px;
+        margin: auto;
     }
 
     #stacks dialog {
-        margin-left: 160px;
+        width: auto;
+        margin: auto;
+        border-radius: 4px;
     }
 
     /*FORMATAÇÃO PROJETOS*/
-    #projects h2 {
-        display: block;
-        margin-left: 360px;
+    #cards {
+        max-width: 400px;
     }
 
-    #cards {
-        max-width: 618px;
-        margin-left: 120px;
-    }
-    
     #cards div:nth-child(3), #cards div:nth-child(6) {
         display: none;
     }
 
     /*FORMATAÇÃO FOOTER*/
     footer {
-        width: 790px;
-        margin-left: 40px;
+        width: 400px;
+        padding-left: 15px;
+        /* border: 2px solid violet; */
     }
 
-    #divider {
-        width: 48.5rem;
-        height: 0;
-        margin-top: 0.625rem;
-        margin-bottom: 0.625rem;
-        border: 0.063rem solid var(--divider-color);
-    }
-
-    #end-nav {
+    #contact-information, #end-nav {
         display: none;
+    }
+    #divider {
+        width: 370px;
+    }
+
+    footer span:last-child {
+        float: left;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin-top: -70px;
+    }
+    footer span:last-child i {
+        margin: 0 10px;
     }
 }
