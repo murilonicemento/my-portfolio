@@ -11,7 +11,7 @@ function switchTheme() {
 
     const srcCss = document.body.classList.contains("light-theme") ? "assets/img/css3.svg" : "assets/img/css3-dark.svg";
     document.getElementById("css").setAttribute("src", srcCss);
-    
+
     const srcNodejs = document.body.classList.contains("light-theme") ? "assets/img/nodejs.svg" : "assets/img/nodejs-dark.svg";
     document.getElementById("node").setAttribute("src", srcNodejs);
 
@@ -21,7 +21,7 @@ function switchTheme() {
 
 
 // ATUALIZAÇÃO DA PÁGINA AO CLICAR NA LOGO
-const logo = document.querySelector("header nav p:first-child");
+const logo = document.querySelector("header p:first-child");
 logo.style.cursor = "pointer";
 
 logo.addEventListener("click", () => {

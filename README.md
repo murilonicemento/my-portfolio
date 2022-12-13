@@ -19,5 +19,14 @@ https://my-portfolio-chi-nine.vercel.app/
 
 <img src=".github/portfolio-light-theme.png">
 
+## Light Theme Mobile
+
+<img src=".github/portfolio-light-theme-mobile.png">
+
 ## Dark Theme
+
 <img src=".github/portfolio-dark-theme.png">
+
+## Dark Theme Mobile
+
+<img src=".github/portfolio-dark-theme-mobile.png">
