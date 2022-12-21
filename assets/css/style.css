@@ -403,10 +403,12 @@ footer>p {
 
 /* MEDIA QUERIES */
 @media (max-width: 700px) {
+
     /*FORMATAÇÃO HEADER*/
     header {
-        width: 400px;
+        width: 90%;
     }
+
     header ul {
         display: none;
     }
@@ -422,10 +424,11 @@ footer>p {
 
     /*FORMATAÇÃO APRESENTAÇÃO*/
     main {
-        width: 400px;
+        width: 90%;
     }
+
     #presentation p {
-        width: 380px;
+        width: 85%;
         margin-left: 15px;
     }
 
@@ -439,17 +442,20 @@ footer>p {
     }
 
     /*FORMATAÇÃO TECH STACKS*/
+
     #stacks div {
-        width: 400px;
+        max-width: 600px;
         height: 500px;
         display: flex;
         gap: 5px;
         flex-wrap: wrap;
+        margin: auto;
         margin-top: 5rem;
+        border: 1px solid blue;
     }
 
     #stacks div img {
-        width: 100px;
+        width: 30%;
         margin: auto;
     }
 
@@ -460,6 +466,10 @@ footer>p {
     }
 
     /*FORMATAÇÃO PROJETOS*/
+    #projects {
+        margin-top: -80px;
+    }
+
     #cards {
         max-width: 400px;
     }
@@ -470,16 +480,16 @@ footer>p {
 
     /*FORMATAÇÃO FOOTER*/
     footer {
-        width: 400px;
+        width: 90%;
         padding-left: 15px;
-        /* border: 2px solid violet; */
     }
 
     #contact-information, #end-nav {
         display: none;
     }
+
     #divider {
-        width: 370px;
+        width: 100%;
     }
 
     footer span:last-child {
@@ -487,8 +497,8 @@ footer>p {
         width: 300px;
         display: flex;
         align-items: center;
-        margin-top: -70px;
     }
+
     footer span:last-child i {
         margin: 0 10px;
     }
