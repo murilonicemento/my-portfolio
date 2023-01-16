@@ -16,7 +16,7 @@ body {
     background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
     color: var(--font-color);
-    transition: 0.2s linear;
+    transition: .4s ease-in-out;
 
 }
 
