@@ -1,300 +1,586 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38EHL206E2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-38EHL206E2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-38EHL206E2');
+      gtag("config", "G-38EHL206E2");
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo-aba.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/logo-aba.png" />
     <title>Portfólio</title>
-</head>
+  </head>
 
-<body class="dark-theme" id="home">
+  <body class="dark-theme" id="home">
     <!--INÍCIO HEADER-->
     <header>
-        <!--INÍCIO NAV-->
-        <nav>
-            <p title="Logo">&lt;/MN&gt;</p>
-            <span class="icons">
-                <a href="https://github.com/murilonicemento" target="_blank" title="GitHub">
-                    <img src="assets/img/github.svg" alt="Logo Github" width="120px" height="120px">
-                </a>
-                <a href="https://www.instagram.com/murilonasciment22/" target="_blank" title="Instagram">
-                    <img src="assets/img/instagram.svg" alt="Logo Instagram" width="120px" height="120px">
-                </a>
-                <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank" title="LinkedIn">
-                    <img src="assets/img/linkedin.svg" alt="Logo LinkedIn" width="120px" height="120px">
-                </a>
-                <button title="Button" id="btn-theme-switch">
-                    <img src="assets/img/sun.svg" alt="Imagem sol" onclick="switchTheme()" id="moon">
-                </button>
-            </span>
-            <ul class="nav-list">
-                <li>
-                    <a href="#home" title="Home">Home</a>
-                </li>
-                <li>
-                    <a href="#presentation" title="About">Sobre</a>
-                </li>
-                <li>
-                    <a href="#stacks" title="Tech Stacks">Tech Stacks</a>
-                </li>
-                <li>
-                    <a href="#projects" title="Projects">Projetos</a>
-                </li>
-                <li>
-                    <a href="#contact" title="Contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <!--FIM NAV-->
+      <!--INÍCIO NAV-->
+      <nav>
+        <p title="Logo">&lt;/MN&gt;</p>
+        <span class="icons">
+          <a
+            href="https://github.com/murilonicemento"
+            target="_blank"
+            title="GitHub"
+          >
+            <img
+              src="assets/img/github.svg"
+              alt="Logo Github"
+              width="120px"
+              height="120px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/murilonasciment22/"
+            target="_blank"
+            title="Instagram"
+          >
+            <img
+              src="assets/img/instagram.svg"
+              alt="Logo Instagram"
+              width="120px"
+              height="120px"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/murilonicemento/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <img
+              src="assets/img/linkedin.svg"
+              alt="Logo LinkedIn"
+              width="120px"
+              height="120px"
+            />
+          </a>
+          <button title="Button" id="btn-theme-switch">
+            <img
+              src="assets/img/sun.svg"
+              alt="Imagem sol"
+              onclick="switchTheme()"
+              id="moon"
+            />
+          </button>
+        </span>
+        <ul class="nav-list">
+          <li>
+            <a href="#home" title="Home">Home</a>
+          </li>
+          <li>
+            <a href="#presentation" title="About">Sobre</a>
+          </li>
+          <li>
+            <a href="#stacks" title="Tech Stacks">Tech Stacks</a>
+          </li>
+          <li>
+            <a href="#projects" title="Projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact" title="Contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <!--FIM NAV-->
     </header>
     <!--FIM HEADER-->
     <!--INÍCIO MAIN-->
     <main>
-        <section id="presentation">
-            <div style="clear: both;"></div>
-            <p title="Presentation">Olá 👋,<br /> meu nome é <span translate="no">Murilo Nascimento</span><br /> Sou estudante de
-                Engenharia de
-                Software<br /> e
-                Desenvolvimento
-                Web
+      <section id="presentation">
+        <div style="clear: both"></div>
+        <p title="Presentation">
+          Olá 👋,<br />
+          meu nome é <span translate="no">Murilo Nascimento</span><br />
+          Sou estudante de Engenharia de Software<br />
+          e Desenvolvimento Web
+        </p>
+        <a href="curriculo.pdf" title="Curriculum" download
+          >Download CV <i class="fa-solid fa-download"></i
+        ></a>
+        <!-- <img src="assets/img/download.svg" alt="download image" id="download"> -->
+        <div style="clear: both"></div>
+        <img
+          src="assets/img/foto-perfil.jpg"
+          alt="Foto de Perfil"
+          title="Profile Picture"
+        />
+      </section>
+      <div style="clear: both"></div>
+      <!--INÍCIO TECH STACKS-->
+      <section id="stacks" data-anime="left">
+        <h2 title="Tech Stacks">Tech Stacks</h2>
+        <div>
+          <img
+            src="assets/img/html5-dark.svg"
+            alt="HTML5"
+            width="140px"
+            height="140px"
+            id="html"
+            title="HTML"
+          />
+          <dialog id="modalhtml">
+            <p>
+              HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção
+              mais básico da web. Define o significado e a estrutura do conteúdo
+              da web. Outras tecnologias além do HTML geralmente são usadas para
+              descrever a aparência/apresentação (CSS) ou a
+              funcionalidade/comportamento (JavaScript) de uma página da
+              web."Hipertexto" refere-se aos links que conectam páginas da Web
+              entre si, seja dentro de um único site ou entre sites. Links são
+              um aspecto fundamental da web.
             </p>
-            <a href="curriculo.pdf" title="Curriculum" download>Download CV <i class="fa-solid fa-download"></i></a>
-            <!-- <img src="assets/img/download.svg" alt="download image" id="download"> -->
-            <div style="clear: both;"></div>
-            <img src="assets/img/foto-perfil.jpg" alt="Foto de Perfil" title="Profile Picture">
-        </section>
-        <div style="clear: both;"></div>
-        <!--INÍCIO TECH STACKS-->
-        <section id="stacks" data-anime="left">
-            <h2 title="Tech Stacks">Tech Stacks</h2>
-            <div>
-                <img src="assets/img/html5-dark.svg" alt="HTML5" width="140px" height="140px" id="html" title="HTML">
-                <dialog id="modalhtml">
-                    <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o
-                        significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são
-                        usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento
-                        (JavaScript) de uma página da web."Hipertexto" refere-se aos links que conectam páginas da Web
-                        entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web.
-                    </p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
-                <img src="assets/img/css3-dark.svg" alt="CSS3" width="140px" height="140px" id="css" title="CSS">
-                <dialog id="modalcss">
-                    <p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US)
-                        usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias
-                        linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na
-                        tela, no papel, na fala ou em outras mídias. CSS é uma das principais linguagens da open web e é
-                        padronizada em navegadores web de acordo com as especificação da W3C.</p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
-                <img src="assets/img/javascript.svg" alt="JAVASCRIPT" width="120px" height="120px" id="js"
-                    title="JavaScript">
-                <dialog id="modaljs">
-                    <p>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos
-                        com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas
-                        usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe
-                        Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica,
-                        suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a
-                        programação funcional).</p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
-                <img src="assets/img/nodejs-dark.svg" alt="NODE.JS" width="140px" height="140px" id="node" title="Node.js" style="animation-delay: .6s;">
-                <dialog id="modalnode">
-                    <p>O Node.js é um ambiente de tempo de execução JavaScript de código aberto e multiplataforma. É uma
-                        ferramenta popular para quase qualquer tipo de projeto!
-                        O Node.js executa o mecanismo JavaScript V8, o núcleo do Google Chrome, fora do navegador. Isso
-                        permite que o Node.js tenha um alto desempenho. Um aplicativo Node.js é executado em um único
-                        processo, sem criar um novo thread para cada solicitação. O Node.js fornece um conjunto de
-                        primitivas de E/S assíncronas em sua biblioteca padrão que impedem o bloqueio do código
-                        JavaScript e, geralmente, as bibliotecas no Node.js são escritas usando paradigmas sem bloqueio,
-                        tornando o comportamento de bloqueio a exceção e não a norma.</p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
-                <img src="assets/img/git-dark.svg" alt="GIT" width="140px" height="140px" id="git" title="Git" style="animation-delay: .8s;">
-                <dialog id="modalgit">
-                    <p>Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para
-                        lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.</p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
-                <img src="assets/img/vscode.svg" alt="VSCODE" width="120px" height="120px" id="vscode"
-                    title="Visual Studio Code" style="animation-delay: 1s;">
-                <dialog id="modalvscode">
-                    <p>O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado em sua área
-                        de trabalho e está disponível para Windows, macOS e Linux. Ele vem com suporte integrado para
-                        JavaScript, TypeScript e Node.js e possui um rico ecossistema de extensões para outras
-                        linguagens e ambientes de execução (como C++, C#, Java, Python, PHP, Go, .NET). </p>
-                    <button onclick="closeModal()">
-                        Fechar
-                    </button>
-                </dialog>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/css3-dark.svg"
+            alt="CSS3"
+            width="140px"
+            height="140px"
+            id="css"
+            title="CSS"
+          />
+          <dialog id="modalcss">
+            <p>
+              CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma
+              linguagem de estilo (en-US) usada para descrever a apresentação de
+              um documento escrito em HTML ou em XML (incluindo várias
+              linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como
+              elementos são mostrados na tela, no papel, na fala ou em outras
+              mídias. CSS é uma das principais linguagens da open web e é
+              padronizada em navegadores web de acordo com as especificação da
+              W3C.
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/sass.svg"
+            alt="SASS"
+            width="140px"
+            height="140px"
+            id="sass"
+            title="SASS"
+          />
+          <dialog id="modalsass">
+            <p>
+              Sass é uma linguagem de folha de estilo compilada para CSS. Ele
+              permite que você use variáveis, regras aninhadas, mixins, funções
+              e muito mais, tudo com uma sintaxe totalmente compatível com CSS.
+              O Sass ajuda a manter grandes folhas de estilo bem organizadas e
+              facilita o compartilhamento de design dentro e entre projetos.
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/javascript.svg"
+            alt="JAVASCRIPT"
+            width="120px"
+            height="120px"
+            id="js"
+            title="JavaScript"
+          />
+          <dialog id="modaljs">
+            <p>
+              JavaScript® (às vezes abreviado para JS) é uma linguagem leve,
+              interpretada e baseada em objetos com funções de primeira classe,
+              mais conhecida como a linguagem de script para páginas Web, mas
+              usada também em vários outros ambientes sem browser, tais como
+              node.js, Apache CouchDB e Adobe Acrobat. O JavaScript é uma
+              linguagem baseada em protótipos, multi-paradigma e dinâmica,
+              suportando estilos de orientação a objetos, imperativos e
+              declarativos (como por exemplo a programação funcional).
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/nodejs-dark.svg"
+            alt="NODE.JS"
+            width="140px"
+            height="140px"
+            id="node"
+            title="Node.js"
+            style="animation-delay: 0.6s"
+          />
+          <dialog id="modalnode">
+            <p>
+              O Node.js é um ambiente de tempo de execução JavaScript de código
+              aberto e multiplataforma. É uma ferramenta popular para quase
+              qualquer tipo de projeto! O Node.js executa o mecanismo JavaScript
+              V8, o núcleo do Google Chrome, fora do navegador. Isso permite que
+              o Node.js tenha um alto desempenho. Um aplicativo Node.js é
+              executado em um único processo, sem criar um novo thread para cada
+              solicitação. O Node.js fornece um conjunto de primitivas de E/S
+              assíncronas em sua biblioteca padrão que impedem o bloqueio do
+              código JavaScript e, geralmente, as bibliotecas no Node.js são
+              escritas usando paradigmas sem bloqueio, tornando o comportamento
+              de bloqueio a exceção e não a norma.
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/git-dark.svg"
+            alt="GIT"
+            width="140px"
+            height="140px"
+            id="git"
+            title="Git"
+            style="animation-delay: 0.8s"
+          />
+          <dialog id="modalgit">
+            <p>
+              Git é um sistema de controle de versão distribuído gratuito e de
+              código aberto projetado para lidar com tudo, desde projetos
+              pequenos a muito grandes com velocidade e eficiência.
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+          <img
+            src="assets/img/sqlite.svg"
+            alt="SQLite"
+            width="140px"
+            height="140px"
+            id="sqlite"
+            title="SQLite"
+            style="animation-delay: 1s"
+          />
+          <dialog id="modalsqlite">
+            <p>
+              SQL significa Standard Query Language, literalmente a linguagem
+              padrão para realizar queries. A linguagem SQL é utilizada de
+              maneira relativamente parecida entre os principais bancos de dados
+              relacionais do mercado: Oracle, MySQL, MariaDB, PostgreSQL,
+              Microsoft SQL Server, entre muitos outros.
+            </p>
+            <button onclick="closeModal()">Fechar</button>
+          </dialog>
+        </div>
+      </section>
+      <!--FIM TECH STACKS-->
+      <!--INÍCIO PROJETOS-->
+      <section id="projects" data-anime="left">
+        <h2 title="Projects">Projetos</h2>
+        <div id="cards">
+          <div class="card">
+            <div class="projects-content" title="Project Stranger Things">
+              <img
+                src="assets/img/stranger-things.JPG"
+                alt="Foto do projeto Landing Page Stranger Things"
+              />
+              <h4>Landing Page Stranger Things</h4>
+              <p>
+                Projeto criado através da plataforma Digital Innovation One
+                (DIO).
+              </p>
+              <p>Tech Stacks: HTML, CSS, JavaScript e Firebase</p>
+              <p>
+                <a
+                  href="https://landpg-strthgs.netlify.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/landing-page-stranger-things"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
             </div>
-        </section>
-        <!--FIM TECH STACKS-->
-        <!--INÍCIO PROJETOS-->
-        <section id="projects" data-anime="left">
-            <h2 title="Projects">Projetos</h2>
-            <div id="cards">
-                <div class="card">
-                    <div class="projects-content" title="Project Stranger Things">
-                        <img src="assets/img/stranger-things.JPG" alt="Foto do projeto Landing Page Stranger Things">
-                        <h4>Landing Page Stranger Things</h4>
-                        <p>Projeto criado através da plataforma Digital Innovation One (DIO).</p>
-                        <p>Tech Stacks: HTML, CSS, JavaScript e Firebase</p>
-                        <p><a href="https://landpg-strthgs.netlify.app/" target="_blank"
-                                style="margin-right: 1.563rem;"><i class="fa-solid fa-link"
-                                    style="margin-right: 0.313rem;"></i>Live Preview</a> <a
-                                href="https://github.com/murilonicemento/landing-page-stranger-things"
-                                target="_blank"><i class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View
-                                Code</a></p>
-                    </div>
-                </div>
+          </div>
 
-                <div class="card">
-                    <div class="projects-content" title="Project Rocketpay">
-                        <img src="assets/img/rocketpay.JPG" alt="Foto do projeto Rocketpay">
-                        <h4>RocketPay</h4>
-                        <p>Projeto criado através da plataforma Rocketseat no evento Explorer Lab - JavaScript DOM.</p>
-                        <p>Tech Stacks: HTML, CSS e JavaScript</p>
-                        <p><a href="https://rocketpay-topaz.vercel.app/" target="_blank"
-                                style="margin-right: 1.563rem;"><i class="fa-solid fa-link"
-                                    style="margin-right: 0.313rem;"></i>Live Preview</a> <a
-                                href="https://github.com/murilonicemento/rocketpay" target="_blank"><i
-                                    class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View Code</a></p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="projects-content" title="Project National Museum">
-                        <img src="assets/img/museu-nacional.JPG" alt="Foto do projeto Museu Nacional">
-                        <h4>Museu Nacional</h4>
-                        <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo no módulo de
-                            HTML e CSS.</p>
-                        <p>Tech Stacks: HTML e CSS</p>
-                        <p><a href="https://musenac.netlify.app/" target="_blank" style="margin-right: 1.563rem;"><i
-                                    class="fa-solid fa-link" style="margin-right: 0.313rem;"></i>Live
-                                Preview</a> <a href="https://github.com/murilonicemento/museu-nacional"
-                                target="_blank"><i class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View
-                                Code</a></p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="projects-content" title="Project App Kill The Mosquito">
-                        <img src="assets/img/mata-mosquito.JPG" alt="Foto do projeto App Mata-mosquito">
-                        <h4>App Mata-mosquito</h4>
-                        <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
-                        <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
-                        <p><a href="https://app-matmosq.netlify.app/" target="_blank" style="margin-right: 1.563rem;"><i
-                                    class="fa-solid fa-link" style="margin-right: 0.313rem;"
-                                    style="margin-right: 1.563rem;"></i>Live
-                                Preview</a> <a href="https://github.com/murilonicemento/app-mata-mosquito"
-                                target="_blank"><i class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View
-                                Code</a></p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="projects-content" title="Project App Calculator">
-                        <img src="assets/img/calculadora.JPG" alt="Foto do projeto App Calculadora">
-                        <h4>App Calculadora</h4>
-                        <p>Projeto criado através da plataforma Udemy no curso Desenvolvimento Web Completo.</p>
-                        <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
-                        <p><a href="https://appcal.netlify.app/" target="_blank" style="margin-right: 1.563rem;"><i
-                                    class="fa-solid fa-link" style="margin-right: 0.313rem;"></i>Live
-                                Preview</a> <a href="https://github.com/murilonicemento/app-calculadora"
-                                target="_blank"><i class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View
-                                Code</a></p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="projects-content" title="Project Countdown">
-                        <img src="assets/img/countdown.JPG" alt="Foto do projeto Countdown">
-                        <h4>Cowntdown</h4>
-                        <p>Projeto criado através da plataforma Rocketseat na trilha Discover.</p>
-                        <p>Tech Stacks: HTML, CSS e JavaScript</p>
-                        <p><a href="https://cowdow.netlify.app/" target="_blank" style="margin-right: 1.563rem;"><i
-                                    class="fa-solid fa-link" style="margin-right: 0.313rem;"></i>Live
-                                Preview</a> <a href="https://github.com/murilonicemento/countdown" target="_blank"><i
-                                    class="fa-brands fa-github" style="margin-right: 0.313rem;"></i>View Code</a></p>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="projects-content" title="Project Rocketpay">
+              <img
+                src="assets/img/rocketpay.JPG"
+                alt="Foto do projeto Rocketpay"
+              />
+              <h4>RocketPay</h4>
+              <p>
+                Projeto criado através da plataforma Rocketseat no evento
+                Explorer Lab - JavaScript DOM.
+              </p>
+              <p>Tech Stacks: HTML, CSS e JavaScript</p>
+              <p>
+                <a
+                  href="https://rocketpay-topaz.vercel.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/rocketpay"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
             </div>
-        </section>
-        <!--FIM PROJETOS-->
+          </div>
+
+          <div class="card">
+            <div class="projects-content" title="Project National Museum">
+              <img
+                src="assets/img/museu-nacional.JPG"
+                alt="Foto do projeto Museu Nacional"
+              />
+              <h4>Museu Nacional</h4>
+              <p>
+                Projeto criado através da plataforma Udemy no curso
+                Desenvolvimento Web Completo no módulo de HTML e CSS.
+              </p>
+              <p>Tech Stacks: HTML e CSS</p>
+              <p>
+                <a
+                  href="https://musenac.netlify.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/museu-nacional"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="projects-content" title="Project App Kill The Mosquito">
+              <img
+                src="assets/img/mata-mosquito.JPG"
+                alt="Foto do projeto App Mata-mosquito"
+              />
+              <h4>App Mata-mosquito</h4>
+              <p>
+                Projeto criado através da plataforma Udemy no curso
+                Desenvolvimento Web Completo.
+              </p>
+              <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
+              <p>
+                <a
+                  href="https://app-matmosq.netlify.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                    style="margin-right: 1.563rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/app-mata-mosquito"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="projects-content" title="Project App Calculator">
+              <img
+                src="assets/img/calculadora.JPG"
+                alt="Foto do projeto App Calculadora"
+              />
+              <h4>App Calculadora</h4>
+              <p>
+                Projeto criado através da plataforma Udemy no curso
+                Desenvolvimento Web Completo.
+              </p>
+              <p>Tech Stacks: HTML, CSS, Bootstrap e JavaScript</p>
+              <p>
+                <a
+                  href="https://appcal.netlify.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/app-calculadora"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="projects-content" title="Project Countdown">
+              <img
+                src="assets/img/countdown.JPG"
+                alt="Foto do projeto Countdown"
+              />
+              <h4>Cowntdown</h4>
+              <p>
+                Projeto criado através da plataforma Rocketseat na trilha
+                Discover.
+              </p>
+              <p>Tech Stacks: HTML, CSS e JavaScript</p>
+              <p>
+                <a
+                  href="https://cowdow.netlify.app/"
+                  target="_blank"
+                  style="margin-right: 1.563rem"
+                  ><i
+                    class="fa-solid fa-link"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >Live Preview</a
+                >
+                <a
+                  href="https://github.com/murilonicemento/countdown"
+                  target="_blank"
+                  ><i
+                    class="fa-brands fa-github"
+                    style="margin-right: 0.313rem"
+                  ></i
+                  >View Code</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FIM PROJETOS-->
     </main>
     <!--FIM MAIN-->
     <!--INÍCIO FOOTER-->
     <footer id="contact">
-        <p title="Logo">&lt;/MN&gt;</p>
-        <span class="icons">
-            <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank" title="LinkedIn">
-                <img src="assets/img/linkedin.svg" alt="Logo LinkedIn" width="120px" height="120px">
-            </a>
-            <a href="https://www.instagram.com/murilonasciment22/" target="_blank" title="Instagram">
-                <img src="assets/img/instagram.svg" alt="Logo Instagram" width="120px" height="120px">
-            </a>
-            <a href="https://github.com/murilonicemento" target="_blank" title="GitHub">
-                <img src="assets/img/github.svg" alt="Logo Github" width="120px" height="120px">
-            </a>
-        </span>
-        <ul id="contact-information">
-            <li>
-                <a href="https://web.whatsapp.com/send?phone=5531981141827" target="_blank" title="Telephone"><i
-                        class="fa-brands fa-whatsapp"></i> +55 (31) 98114 - 1827</a>
-            </li>
-            <li>
-                <a href="mailto: murilo_nascimento22@outlook.com?subject=subjecttext" title="E-mail"><i
-                        class="fa-solid fa-envelope"></i> murilo_nascimento22@outlook.com</a>
-            </li>
-        </ul>
-        <div id="divider"></div>
-        <ul id="end-nav">
-            <li>
-                <a href="#home" title="Home">Home</a>
-            </li>
-            <li>
-                <a href="#presentation" title="About">Sobre</a>
-            </li>
-            <li>
-                <a href="#stacks" title="Tech Stacks">Tech Stack</a>
-            </li>
-            <li>
-                <a href="#projects" title="Projects">Projetos</a>
-            </li>
-            <li>
-                <a href="#contact" title="Contact">Contato</a>
-            </li>
-        </ul>
-        <span translate="no">Made with <i class="fa-solid fa-heart" style="color: firebrick;"></i> by Murilo Nascimento</span>
+      <p title="Logo">&lt;/MN&gt;</p>
+      <span class="icons">
+        <a
+          href="https://www.linkedin.com/in/murilonicemento/"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <img
+            src="assets/img/linkedin.svg"
+            alt="Logo LinkedIn"
+            width="120px"
+            height="120px"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/murilonasciment22/"
+          target="_blank"
+          title="Instagram"
+        >
+          <img
+            src="assets/img/instagram.svg"
+            alt="Logo Instagram"
+            width="120px"
+            height="120px"
+          />
+        </a>
+        <a
+          href="https://github.com/murilonicemento"
+          target="_blank"
+          title="GitHub"
+        >
+          <img
+            src="assets/img/github.svg"
+            alt="Logo Github"
+            width="120px"
+            height="120px"
+          />
+        </a>
+      </span>
+      <ul id="contact-information">
+        <li>
+          <a
+            href="https://web.whatsapp.com/send?phone=5531981141827"
+            target="_blank"
+            title="Telephone"
+            ><i class="fa-brands fa-whatsapp"></i> +55 (31) 98114 - 1827</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto: murilo_nascimento22@outlook.com?subject=subjecttext"
+            title="E-mail"
+            ><i class="fa-solid fa-envelope"></i>
+            murilo_nascimento22@outlook.com</a
+          >
+        </li>
+      </ul>
+      <div id="divider"></div>
+      <ul id="end-nav">
+        <li>
+          <a href="#home" title="Home">Home</a>
+        </li>
+        <li>
+          <a href="#presentation" title="About">Sobre</a>
+        </li>
+        <li>
+          <a href="#stacks" title="Tech Stacks">Tech Stack</a>
+        </li>
+        <li>
+          <a href="#projects" title="Projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#contact" title="Contact">Contato</a>
+        </li>
+      </ul>
+      <span translate="no"
+        >Made with
+        <i class="fa-solid fa-heart" style="color: firebrick" id="heart"></i> by
+        Murilo Nascimento</span
+      >
     </footer>
     <!--FIM FOOTER-->
     <!--SCRIPTS-->
-    <script src="https://kit.fontawesome.com/052b10b1cc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/052b10b1cc.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

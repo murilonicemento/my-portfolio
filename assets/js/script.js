@@ -32,10 +32,11 @@ logo.addEventListener("click", () => {
 const modal = {
     html: document.querySelector("#html"),
     css: document.querySelector("#css"),
+    sass: document.querySelector("#sass"),
     js: document.querySelector("#js"),
     node: document.querySelector("#node"),
     git: document.querySelector("#git"),
-    vscode: document.querySelector("#vscode")
+    sqlite: document.querySelector("#sqlite")
 };
 
 modal.html.onclick = () => {
@@ -44,6 +45,10 @@ modal.html.onclick = () => {
 
 modal.css.onclick = () => {
     document.querySelector("#modalcss").showModal()
+}
+
+modal.sass.onclick = () => {
+    document.querySelector("#modalsass").showModal()
 }
 
 modal.js.onclick = () => {
@@ -58,17 +63,18 @@ modal.git.onclick = () => {
     document.querySelector("#modalgit").showModal()
 }
 
-modal.vscode.onclick = () => {
-    document.querySelector("#modalvscode").showModal()
+modal.sqlite.onclick = () => {
+    document.querySelector("#modalsqlite").showModal()
 }
 
 function closeModal() {
     document.querySelector("#modalhtml").close()
     document.querySelector("#modalcss").close()
+    document.querySelector("#modalsass").close()
     document.querySelector("#modaljs").close()
     document.querySelector("#modalnode").close()
     document.querySelector("#modalgit").close()
-    document.querySelector("#modalvscode").close()
+    document.querySelector("#modalsqlite").close()
 }
 
 // ANIMAÇÃO SCROLL
