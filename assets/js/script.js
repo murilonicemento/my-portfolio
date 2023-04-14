@@ -12,9 +12,6 @@ function switchTheme() {
     const srcCss = document.body.classList.contains("light-theme") ? "assets/img/css3.svg" : "assets/img/css3-dark.svg";
     document.getElementById("css").setAttribute("src", srcCss);
 
-    const srcNodejs = document.body.classList.contains("light-theme") ? "assets/img/nodejs.svg" : "assets/img/nodejs-dark.svg";
-    document.getElementById("node").setAttribute("src", srcNodejs);
-
     const srcGit = document.body.classList.contains("light-theme") ? "assets/img/git.svg" : "assets/img/git-dark.svg";
     document.getElementById("git").setAttribute("src", srcGit);
 }
@@ -34,7 +31,7 @@ const modal = {
     css: document.querySelector("#css"),
     sass: document.querySelector("#sass"),
     js: document.querySelector("#js"),
-    node: document.querySelector("#node"),
+    react: document.querySelector("#react"),
     git: document.querySelector("#git"),
     sqlite: document.querySelector("#sqlite")
 };
@@ -55,8 +52,8 @@ modal.js.onclick = () => {
     document.querySelector("#modaljs").showModal()
 }
 
-modal.node.onclick = () => {
-    document.querySelector("#modalnode").showModal()
+modal.react.onclick = () => {
+    document.querySelector("#modalreact").showModal()
 }
 
 modal.git.onclick = () => {
@@ -72,7 +69,7 @@ function closeModal() {
     document.querySelector("#modalcss").close()
     document.querySelector("#modalsass").close()
     document.querySelector("#modaljs").close()
-    document.querySelector("#modalnode").close()
+    document.querySelector("#modalreact").close()
     document.querySelector("#modalgit").close()
     document.querySelector("#modalsqlite").close()
 }
