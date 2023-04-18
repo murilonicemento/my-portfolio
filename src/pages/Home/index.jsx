@@ -1,5 +1,5 @@
 import { Main } from "./styled";
 
 export function Home() {
-  return <>Home vai ficar aqui</>;
+  return <>Esse aqui é o Home</>;
 }

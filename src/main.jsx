@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { TechStack } from "./pages/TechStack";
+import { Projects } from "./pages/Projects";
+import { Contact } from "./pages/Contact";
+import { NotFound } from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import globalStyles from "./styles/globalStyles";
+import GlobalStyles from "./styles/globalStyles";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <GlobalStyles />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
