@@ -1,5 +1,6 @@
-import { Main } from "./styled";
 import { MyHeader } from "../../components/Header";
+import { MyFooter } from "../../components/Footer";
+import { Main } from "./styled";
 import profilePicture from "../../assets/images/profilePicture.jpg";
 
 export function Home() {
@@ -19,6 +20,7 @@ export function Home() {
         </a>
         <img src={profilePicture} alt="Profile Picture" />
       </Main>
+      <MyFooter />
     </>
   );
 }
