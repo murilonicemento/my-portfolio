@@ -27,7 +27,7 @@ export function MyHeader() {
           </li>
         </ul>
       </Nav>
-      <div className="socialMedia">
+      <section className="socialMedia">
         <a href="https://github.com/murilonicemento" target="_blank">
           <img src={github} alt="GitHub Profile" />
         </a>
@@ -40,7 +40,7 @@ export function MyHeader() {
         >
           <img src={whatsapp} alt="WhatsApp Profile" />
         </a>
-      </div>
+      </section>
     </Header>
   );
 }
