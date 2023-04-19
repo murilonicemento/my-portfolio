@@ -1,3 +1,10 @@
+import { MyHeader } from "../../components/Header";
+
 export function Projects() {
-  return <>Esse aqui é o Projects</>;
+  return (
+    <>
+      <MyHeader />
+      Esse aqui é o Projects
+    </>
+  );
 }

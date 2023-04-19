@@ -1,3 +1,10 @@
+import { MyHeader } from "../../components/Header";
+
 export function About() {
-  return <>Esse aqui é o about</>;
+  return (
+    <>
+      <MyHeader />
+      Esse aqui é o about
+    </>
+  );
 }

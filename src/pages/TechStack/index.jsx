@@ -1,3 +1,10 @@
+import { MyHeader } from "../../components/Header";
+
 export function TechStack() {
-  return <>Esse aqui é o Tech Stack</>;
+  return (
+    <>
+      <MyHeader />
+      Esse aqui é o Tech Stack
+    </>
+  );
 }

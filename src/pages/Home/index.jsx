@@ -1,10 +1,10 @@
 import { Main } from "./styled";
-import { Header } from "../../components/Header";
+import { MyHeader } from "../../components/Header";
 
 export function Home() {
   return (
     <>
-      <Header />
+      <MyHeader />
       <Main>
         <p>
           Olá 👋,

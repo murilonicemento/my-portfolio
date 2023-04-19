@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as colors from "../../config/colors";
 
-export const Nav = styled.nav`
+export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -20,27 +20,32 @@ export const Nav = styled.nav`
     font-weight: bold;
   }
 
-  ul {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  ul li a:hover {
-    color: ${colors.dividerColor};
-    transition: 0.3s ease-in-out;
-  }
-
   .socialMedia {
-    width: 100px;
+    width: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   img {
+    width: 25px;
+    height: 25px;
     cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg)
+      brightness(104%) contrast(104%);
+  }
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  ul {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (max-width: 800px) {
