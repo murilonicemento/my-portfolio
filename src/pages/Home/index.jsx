@@ -1,5 +1,6 @@
 import { Main } from "./styled";
 import { MyHeader } from "../../components/Header";
+import profilePicture from "../../assets/images/profilePicture.jpg";
 
 export function Home() {
   return (
@@ -13,10 +14,10 @@ export function Home() {
           <br />
           Sou estudante de Engenharia de Software e Desenvolvimento Web
         </p>
-        <img src="" alt="" />
-        <a href="" download>
+        <a href="/curriculum.pdf" download>
           Download CV
         </a>
+        <img src={profilePicture} alt="Profile Picture" />
       </Main>
     </>
   );
