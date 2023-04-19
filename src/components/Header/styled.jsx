@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import * as colors from "../../config/colors";
 
 export const Header = styled.header`
+  width: 90%;
+  margin: 41px auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 41px;
 
   p {
     background-image: linear-gradient(
@@ -33,6 +33,12 @@ export const Header = styled.header`
     cursor: pointer;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg)
       brightness(104%) contrast(104%);
+  }
+
+  @media (max-width: 800px) {
+    width: 90%;
+    margin: 41px auto 0 auto;
+    justify-content: space-between;
   }
 `;
 
