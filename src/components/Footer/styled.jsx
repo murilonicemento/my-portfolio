@@ -17,13 +17,13 @@ export const Footer = styled.footer`
     font-weight: bold;
   }
 
-  div:nth-child(1) {
+  section:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  div:nth-child(1) ul {
+  section:nth-child(1) ul {
     display: none;
   }
 
@@ -42,7 +42,7 @@ export const Footer = styled.footer`
       brightness(104%) contrast(104%);
   }
 
-  #divider {
+  .divider {
     border: 1px solid #141414;
     margin: 20px 0 20px 0;
   }
@@ -53,7 +53,7 @@ export const Footer = styled.footer`
     justify-content: space-between;
   }
 
-  div:nth-child(3) p {
+  section:nth-child(3) p {
     display: none;
   }
 `;

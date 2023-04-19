@@ -7,7 +7,7 @@ import whatsapp from "../../assets/images/whatsapp.svg";
 export function MyFooter() {
   return (
     <Footer>
-      <div>
+      <section>
         <p className="logo">&lt;/MN&gt;</p>
         <ul>
           <li>
@@ -22,12 +22,12 @@ export function MyFooter() {
           <img src={linkedin} alt="LinkedIn Profile" />
           <img src={whatsapp} alt="WhatsApp Profile" />
         </div>
-      </div>
-      <div id="divider"></div>
-      <div id="navigationBar">
+      </section>
+      <div className="divider"></div>
+      <section id="navigationBar">
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">Sobre</Link>
@@ -43,7 +43,7 @@ export function MyFooter() {
           </li>
         </ul>
         <p>Made with (heart) by Murilo Nascimento</p>
-      </div>
+      </section>
     </Footer>
   );
 }
