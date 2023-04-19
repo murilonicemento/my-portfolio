@@ -5,9 +5,9 @@ export const Header = styled.header`
   margin: 41px auto 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  p {
+  .logo {
     background-image: linear-gradient(
       to right,
       rgb(149 114 252),
@@ -34,16 +34,10 @@ export const Header = styled.header`
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg)
       brightness(104%) contrast(104%);
   }
-
-  @media (max-width: 800px) {
-    width: 90%;
-    margin: 41px auto 0 auto;
-    justify-content: space-between;
-  }
 `;
 
 export const Nav = styled.nav`
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-around;
 
@@ -52,9 +46,5 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media (max-width: 800px) {
-    display: none;
   }
 `;

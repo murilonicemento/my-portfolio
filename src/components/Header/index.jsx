@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Nav } from "./styled";
-import { Header } from "./styled";
+import { Header, Nav } from "./styled";
 import github from "../../assets/images/github.svg";
 import linkedin from "../../assets/images/linkedin.svg";
 import whatsapp from "../../assets/images/whatsapp.svg";
@@ -8,23 +7,23 @@ import whatsapp from "../../assets/images/whatsapp.svg";
 export function MyHeader() {
   return (
     <Header>
-      <p>&lt;/MN&gt;</p>
+      <p className="logo">&lt;/MN&gt;</p>
       <Nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">Sobre</Link>
           </li>
           <li>
             <Link to="/techstack">Tech Stack</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">Projetos</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
       </Nav>
@@ -39,7 +38,7 @@ export function MyHeader() {
           href="https://web.whatsapp.com/send?phone=5531981141827"
           target="_blank"
         >
-          <img src={whatsapp} alt="LinkedIn Profile" />
+          <img src={whatsapp} alt="WhatsApp Profile" />
         </a>
       </div>
     </Header>
