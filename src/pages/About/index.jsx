@@ -1,10 +1,11 @@
 import { MyHeader } from "../../components/Header";
 import { MyFooter } from "../../components/Footer";
-import { Main } from "./styled";
+import { Main } from "../../styles/globalStyles";
+import { Container, WorkExperience, Education } from "./styled";
 
 export function About() {
   return (
-    <>
+    <Container>
       <MyHeader />
       <Main>
         <h1>Sobre Mim</h1>
@@ -17,7 +18,7 @@ export function About() {
           e alta performance.
         </p>
         <h1>Experiência</h1>
-        <section id="workExperience">
+        <WorkExperience>
           <div>
             <p>Estagiário em TI</p>
             <p>Estágio</p>
@@ -28,9 +29,9 @@ export function About() {
             <p>Fev 2023 - Mar 2023</p>
           </div>
           <div className="divider"></div>
-        </section>
+        </WorkExperience>
         <h1>Educação</h1>
-        <section id="education">
+        <Education>
           <div>
             <p>Engenharia de Software</p>
             <p>EAD</p>
@@ -42,9 +43,9 @@ export function About() {
             Fev 2022 - Dez 2025
           </div>
           <div className="divider"></div>
-        </section>
+        </Education>
       </Main>
       <MyFooter />
-    </>
+    </Container>
   );
 }

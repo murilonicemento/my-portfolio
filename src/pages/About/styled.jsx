@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-export const Main = styled.main`
-  width: 90%;
-  margin: 150px auto 0 auto;
-
+export const Container = styled.div`
   h1 {
     margin-bottom: 38px;
     background-image: linear-gradient(
@@ -23,7 +20,14 @@ export const Main = styled.main`
     margin-top: 38px;
   }
 
-  #workExperience > div:first-of-type {
+  .divider {
+    border: 1px solid #141414;
+    margin-top: 24px;
+  }
+`;
+
+export const WorkExperience = styled.section`
+  > div:first-of-type {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,13 +61,10 @@ export const Main = styled.main`
     font-size: 10px;
     font-weight: 500;
   }
+`;
 
-  .divider {
-    border: 1px solid #141414;
-    margin-top: 24px;
-  }
-
-  #education > div:first-of-type {
+export const Education = styled.section`
+  > div:first-of-type {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +90,7 @@ export const Main = styled.main`
     }
   }
 
-  #education div:nth-child(2) {
+  div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;

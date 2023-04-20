@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-export const Main = styled.main`
-  width: 90%;
-  margin: 150px auto 0 auto;
-
-  p {
+export const Container = styled.div`
+  #presentation {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -22,7 +19,7 @@ export const Main = styled.main`
     font-weight: bold;
   }
 
-  a {
+  #curriculum {
     text-transform: uppercase;
     font-weight: 500;
     padding: 8px;
@@ -40,10 +37,10 @@ export const Main = styled.main`
     border-radius: 0.438rem;
   }
 
-  img {
+  #profilePicture {
     width: 150px;
     position: absolute;
-    top: 240px;
+    top: 165px;
     right: 20px;
     border-radius: 50%;
   }

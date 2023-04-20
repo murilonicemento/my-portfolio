@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { TechStack } from "./pages/TechStack";
-import { Projects } from "./pages/Projects";
+import { MyProjects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/techstack" element={<TechStack />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<MyProjects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

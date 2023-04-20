@@ -31,4 +31,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 `;
 
+export const Main = styled.main`
+  width: 90%;
+  margin: 80px auto 0 auto;
+`;
 export default GlobalStyles;
