@@ -1,20 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  h1 {
-    margin-bottom: 31px;
-    background-image: linear-gradient(
-      to right,
-      rgb(149 114 252),
-      rgb(67 231 173),
-      rgb(226 212 92)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-  }
-
   p:nth-child(2) {
     font-weight: 400;
     margin-bottom: 80px;
