@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Page404 } from "./styled";
 import notFound from "../../assets/images/notfound.svg";
 import face404 from "../../assets/images/face404.svg";
@@ -10,10 +11,10 @@ export function NotFound() {
       <p>Você está perdido</p>
       <img src={notFound} alt="" />
       <img src={face404} alt="Face" />
-      <button>
+      <Link to="/">
         <img src={arrow} alt="Arrow" />
         Voltar para Home
-      </button>
+      </Link>
     </Page404>
   );
 }

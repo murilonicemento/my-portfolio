@@ -21,21 +21,25 @@ export const Container = styled.div`
   }
 
   #curriculum {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-transform: uppercase;
     font-weight: 500;
     padding: 8px;
-    background: linear-gradient(black, black) padding-box,
-      linear-gradient(
-          to right,
-          rgb(149 114 252),
-          rgb(67 231 173),
-          rgb(226 212 92)
-        )
-        border-box;
-    border-width: 0.125rem;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 0.438rem;
+    border: 2.5px solid rgb(149 114 252);
+    border-radius: 7px;
+    transition: border-color 0.5s ease;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  #curriculum:hover {
+    border: 2.5px solid rgb(67 231 173);
   }
 
   #profilePicture {
@@ -44,5 +48,18 @@ export const Container = styled.div`
     top: 300px;
     right: 20px;
     border-radius: 50%;
+  }
+
+  @media (min-width: 800px) {
+    #presentation {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    #profilePicture {
+      width: 349px;
+      top: 230px;
+      right: 40px;
+    }
   }
 `;

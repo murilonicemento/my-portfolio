@@ -21,7 +21,7 @@ export const Page404 = styled.section`
     left: 30px;
   }
 
-  button {
+  a {
     background-color: ${colors.backgroundColor};
     font-family: "Poppins", sans-serif;
     color: ${colors.fontColor};

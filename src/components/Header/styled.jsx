@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as colors from "../../config/colors";
 
 export const Header = styled.header`
   width: 90%;
@@ -44,5 +45,17 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    li {
+      border-bottom: 2px solid ${colors.backgroundColor};
+      padding: 4px;
+      transition: linear 0.3s;
+      &:hover {
+        border-bottom: 2px solid rgb(67 231 173);
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    display: inline;
   }
 `;

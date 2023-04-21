@@ -60,4 +60,8 @@ export const Footer = styled.footer`
   section:nth-child(3) p {
     display: none;
   }
+
+  @media (min-width: 800px) {
+    display: none;
+  }
 `;

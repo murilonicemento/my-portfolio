@@ -24,7 +24,7 @@ export const WorkExperience = styled.section`
     }
 
     p:nth-child(2) {
-      width: 84px;
+      min-width: 84px;
       height: 24px;
       background-color: #d7ffe0;
       border: none;
@@ -38,14 +38,51 @@ export const WorkExperience = styled.section`
       font-size: 12px;
     }
   }
+`;
 
-  #workExperience div:nth-child(2) {
+export const WorkData = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 500;
+
+  span {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+`;
+
+export const AssignmentsWork = styled.div`
+  font-size: 15px;
+  ul {
     margin-top: 5px;
-    font-size: 10px;
-    font-weight: 500;
+    li {
+      list-style: circle;
+      list-style-position: inside;
+    }
   }
 `;
 
@@ -83,5 +120,15 @@ export const Education = styled.section`
     margin-top: 5px;
     font-size: 10px;
     font-weight: 500;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
   }
 `;

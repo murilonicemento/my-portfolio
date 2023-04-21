@@ -7,7 +7,8 @@ export const Stacks = styled.section`
   flex-wrap: wrap;
 
   img {
-    width: 70px;
+    width: 100px;
+    cursor: pointer;
     animation: float 3s infinite;
   }
 

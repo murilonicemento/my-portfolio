@@ -3,6 +3,7 @@ import { MyFooter } from "../../components/Footer";
 import { Main } from "../../styles/globalStyles";
 import { Container } from "./styled";
 import profilePicture from "../../assets/images/profilePicture.jpg";
+import download from "../../assets/images/download.svg";
 
 export function Home() {
   return (
@@ -16,6 +17,7 @@ export function Home() {
           Front-end
         </p>
         <a href="/curriculum.pdf" download id="curriculum">
+          <img src={download} alt="Download Icon" />
           Download CV
         </a>
         <img src={profilePicture} alt="Profile Picture" id="profilePicture" />
