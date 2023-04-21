@@ -6,10 +6,32 @@ export const Stacks = styled.section`
   justify-content: center;
   flex-wrap: wrap;
 
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 2s;
+  }
+
+  div:hover {
+    p {
+      display: inline;
+    }
+  }
+
   img {
     width: 100px;
-    cursor: pointer;
-    animation: float 3s infinite;
+    animation: 3s infinite;
+  }
+
+  p {
+    text-align: justify;
+    position: absolute;
+    top: 300px;
+    display: none;
+    font-weight: 700;
   }
 
   /* @for $i from 1 through 8 {
@@ -18,7 +40,7 @@ export const Stacks = styled.section`
     }
   } */
 
-  img:nth-child(2) {
+  /* img:nth-child(2) {
     animation-delay: 0.2s;
   }
 
@@ -54,7 +76,7 @@ export const Stacks = styled.section`
     50% {
       transform: translateY(-30px);
     }
-  }
+  } */
 
   @keyframes rotate {
     from {
