@@ -31,8 +31,6 @@ export const Header = styled.header`
     width: 25px;
     height: 25px;
     cursor: pointer;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg)
-      brightness(104%) contrast(104%);
   }
 `;
 

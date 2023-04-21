@@ -12,9 +12,8 @@ export function Home() {
         <p id="presentation">
           Olá 👋,
           <br />
-          meu nome é <span>Murilo Nascimento</span>
-          <br />
-          Sou estudante de Engenharia de Software e Desenvolvimento Web
+          meu nome é <span>Murilo Nascimento</span> e sou Desenvolvedor
+          Front-end
         </p>
         <a href="/curriculum.pdf" download id="curriculum">
           Download CV

@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   width: 90%;
-  margin: 150px auto 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 100% auto 0 auto;
 
   .logo {
     background-image: linear-gradient(
@@ -18,6 +21,7 @@ export const Footer = styled.footer`
   }
 
   section:nth-child(1) {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,16 +42,16 @@ export const Footer = styled.footer`
     width: 25px;
     height: 25px;
     cursor: pointer;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg)
-      brightness(104%) contrast(104%);
   }
 
   .divider {
+    width: 100%;
     border: 1px solid #141414;
     margin: 20px 0 20px 0;
   }
 
   #navigationBar ul {
+    width: 89vw;
     display: flex;
     align-items: center;
     justify-content: space-between;

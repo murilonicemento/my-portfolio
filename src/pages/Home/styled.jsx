@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   #presentation {
     width: 50%;
+    margin-top: 230px;
     margin-bottom: 20px;
   }
 
@@ -40,7 +41,7 @@ export const Container = styled.div`
   #profilePicture {
     width: 150px;
     position: absolute;
-    top: 165px;
+    top: 300px;
     right: 20px;
     border-radius: 50%;
   }
