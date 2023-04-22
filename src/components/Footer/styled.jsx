@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as colors from "../../config/colors";
 
 export const Footer = styled.footer`
   width: 90%;
@@ -46,7 +47,7 @@ export const Footer = styled.footer`
 
   .divider {
     width: 100%;
-    border: 1px solid #141414;
+    border: 1px solid ${colors.dividerColor};
     margin: 20px 0 20px 0;
   }
 

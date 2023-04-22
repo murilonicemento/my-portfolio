@@ -50,7 +50,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     display: inline;
   }
 `;

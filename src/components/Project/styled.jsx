@@ -3,6 +3,7 @@ import * as colors from "../../config/colors";
 
 export const ProjectsCards = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 45px;
 
