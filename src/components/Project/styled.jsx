@@ -18,6 +18,11 @@ export const Project = styled.div`
   background-color: ${colors.cardColor};
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 
   h3 {
     width: 90%;
