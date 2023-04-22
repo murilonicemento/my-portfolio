@@ -1,5 +1,6 @@
-export const backgroundColor = "#000";
-export const fontColor = "#fff";
+export const backgroundColor = "#262A33";
+export const fontColor = "#D5CED9";
 export const hoverFontColor = "#000";
-export const dividerColor = "#9d9d9d";
+export const dividerColor = "#f39c12";
+export const cardColor = "#363636";
 export const fontCardsProjects = "#CCCCCC";

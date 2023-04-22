@@ -8,12 +8,7 @@ export const Form = styled.form`
 
   p:nth-child(2) {
     text-align: center;
-    background-image: linear-gradient(
-      to right,
-      rgb(149 114 252),
-      rgb(67 231 173),
-      rgb(226 212 92)
-    );
+    background-image: linear-gradient(to right, #ee5d43, #f39c12);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

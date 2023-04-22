@@ -14,7 +14,7 @@ export const ProjectsCards = styled.div`
 export const Project = styled.div`
   width: 373px;
   height: 550px;
-  background-color: #363636;
+  background-color: ${colors.cardColor};
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 

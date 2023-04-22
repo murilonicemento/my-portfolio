@@ -37,12 +37,7 @@ export const Main = styled.main`
 
   h1 {
     margin-bottom: 31px;
-    background-image: linear-gradient(
-      to right,
-      rgb(149 114 252),
-      rgb(67 231 173),
-      rgb(226 212 92)
-    );
+    background-image: linear-gradient(to right, #ee5d43, #c74ded);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

@@ -8,12 +8,7 @@ export const Container = styled.div`
   }
 
   span {
-    background-image: linear-gradient(
-      to right,
-      rgb(149 114 252),
-      rgb(67 231 173),
-      rgb(226 212 92)
-    );
+    background-image: linear-gradient(to right, #ee5d43, #f39c12);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -28,7 +23,7 @@ export const Container = styled.div`
     text-transform: uppercase;
     font-weight: 500;
     padding: 8px;
-    border: 2.5px solid rgb(149 114 252);
+    border: 2.5px solid #ee5d43;
     border-radius: 7px;
     transition: border-color 0.5s ease;
 
@@ -39,7 +34,7 @@ export const Container = styled.div`
   }
 
   #curriculum:hover {
-    border: 2.5px solid rgb(67 231 173);
+    border: 2.5px solid #f39c12;
   }
 
   #profilePicture {

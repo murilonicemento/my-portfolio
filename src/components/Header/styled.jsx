@@ -9,12 +9,7 @@ export const Header = styled.header`
   justify-content: space-between;
 
   .logo {
-    background-image: linear-gradient(
-      to right,
-      rgb(149 114 252),
-      rgb(67 231 173),
-      rgb(226 212 92)
-    );
+    background-image: linear-gradient(to right, #ee5d43, #f39c12);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -50,7 +45,7 @@ export const Nav = styled.nav`
       padding: 4px;
       transition: linear 0.3s;
       &:hover {
-        border-bottom: 2px solid rgb(67 231 173);
+        border-bottom: 2px solid #ee5d43;
       }
     }
   }
