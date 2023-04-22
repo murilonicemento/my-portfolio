@@ -14,11 +14,8 @@ export const Page404 = styled.section`
     width: 90%;
   }
 
-  img:nth-child(4) {
-    width: 40%;
-    position: absolute;
-    top: 245px;
-    left: 30px;
+  img:nth-child(3) {
+    margin-top: 50px;
   }
 
   a {
@@ -41,23 +38,6 @@ export const Page404 = styled.section`
   }
 
   @media (min-width: 800px) {
-    width: 90%;
-    margin: auto;
     padding-bottom: 40px;
-
-    h1 {
-      font-size: 40px;
-    }
-
-    img {
-      width: 70%;
-    }
-
-    img:nth-child(4) {
-      width: 30%;
-      position: absolute;
-      top: 320px;
-      left: 280px;
-    }
   }
 `;
