@@ -16,6 +16,10 @@ export const Stacks = styled.section`
   }
 
   div:hover {
+    img {
+      animation: rotate 1.5s linear;
+    }
+
     p {
       display: inline;
     }
@@ -23,7 +27,6 @@ export const Stacks = styled.section`
 
   img {
     width: 100px;
-    animation: 3s infinite;
   }
 
   p {
@@ -80,10 +83,10 @@ export const Stacks = styled.section`
 
   @keyframes rotate {
     from {
-      transform: rotate(0);
+      transform: rotateY(0);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotateY(360deg);
     }
   }
 `;

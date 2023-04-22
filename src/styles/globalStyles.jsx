@@ -14,6 +14,20 @@ export const GlobalStyles = createGlobalStyle`
         background-color: ${colors.backgroundColor};
         font-family: "Poppins", sans-serif;
         color: ${colors.fontColor};
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: ${colors.backgroundColor};
+            border-radius: 30px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: ${colors.fontColor};
+            border-radius: 7px;
+        }
     }
 
     a {
