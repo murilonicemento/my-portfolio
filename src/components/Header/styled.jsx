@@ -23,10 +23,28 @@ export const Header = styled.header`
     justify-content: space-between;
   }
 
+  .socialMedia > a {
+    display: none;
+  }
+
+  .socialMedia svg {
+    margin-left: 85px;
+  }
+
   img {
     width: 25px;
     height: 25px;
     cursor: pointer;
+  }
+
+  @media (min-width: 800px) {
+    .socialMedia > a {
+      display: inherit;
+    }
+
+    .socialMedia svg {
+      display: none;
+    }
   }
 `;
 

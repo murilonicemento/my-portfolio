@@ -22,7 +22,7 @@ export function Home() {
         </a>
         <img src={profilePicture} alt="Profile Picture" id="profilePicture" />
       </Main>
-      <MyFooter />
+      {/* <MyFooter /> */}
     </Container>
   );
 }

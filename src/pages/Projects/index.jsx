@@ -15,7 +15,7 @@ export function MyProjects() {
           <MyProject />
         </Projects>
       </Main>
-      <MyFooter />
+      {/* <MyFooter /> */}
     </>
   );
 }

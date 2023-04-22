@@ -13,7 +13,7 @@ export function Contact() {
         </p>
         <p>murilo_nascimento22@outlook.com</p>
       </Form>
-      <MyFooter />
+      {/* <MyFooter /> */}
     </>
   );
 }

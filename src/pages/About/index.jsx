@@ -85,7 +85,7 @@ export function About() {
           <div className="divider"></div>
         </Education>
       </Main>
-      <MyFooter />
+      {/* <MyFooter /> */}
     </Container>
   );
 }

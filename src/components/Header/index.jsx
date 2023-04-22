@@ -1,10 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Header, Nav } from "./styled";
+import { FaBars } from "react-icons/fa";
+import { Sidebar } from "../Sidebar";
 import github from "../../assets/images/github.svg";
 import linkedin from "../../assets/images/linkedin.svg";
 import whatsapp from "../../assets/images/whatsapp.svg";
 
 export function MyHeader() {
+  const [sidebar, setSidebar] = useState(false);
+
+  function showSiderbar() {
+    setSidebar(!sidebar);
+  }
   return (
     <Header>
       <p className="logo">&lt;/MN&gt;</p>
@@ -40,6 +48,8 @@ export function MyHeader() {
         >
           <img src={whatsapp} alt="WhatsApp Profile" />
         </a>
+        <FaBars onClick={showSiderbar} cursor="pointer" size={25} />
+        {sidebar && <Sidebar active={setSidebar} />}
       </section>
     </Header>
   );

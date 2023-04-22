@@ -13,7 +13,7 @@ export function TechStack() {
         <p>Tecnologias que venho trabalhando recentemente</p>
         <MyStacks />
       </Main>
-      <MyFooter />
+      {/* <MyFooter /> */}
     </Container>
   );
 }
