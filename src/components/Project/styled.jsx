@@ -5,6 +5,10 @@ export const ProjectsCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
+
+  @media (min-width: 800px) {
+    padding-bottom: 40px;
+  }
 `;
 
 export const Project = styled.div`

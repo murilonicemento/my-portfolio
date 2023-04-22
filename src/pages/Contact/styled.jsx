@@ -19,4 +19,10 @@ export const Form = styled.form`
     color: transparent;
     font-weight: bold;
   }
+
+  @media (min-width: 800px) {
+    p {
+      font-size: 37px;
+    }
+  }
 `;
