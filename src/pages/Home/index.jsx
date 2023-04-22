@@ -2,7 +2,7 @@ import { MyHeader } from "../../components/Header";
 import { MyFooter } from "../../components/Footer";
 import { Main } from "../../styles/globalStyles";
 import { Container } from "./styled";
-import profilePicture from "../../assets/images/profilePicture.jpg";
+import developer from "../../assets/images/developer.svg";
 import download from "../../assets/images/download.svg";
 
 export function Home() {
@@ -20,7 +20,7 @@ export function Home() {
           <img src={download} alt="Download Icon" />
           Download CV
         </a>
-        <img src={profilePicture} alt="Profile Picture" id="profilePicture" />
+        <img src={developer} alt="Developer Picture" id="developerPicture" />
       </Main>
       {/* <MyFooter /> */}
     </Container>

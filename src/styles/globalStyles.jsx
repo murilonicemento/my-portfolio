@@ -48,6 +48,7 @@ export const GlobalStyles = createGlobalStyle`
 export const Main = styled.main`
   width: 90%;
   margin: 80px auto 0 auto;
+  animation: fadeIn 2.5s;
 
   h1 {
     margin-bottom: 31px;
@@ -56,6 +57,15 @@ export const Main = styled.main`
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;
 export default GlobalStyles;

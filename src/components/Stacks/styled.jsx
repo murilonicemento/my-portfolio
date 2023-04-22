@@ -6,35 +6,12 @@ export const Stacks = styled.section`
   justify-content: center;
   flex-wrap: wrap;
 
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    transition: 2s;
-  }
-
-  div:hover {
-    img {
-      animation: rotate 1.5s linear;
-    }
-
-    p {
-      display: inline;
-    }
-  }
-
   img {
     width: 100px;
   }
 
-  p {
-    text-align: justify;
-    position: absolute;
-    top: 300px;
-    display: none;
-    font-weight: 700;
+  img:hover {
+    animation: rotate 1.5s linear;
   }
 
   /* @for $i from 1 through 8 {

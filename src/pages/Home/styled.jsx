@@ -37,12 +37,10 @@ export const Container = styled.div`
     border: 2.5px solid #f39c12;
   }
 
-  #profilePicture {
+  #developerPicture {
     width: 150px;
-    position: absolute;
-    top: 300px;
-    right: 20px;
-    border-radius: 50%;
+    float: right;
+    margin-top: -180px;
   }
 
   @media (min-width: 800px) {
@@ -51,10 +49,9 @@ export const Container = styled.div`
       font-weight: 700;
     }
 
-    #profilePicture {
-      width: 349px;
-      top: 230px;
-      right: 40px;
+    #developerPicture {
+      width: 420px;
+      margin-top: -250px;
     }
   }
 `;

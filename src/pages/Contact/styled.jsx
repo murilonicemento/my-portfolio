@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   width: 90%;
-  margin: 240px auto 0 auto;
+  margin: 150px auto 0 auto;
   text-align: justify;
   font-weight: 700;
 
