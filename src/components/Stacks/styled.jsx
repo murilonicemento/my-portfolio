@@ -11,7 +11,7 @@ export const Stacks = styled.section`
   }
 
   img:hover {
-    animation: rotate 1.5s linear;
+    animation: rotate 1.5s alternate;
   }
 
   /* @for $i from 1 through 8 {
