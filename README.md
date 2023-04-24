@@ -15,7 +15,7 @@ Para iniciar o projeto em sua máquina local, siga os passos abaixo:
 1. Faça o download ou clone o repositório em seu computador.
 2. Abra o terminal e navegue até o diretório do projeto.
 3. Execute o comando `npm install` para instalar as dependências do projeto.
-4. Execute o comando `npm start` para iniciar o servidor de desenvolvimento.
+4. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento.
 
 O aplicativo será iniciado em http://localhost:3000.
 
