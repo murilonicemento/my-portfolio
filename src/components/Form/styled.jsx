@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as colors from "../../config/colors";
 
 export const Form = styled.form`
   width: 90%;
@@ -30,6 +31,8 @@ export const Form = styled.form`
     height: 40px;
     background-color: #ee5d43;
     font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     border: none;
     border-radius: 4px;
     cursor: pointer;
