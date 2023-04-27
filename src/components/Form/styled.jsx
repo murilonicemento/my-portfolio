@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   input {
-    width: 690px;
+    width: 100%;
     height: 40px;
     padding-left: 10px;
     font-family: "Poppins", sans-serif;
@@ -15,7 +16,7 @@ export const Form = styled.form`
   }
 
   textarea {
-    width: 690px;
+    width: 100%;
     height: 100px;
     padding-top: 5px;
     padding-left: 10px;
