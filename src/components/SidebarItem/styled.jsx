@@ -13,9 +13,14 @@ export const Container = styled.div`
     width: 90%;
     height: 30px;
     background-color: ${colors.backgroundColor};
-    padding-left: 18px;
+    padding-left: 10px;
     border-radius: 7px;
     display: flex;
     align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+    }
   }
 `;
