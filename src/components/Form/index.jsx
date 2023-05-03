@@ -53,7 +53,7 @@ export function MyForm() {
 
   return (
     <Main>
-      <h1>Entre em contato Comigo</h1>
+      <h1>Entre em Contato Comigo</h1>
       <Form ref={form} onSubmit={sendEmail}>
         <label htmlFor="name">Nome</label>
         <input
