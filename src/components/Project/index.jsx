@@ -18,7 +18,7 @@ export function MyProject() {
           Projeto Criado na Trilha Discover da Rocketseat - Módulo Fundamentos
           do ReactJS.
         </p>
-        <p>Tech Stacks: React.js, CSS e TypeScipt</p>
+        <p>Tech Stacks: React.js, CSS e TypeScript</p>
         <Links>
           <a href="https://www.attendace-list.vercel.app/" target="_blank">
             <img src={preview} alt="Preview Icon" />
