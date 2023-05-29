@@ -1,10 +1,10 @@
 import { ProjectsCards, Project, Links, Image } from "./styled";
 import attendanceList from "../../assets/images/attendance-list.png";
-import cardForm from "../../assets/images/card-form.jpg";
+import urlShortening from "../../assets/images/url-shortening.png";
 import strangerThings from "../../assets/images/stranger-things.jpg";
 import habitTracker from "../../assets/images/habit-tracker.png";
 import personalBudget from "../../assets/images/personal-budget.png";
-import mosquitoKiller from "../../assets/images/mosquito-killer.jpg";
+import cardForm from "../../assets/images/card-form.jpg";
 import github from "../../assets/images/github.svg";
 import preview from "../../assets/images/preview.svg";
 
@@ -18,7 +18,7 @@ export function MyProject() {
           Projeto Criado na Trilha Discover da Rocketseat - Módulo Fundamentos
           do ReactJS.
         </p>
-        <p>Tech Stacks: React.js, CSS e TypeScript</p>
+        <p>Tech Stacks: React.js e TypeScript</p>
         <Links>
           <a href="https://www.attendace-list.vercel.app/" target="_blank">
             <img src={preview} alt="Preview Icon" />
@@ -26,6 +26,29 @@ export function MyProject() {
           </a>
           <a
             href="https://github.com/murilonicemento/attendace-list"
+            target="_blank"
+          >
+            <img src={github} alt="GitHub Icon" />
+            Repositório
+          </a>
+        </Links>
+      </Project>
+      <Project>
+        <Image src={urlShortening} />
+        <h3>Encurtador de URL</h3>
+        <p>
+          Este é um projeto de encurtamento de URL desenvolvido com React. Ele
+          permite que o usuário insira uma URL longa e obtenha uma URL encurtada
+          como resultado.
+        </p>
+        <p>Tech Stacks: React.js</p>
+        <Links>
+          <a href="https://url-shortening-ruddy.vercel.app/" target="_blank">
+            <img src={preview} alt="Preview Icon" />
+            Deploy
+          </a>
+          <a
+            href="https://github.com/murilonicemento/url-shortening"
             target="_blank"
           >
             <img src={github} alt="GitHub Icon" />
@@ -51,27 +74,6 @@ export function MyProject() {
           </a>
           <a
             href="https://github.com/murilonicemento/interactive-card-details-form"
-            target="_blank"
-          >
-            <img src={github} alt="GitHub Icon" />
-            Repositório
-          </a>
-        </Links>
-      </Project>
-      <Project>
-        <Image src={strangerThings} />
-        <h3>Landing Page Stranger Things</h3>
-        <p>
-          Projeto criado através da plataforma Digital Innovation One (DIO).
-        </p>
-        <p>Tech Stacks: HTML, CSS, JavaScript e Firebase</p>
-        <Links>
-          <a href="https://landpg-strthgs.netlify.app/" target="_blank">
-            <img src={preview} alt="Preview Icon" />
-            Deploy
-          </a>
-          <a
-            href="https://github.com/murilonicemento/landing-page-stranger-things"
             target="_blank"
           >
             <img src={github} alt="GitHub Icon" />
@@ -124,20 +126,19 @@ export function MyProject() {
         </Links>
       </Project>
       <Project>
-        <Image src={mosquitoKiller} />
-        <h3>Mata-mosquito</h3>
+        <Image src={strangerThings} />
+        <h3>Landing Page Stranger Things</h3>
         <p>
-          Projeto criado através da plataforma Udemy no curso Desenvolvimento
-          Web Completo na Seção JavaScript.
+          Projeto criado através da plataforma Digital Innovation One (DIO).
         </p>
-        <p>Tech Stacks: HTML, CSS e JavaScript</p>
+        <p>Tech Stacks: HTML, CSS, JavaScript e Firebase</p>
         <Links>
-          <a href="https://app-matmosq.netlify.app/" target="_blank">
+          <a href="https://landpg-strthgs.netlify.app/" target="_blank">
             <img src={preview} alt="Preview Icon" />
             Deploy
           </a>
           <a
-            href="https://github.com/murilonicemento/app-mata-mosquito"
+            href="https://github.com/murilonicemento/landing-page-stranger-things"
             target="_blank"
           >
             <img src={github} alt="GitHub Icon" />
