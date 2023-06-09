@@ -68,7 +68,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     display: inline;
   }
 `;
