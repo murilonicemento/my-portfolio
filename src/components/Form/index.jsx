@@ -60,7 +60,7 @@ export function MyForm() {
           type="text"
           name="name"
           id="name"
-          placeholder="Nome"
+          placeholder="Stephen Clark"
           autoComplete="off"
           value={name}
           onChange={(event) => setName(event.target.value)}
@@ -70,7 +70,7 @@ export function MyForm() {
           type="email"
           name="email"
           id="email"
-          placeholder="E-mail"
+          placeholder="name@email.com"
           autoComplete="off"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
