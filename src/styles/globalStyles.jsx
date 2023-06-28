@@ -59,6 +59,10 @@ export const Main = styled.main`
     font-weight: bold;
   }
 
+  p {
+    text-align: justify;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
