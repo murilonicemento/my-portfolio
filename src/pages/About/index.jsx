@@ -24,8 +24,13 @@ export function About() {
           após concluir o ensino médio em 2021, mergulhei de cabeça no
           fascinante universo da programação web. Hoje, posso dizer que tenho
           conhecimentos sólidos em HTML, CSS, SASS, JavaScript, Git, React.js e
-          SQL. Além disso, estou atualmente cursando Engenharia de Software,
-          buscando aprimorar minhas habilidades e me tornar um desenvolvedor web
+          SQL. Também, gostaria de acrescentar que estou mergulhando meus
+          estudos em TypeScript, um superset do JavaScript que amplia ainda mais
+          minhas habilidades como desenvolvedor web. Com dedicação e empenho,
+          estou me familiarizando com os recursos e benefícios que o TypeScript
+          oferece, permitindo-me criar código mais robusto, seguro e escalável.
+          Além disso, estou atualmente cursando Engenharia de Software, buscando
+          aprimorar minhas habilidades e me tornar um desenvolvedor web
           completo. Sou motivado e estou sempre em busca de desafios que me
           permitam expandir minhas competências e aprimorar meu conhecimento.
           Sou uma pessoa organizada, que valoriza a busca constante por
