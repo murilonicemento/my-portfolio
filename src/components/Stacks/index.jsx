@@ -5,8 +5,8 @@ import sass from "../../assets/images/sass.svg";
 import javascript from "../../assets/images/javascript.svg";
 import git from "../../assets/images/git.svg";
 import react from "../../assets/images/react.svg";
+import typescript from "../../assets/images/typescript.svg";
 import sqlite from "../../assets/images/sqlite.svg";
-import vscode from "../../assets/images/vscode.svg";
 
 export function MyStacks() {
   return (
@@ -17,8 +17,8 @@ export function MyStacks() {
       <img src={javascript} alt="JavaScript Icon" />
       <img src={git} alt="Git Icon" />
       <img src={react} alt="React Icon" />
+      <img src={typescript} alt="React Icon" />
       <img src={sqlite} alt="SQLite Icon" />
-      <img src={vscode} alt="Visual Studio Code Icon" />
     </Stacks>
   );
 }
