@@ -16,6 +16,8 @@ export const Container = styled.div`
 `;
 
 export const WorkExperience = styled.section`
+  padding-bottom: 15px;
+
   > div:first-of-type {
     display: flex;
     align-items: center;
@@ -40,6 +42,20 @@ export const WorkExperience = styled.section`
       justify-content: center;
       font-weight: 600;
       font-size: 12px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    > div:first-of-type {
+      p:first-child {
+        font-size: 18px;
+        width: 230px;
+        text-align: left;
+      }
+
+      p:nth-child(2) {
+        font-size: 10px;
+      }
     }
   }
 `;
