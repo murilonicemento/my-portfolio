@@ -20,6 +20,7 @@ export const WorkExperience = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 15px;
 
     p:first-child {
       font-size: 20px;

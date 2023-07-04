@@ -46,6 +46,49 @@ export function About() {
         <h1>Experiência</h1>
         <WorkExperience>
           <div>
+            <p>Estagiário em Programação Full Stack</p>
+            <p>Estágio</p>
+          </div>
+          <WorkData>
+            <span>
+              <p>
+                <img src={building} alt="Building Icon" />
+                Teknisa
+              </p>
+              <p>
+                <img src={location} alt="Location Icon" />
+                Belo Horizonte
+              </p>
+            </span>
+            <div>
+              <img src={calendar} alt="Calendar Icon" />
+              <p>Julh 2023 - atual</p>
+            </div>
+          </WorkData>
+          <AssignmentsWork>
+            <ul>
+              <li>Atuar com desenvolvimento de software</li>
+              <li>Auxiliar time na resolução de bugs</li>
+              <li>
+                Participar de treinamentos e reuniões voltadas para melhoria de
+                produtos e das técnicas de trabalho
+              </li>
+              <li>
+                Executar teste padrão, resultado e funcionalidade dos sistemas
+                desenvolvidos pela equipe
+              </li>
+              <li>Auxiliar na documentação dos sistemas</li>
+              <li>
+                Adaptar conhecimentos de lógica de programação aos padrões de
+                desenvolvimento da Teknisa e aplicá-los na manutenção e melhoria
+                contínua de produtos de software
+              </li>
+            </ul>
+          </AssignmentsWork>
+          <div className="divider"></div>
+        </WorkExperience>
+        <WorkExperience>
+          <div>
             <p>Estagiário em TI</p>
             <p>Estágio</p>
           </div>
