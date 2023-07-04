@@ -37,11 +37,7 @@ export function About() {
           aprendizado e crescimento pessoal. Cada linha de código que escrevo é
           uma oportunidade de criar algo único e surpreendente. Imerso nesse
           emocionante campo, estou determinado a deixar minha marca no mundo da
-          programação. Estou sedento por projetos empolgantes, onde posso
-          colaborar com equipes talentosas e colocar em prática minha paixão por
-          criar soluções inovadoras. Estou pronto para enfrentar os desafios que
-          surgirem e transformar ideias em realidade digital de forma cativante
-          e memorável.
+          programação.
         </p>
         <h1>Experiência</h1>
         <WorkExperience>
