@@ -1,5 +1,4 @@
 import { MyHeader } from "../../components/Header";
-import { MyFooter } from "../../components/Footer";
 import { MyProject } from "../../components/Project";
 import { Main } from "../../styles/globalStyles";
 import { Projects } from "./styled";
@@ -15,7 +14,6 @@ export function MyProjects() {
           <MyProject />
         </Projects>
       </Main>
-      {/* <MyFooter /> */}
     </>
   );
 }

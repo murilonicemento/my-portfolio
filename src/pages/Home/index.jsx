@@ -1,5 +1,4 @@
 import { MyHeader } from "../../components/Header";
-import { MyFooter } from "../../components/Footer";
 import { Main } from "../../styles/globalStyles";
 import { Container } from "./styled";
 import developer from "../../assets/images/developer.svg";
@@ -22,7 +21,6 @@ export function Home() {
         </a>
         <img src={developer} alt="Developer Picture" id="developerPicture" />
       </Main>
-      {/* <MyFooter /> */}
     </Container>
   );
 }

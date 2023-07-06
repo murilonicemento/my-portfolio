@@ -1,6 +1,5 @@
 import { MyHeader } from "../../components/Header";
 import { MyForm } from "../../components/Form";
-import { MyFooter } from "../../components/Footer";
 import { Main } from "../../styles/globalStyles";
 
 export function Contact() {
@@ -10,7 +9,6 @@ export function Contact() {
       <Main>
         <MyForm />
       </Main>
-      {/* <MyFooter /> */}
     </>
   );
 }

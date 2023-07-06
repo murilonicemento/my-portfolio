@@ -1,18 +1,26 @@
 import { MyHeader } from "../../components/Header";
-import { MyFooter } from "../../components/Footer";
+import { WorkExperience } from "../../components/WorkExperience";
+import { Education } from "../../components/Education";
 import { Main } from "../../styles/globalStyles";
-import {
-  Container,
-  WorkExperience,
-  Education,
-  WorkData,
-  AssignmentsWork,
-} from "./styled";
-import building from "../../assets/images/building.svg";
-import location from "../../assets/images/location.svg";
-import calendar from "../../assets/images/calendar.svg";
+import { Container } from "./styled";
 
 export function About() {
+  const assignments = {
+    iLean: [
+      "Desenvolvimento de painéis de visualização de dados em Excel e Power Bi",
+      "Desenvolvimento das competências técnicas e comportamentais para as atividades que serão desenvolvidas",
+      "Extração, Tratamento e Limpeza de fontes de dados de diversas origens",
+    ],
+    Teknisa: [
+      "Atuar com desenvolvimento de software",
+      "Auxiliar time na resolução de bugs",
+      "Participar de treinamentos e reuniões voltadas para melhoria de produtos e das técnicas de trabalho",
+      "Executar teste padrão, resultado e funcionalidade dos sistemas desenvolvidos pela equipe",
+      "Auxiliar na documentação dos sistemas",
+      "Adaptar conhecimentos de lógica de programação aos padrões de desenvolvimento da Teknisa e aplicá-los na manutenção e melhoria contínua de produtos de software",
+    ],
+  };
+
   return (
     <Container>
       <MyHeader />
@@ -40,108 +48,38 @@ export function About() {
           programação.
         </p>
         <h1>Experiência</h1>
-        <WorkExperience>
-          <div>
-            <p>Estagiário em Programação Full Stack</p>
-            <p>Estágio</p>
-          </div>
-          <WorkData>
-            <span>
-              <p>
-                <img src={building} alt="Building Icon" />
-                Teknisa
-              </p>
-              <p>
-                <img src={location} alt="Location Icon" />
-                Belo Horizonte
-              </p>
-            </span>
-            <div>
-              <img src={calendar} alt="Calendar Icon" />
-              <p>Julh 2023 - atual</p>
-            </div>
-          </WorkData>
-          <AssignmentsWork>
-            <ul>
-              <li>Atuar com desenvolvimento de software</li>
-              <li>Auxiliar time na resolução de bugs</li>
-              <li>
-                Participar de treinamentos e reuniões voltadas para melhoria de
-                produtos e das técnicas de trabalho
-              </li>
-              <li>
-                Executar teste padrão, resultado e funcionalidade dos sistemas
-                desenvolvidos pela equipe
-              </li>
-              <li>Auxiliar na documentação dos sistemas</li>
-              <li>
-                Adaptar conhecimentos de lógica de programação aos padrões de
-                desenvolvimento da Teknisa e aplicá-los na manutenção e melhoria
-                contínua de produtos de software
-              </li>
-            </ul>
-          </AssignmentsWork>
-          <div className="divider"></div>
-        </WorkExperience>
-        <WorkExperience>
-          <div>
-            <p>Estagiário em TI</p>
-            <p>Estágio</p>
-          </div>
-          <WorkData>
-            <span>
-              <p>
-                <img src={building} alt="Building Icon" />
-                iLean Gestão de Resultados
-              </p>
-              <p>
-                <img src={location} alt="Location Icon" />
-                Belo Horizonte
-              </p>
-            </span>
-            <div>
-              <img src={calendar} alt="Calendar Icon" />
-              <p>Fev 2023 - Mar 2023</p>
-            </div>
-          </WorkData>
-          <AssignmentsWork>
-            <ul>
-              <li>
-                Desenvolvimento de painéis de visualização de dados em Excel e
-                Power Bi
-              </li>
-              <li>
-                Desenvolvimento das competências técnicas e comportamentais para
-                as atividades que serão desenvolvidas
-              </li>
-              <li>
-                Extração, Tratamento e Limpeza de fontes de dados de diversas
-                origens
-              </li>
-            </ul>
-          </AssignmentsWork>
-          <div className="divider"></div>
-        </WorkExperience>
+        <WorkExperience
+          title="Estagiário em Programação Full Stack"
+          jobType="Estágio"
+          company="Teknisa"
+          city="Belo Horizonte"
+          startDate="Julh"
+          startYear="2023"
+          endDate="atual"
+          assignments={assignments.Teknisa}
+        />
+        <WorkExperience
+          title="Estagiário em TI"
+          jobType="Estágio"
+          company="iLean Gestão de Resultados"
+          city="Belo Horizonte"
+          startDate="Fev"
+          startYear="2023"
+          endDate="Mar"
+          endYear="2023"
+          assignments={assignments.iLean}
+        />
         <h1>Educação</h1>
-        <Education>
-          <div>
-            <p>Engenharia de Software</p>
-            <p>EAD</p>
-          </div>
-          <div>
-            <div>
-              <img src={building} alt="Building Icon" />
-              <p>Universidade Estácio de Sá</p>
-            </div>
-            <div>
-              <img src={calendar} alt="Calendar Icon" />
-              Fev 2022 - Dez 2025
-            </div>
-          </div>
-          <div className="divider"></div>
-        </Education>
+        <Education
+          course="Engenharia de Software"
+          modality="EAD"
+          university="Universidade Estácio de Sá"
+          startDate="Fev"
+          startYear="2022"
+          endDate="Dez"
+          endYear="2025"
+        />
       </Main>
-      {/* <MyFooter /> */}
     </Container>
   );
 }
