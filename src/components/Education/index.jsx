@@ -1,4 +1,4 @@
-import { MyEducation } from "./styled";
+import { MyEducation, Skills } from "./styled";
 import building from "../../assets/images/building.svg";
 import calendar from "../../assets/images/calendar.svg";
 
@@ -9,7 +9,8 @@ export function Education({
   startDate,
   startYear,
   endDate,
-  endYear,
+  endYear = "atual",
+  skills,
 }) {
   return (
     <MyEducation>
@@ -27,6 +28,13 @@ export function Education({
           {`${startDate} ${startYear} - ${endDate} ${endYear}`}
         </div>
       </div>
+      <Skills>
+        <ul>
+          {skills.map((skill, index) => {
+            return <li key={index}>{skill}</li>;
+          })}
+        </ul>
+      </Skills>
       <div className="divider"></div>
     </MyEducation>
   );

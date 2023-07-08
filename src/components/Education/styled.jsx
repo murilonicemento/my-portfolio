@@ -45,4 +45,17 @@ export const MyEducation = styled.section`
       }
     }
   }
+
+  .divider {
+    margin-bottom: 20px;
+  }
+`;
+
+export const Skills = styled.div`
+  margin-top: 20px;
+
+  ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
 `;

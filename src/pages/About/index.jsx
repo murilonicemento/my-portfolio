@@ -11,13 +11,52 @@ export function About() {
       "Desenvolvimento das competências técnicas e comportamentais para as atividades que serão desenvolvidas",
       "Extração, Tratamento e Limpeza de fontes de dados de diversas origens",
     ],
-    Teknisa: [
+    teknisa: [
       "Atuar com desenvolvimento de software",
       "Auxiliar time na resolução de bugs",
       "Participar de treinamentos e reuniões voltadas para melhoria de produtos e das técnicas de trabalho",
       "Executar teste padrão, resultado e funcionalidade dos sistemas desenvolvidos pela equipe",
       "Auxiliar na documentação dos sistemas",
       "Adaptar conhecimentos de lógica de programação aos padrões de desenvolvimento da Teknisa e aplicá-los na manutenção e melhoria contínua de produtos de software",
+    ],
+  };
+
+  const skills = {
+    university: [
+      "Pensamento Computacional",
+      "Lógica da Programação",
+      "Programação",
+      "Algoritmos",
+      "Estruturas de Dados",
+      "Desenvolvimento Web",
+      "Modelagem de Dados",
+      "Requisitos de Sistemas",
+    ],
+    rocketseat: [
+      "Desenvolvimento Front-end",
+      "Desenvolvimento Back-end",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Estruturas de Dados",
+      "Programação Orientada a Objetos (POO)",
+      "Node.js",
+      "JavaScript Assíncrono",
+      "Interface de Programação de Aplicativos (API)",
+      "React.js",
+      "TypeScript",
+      "GitHub",
+      "SQL",
+    ],
+    harvard: [
+      "Programação",
+      "Linguagem C",
+      "Algoritmos",
+      "Memória",
+      "Estrutura de Dados",
+      "HTML, CSS e JavaScript",
+      "Python",
+      "Flask",
     ],
   };
 
@@ -56,7 +95,7 @@ export function About() {
           startDate="Julh"
           startYear="2023"
           endDate="atual"
-          assignments={assignments.Teknisa}
+          assignments={assignments.teknisa}
         />
         <WorkExperience
           title="Estagiário em TI"
@@ -78,6 +117,27 @@ export function About() {
           startYear="2022"
           endDate="Dez"
           endYear="2025"
+          skills={skills.university}
+        />
+        <Education
+          course="CS50"
+          modality="Curso EAD"
+          university="Harvard"
+          startDate="Jan"
+          startYear="2023"
+          endDate="Mar"
+          endYear="2023"
+          skills={skills.harvard}
+        />
+        <Education
+          course="Curso Discover"
+          modality="Curso EAD"
+          university="Rocketseat"
+          startDate="Jun"
+          startYear="2022"
+          endDate="Jun"
+          endYear="2023"
+          skills={skills.rocketseat}
         />
       </Main>
     </Container>
