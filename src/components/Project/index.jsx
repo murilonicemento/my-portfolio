@@ -3,7 +3,7 @@ import attendanceList from "../../assets/images/attendance-list.png";
 import urlShortening from "../../assets/images/url-shortening.png";
 import strangerThings from "../../assets/images/stranger-things.jpg";
 import habitTracker from "../../assets/images/habit-tracker.png";
-import personalBudget from "../../assets/images/personal-budget.png";
+import notionClone from "../../assets/images/notion-clone.jpeg";
 import cardForm from "../../assets/images/card-form.jpg";
 import github from "../../assets/images/github.svg";
 import preview from "../../assets/images/preview.svg";
@@ -82,6 +82,29 @@ export function MyProject() {
         </Links>
       </Project>
       <Project>
+        <Image src={notionClone} />
+        <h3>Notion Clone</h3>
+        <p>
+          Este é um clone simples do Notion. O clone incorpora algumas
+          funcionalidades básicas do Notion, permitindo a criação de headings,
+          blocos de códigos e bulleted lists.
+        </p>
+        <p>Tech Stacks: React.js e TailwindCSS</p>
+        <Links>
+          <a href="https://notion-clone-gilt.vercel.app/" target="_blank">
+            <img src={preview} alt="Preview Icon" />
+            Deploy
+          </a>
+          <a
+            href="https://github.com/murilonicemento/notion-clone"
+            target="_blank"
+          >
+            <img src={github} alt="GitHub Icon" />
+            Repositório
+          </a>
+        </Links>
+      </Project>
+      <Project>
         <Image src={habitTracker} />
         <h3>Habit Tracker</h3>
         <p>
@@ -96,28 +119,6 @@ export function MyProject() {
           </a>
           <a
             href="https://github.com/murilonicemento/habit-control"
-            target="_blank"
-          >
-            <img src={github} alt="GitHub Icon" />
-            Repositório
-          </a>
-        </Links>
-      </Project>
-      <Project>
-        <Image src={personalBudget} />
-        <h3>Orçamento Pessoal</h3>
-        <p>
-          Projeto criado através da plataforma Udemy no curso Desenvolvimento
-          Web Completo na seção JavaScript.
-        </p>
-        <p>Tech Stacks: HTML, CSS e JavaScript</p>
-        <Links>
-          <a href="https://persbudgt-app.netlify.app/" target="_blank">
-            <img src={preview} alt="Preview Icon" />
-            Deploy
-          </a>
-          <a
-            href="https://github.com/murilonicemento/app-orcamento-pessoal"
             target="_blank"
           >
             <img src={github} alt="GitHub Icon" />
