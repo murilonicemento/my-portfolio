@@ -1,6 +1,6 @@
+import { Education } from "../../components/Education";
 import { MyHeader } from "../../components/Header";
 import { WorkExperience } from "../../components/WorkExperience";
-import { Education } from "../../components/Education";
 import { Main } from "../../styles/globalStyles";
 import { Container } from "./styled";
 
@@ -55,6 +55,7 @@ export function About() {
       "Memória",
       "Estrutura de Dados",
       "HTML, CSS e JavaScript",
+      "SQL",
       "Python",
       "Flask",
     ],
