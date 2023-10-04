@@ -1,12 +1,12 @@
-import { ProjectsCards, Project, Links, Image } from "./styled";
 import attendanceList from "../../assets/images/attendance-list.png";
-import urlShortening from "../../assets/images/url-shortening.png";
-import strangerThings from "../../assets/images/stranger-things.jpg";
-import habitTracker from "../../assets/images/habit-tracker.png";
-import notionClone from "../../assets/images/notion-clone.jpeg";
-import cardForm from "../../assets/images/card-form.jpg";
 import github from "../../assets/images/github.svg";
+import multiStepForm from "../../assets/images/multi-step-form.jpeg";
+import notionClone from "../../assets/images/notion-clone.jpeg";
 import preview from "../../assets/images/preview.svg";
+import strangerThings from "../../assets/images/stranger-things.jpg";
+import taskList from "../../assets/images/task-list.jpeg";
+import urlShortening from "../../assets/images/url-shortening.png";
+import { Image, Links, Project, ProjectsCards } from "./styled";
 
 export function MyProject() {
   return (
@@ -15,10 +15,10 @@ export function MyProject() {
         <Image src={attendanceList} />
         <h3>Lista de Presença</h3>
         <p>
-          Projeto Criado na Trilha Discover da Rocketseat - Módulo Fundamentos
-          do ReactJS.
+          A aplicação permite registar os nomes dos alunos, juntamente com o
+          horário que foi realizado o registro.
         </p>
-        <p>Tech Stacks: React.js e TypeScript</p>
+        <p>Tech Stacks: React.js, TypeScript e CSS</p>
         <Links>
           <a href="https://www.attendace-list.vercel.app/" target="_blank">
             <img src={preview} alt="Preview Icon" />
@@ -37,11 +37,10 @@ export function MyProject() {
         <Image src={urlShortening} />
         <h3>Encurtador de URL</h3>
         <p>
-          Este é um projeto de encurtamento de URL desenvolvido com React. Ele
-          permite que o usuário insira uma URL longa e obtenha uma URL encurtada
-          como resultado.
+          Este projeto permite que o usuário insira uma URL longa e obtenha uma
+          URL encurtada como resultado.
         </p>
-        <p>Tech Stacks: React.js</p>
+        <p>Tech Stacks: React.js e Styled-components</p>
         <Links>
           <a href="https://url-shortening-ruddy.vercel.app/" target="_blank">
             <img src={preview} alt="Preview Icon" />
@@ -57,16 +56,16 @@ export function MyProject() {
         </Links>
       </Project>
       <Project>
-        <Image src={cardForm} />
-        <h3>Formulário de Cartão</h3>
+        <Image src={multiStepForm} />
+        <h3>Formulário Multi-Etapa</h3>
         <p>
-          Este projeto consiste em um formulário de cartão de crédito
-          desenvolvido em React, feito pela plataforma Frontend Mentor.
+          Este projeto foi criado com o objetivo de capturar informações dos
+          usuários em várias etapas, tornando o processo mais fácil e intuitivo.
         </p>
-        <p>Tech Stacks: React.js e CSS</p>
+        <p>Tech Stacks: React.js, TypeScript, Context API</p>
         <Links>
           <a
-            href="https://interactive-card-details-form-mu-nine.vercel.app/"
+            href="https://multi-step-form-xi-snowy.vercel.app/"
             target="_blank"
           >
             <img src={preview} alt="Preview Icon" />
@@ -105,15 +104,18 @@ export function MyProject() {
         </Links>
       </Project>
       <Project>
-        <Image src={habitTracker} />
+        <Image src={taskList} />
         <h3>Habit Tracker</h3>
         <p>
-          Projeto criado através da plataforma Rocketseat no evento NLW Setup-
-          Trilha Explorer.
+          Esta aplicação permite que os usuários criem, visualizem, atualizem e
+          excluam tarefas em uma interface amigável.
         </p>
-        <p>Tech Stacks: HTML, CSS e JavaScript</p>
+        <p>Tech Stacks: PHP, MySQL, JavaScript e Bootstrap</p>
         <Links>
-          <a href="https://habit-control-beta.vercel.app/" target="_blank">
+          <a
+            href="https://github.com/murilonicemento/app-lista-tarefa"
+            target="_blank"
+          >
             <img src={preview} alt="Preview Icon" />
             Deploy
           </a>
