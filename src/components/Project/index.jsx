@@ -105,7 +105,7 @@ export function MyProject() {
       </Project>
       <Project>
         <Image src={taskList} />
-        <h3>Habit Tracker</h3>
+        <h3>App Lista Tarefa</h3>
         <p>
           Esta aplicação permite que os usuários criem, visualizem, atualizem e
           excluam tarefas em uma interface amigável.
