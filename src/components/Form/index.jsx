@@ -1,10 +1,10 @@
+import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { isEmail } from "validator";
-import { Form } from "./styled";
-import { Main } from "../../styles/globalStyles";
-import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
+import { isEmail } from "validator";
+import { Main } from "../../styles/globalStyles";
+import { Form } from "./styled";
 
 export function MyForm() {
   const form = useRef();
@@ -29,10 +29,10 @@ export function MyForm() {
 
     emailjs
       .sendForm(
-        "gmailMessage",
-        "template_cx8ffi7",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "FNMdjfoTKs8aGX9bS"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
