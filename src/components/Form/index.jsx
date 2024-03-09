@@ -1,10 +1,9 @@
-import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { isEmail } from "validator";
-import { Main } from "../../styles/globalStyles";
 import { Form } from "./styled";
+import { Main } from "../../styles/globalStyles";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export function MyForm() {
   const form = useRef();
@@ -27,6 +26,8 @@ export function MyForm() {
 
     if (formErros) return;
 
+    const toastId = toast.loading("Carregando...");
+
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -34,14 +35,15 @@ export function MyForm() {
         form.current,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        (result) => {
-          toast.success("Mensagem enviada com sucesso");
-        },
-        (error) => {
-          toast.error(error.message);
-        }
-      );
+      .then((result) => {
+        toast.success("Mensagem enviada com sucesso");
+      })
+      .catch((error) => {
+        toast.error("Erro ao enviar a mensagem");
+      })
+      .finally(() => {
+        toast.dismiss(toastId);
+      });
 
     setTimeout(() => {
       setName("");
@@ -95,7 +97,6 @@ export function MyForm() {
         ></textarea>
         <button>Enviar</button>
       </Form>
-      <ToastContainer />
     </Main>
   );
 }
