@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Home } from "./pages/Home";
+import { Toaster } from "react-hot-toast";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { About } from "./pages/About";
-import { TechStack } from "./pages/TechStack";
-import { MyProjects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
+import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { MyProjects } from "./pages/Projects";
+import { TechStack } from "./pages/TechStack";
 import GlobalStyles from "./styles/globalStyles";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -22,5 +23,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
+    <Toaster
+      toastOptions={{
+        duration: 3000,
+        position: "top-center",
+        style: {
+          backgroundColor: "#151B26",
+          color: "#FEFBFB",
+        },
+      }}
+    />
   </React.StrictMode>
 );
