@@ -1,47 +1,39 @@
-# Portfolio
+# vue-project
 
-Este é o meu portfólio pessoal, criado usando React, React Router Dom e Styled Components. Aqui, apresento informações sobre mim, meus projetos, habilidades e experiências profissionais.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Tecnologias Utilizadas
+## Recommended IDE Setup
 
-- React
-- React Router Dom
-- Styled Components
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Como Iniciar o Projeto
+## Type Support for `.vue` Imports in TS
 
-Para iniciar o projeto em sua máquina local, siga os passos abaixo:
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-1. Faça o download ou clone o repositório em seu computador.
-2. Abra o terminal e navegue até o diretório do projeto.
-3. Execute o comando `npm install` para instalar as dependências do projeto.
-4. Execute o comando `npm run dev` para iniciar o servidor de desenvolvimento.
+## Customize configuration
 
-O aplicativo será iniciado em http://localhost:3000.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Estrutura do Projeto
+## Project Setup
 
-A estrutura do projeto é dividida em pastas de acordo com suas funções, como:
+```sh
+pnpm install
+```
 
-- `src`: Contém todos os arquivos do projeto.
-- `src/components`: Contém todos os componentes do projeto.
-- `src/pages`: Contém todas as páginas do projeto.
-- `src/styles`: Contém todos os estilos do projeto.
+### Compile and Hot-Reload for Development
 
-## Como Contribuir
+```sh
+pnpm dev
+```
 
-Contribuições são sempre bem-vindas! Siga os passos abaixo para contribuir para este projeto:
+### Type-Check, Compile and Minify for Production
 
-1. Faça um fork deste repositório.
-2. Crie uma branch com suas alterações: `git checkout -b minha-branch`
-3. Faça suas alterações e faça commit das mesmas: `git commit -m 'Minha Alteração'`
-4. Envie suas alterações para o repositório: `git push origin minha-branch`
-5. Crie um pull request para este repositório.
+```sh
+pnpm build
+```
 
-## Layout
+### Lint with [ESLint](https://eslint.org/)
 
-<img src=".github/portfolio.png" />
-
-## Licença
-
-Este projeto está sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```sh
+pnpm lint
+```
