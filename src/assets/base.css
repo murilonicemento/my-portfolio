@@ -11,6 +11,8 @@
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2.5rem;
   --font-size-3xl: 3rem;
+  --boxSize: 4px;
+  --gutter: 2px;
 }
 
 * {
