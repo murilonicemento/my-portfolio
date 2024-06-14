@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
+import TabComponent from "@/components/TabComponent.vue";
+
+const tabs = ref(["Bio", "Educação", "Experiência", "Prêmios", "Certificações"]);
 </script>
 
 <template>
@@ -20,11 +24,7 @@ import HeaderComponent from "@/components/HeaderComponent.vue";
     <section>
       <h3>Sobre mim</h3>
       <img src="" alt="" />
-      <ul>
-        <li>Bio</li>
-        <li>Educação</li>
-        <li>Experiência</li>
-      </ul>
+      <TabComponent :tabs="tabs" />
     </section>
     <section>
       <h3>Tecnologias</h3>
