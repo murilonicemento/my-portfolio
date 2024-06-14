@@ -8,46 +8,41 @@ import {
   HoverCardTrigger
 } from "radix-vue";
 import SoundWave from "./SoundWave.vue";
+// import axios from "axios";
 
 const hoverState = ref(false);
+// const spotifyApiBaseUrl = "https://api.spotify.com/v1";
+// const axiosInstance = axios.create({
+//   headers: {
+//     Authorization: `Bearer ${import.meta.env.VITE_CLIENT_ID_SPOTIFY}`
+//   }
+// });
+
+// try {
+//   const response = await axiosInstance.get(`${spotifyApiBaseUrl}/me/player/currently-playing`);
+//   console.log(response.data); // Process the response data
+// } catch (error) {
+//   console.error("Error fetching currently playing track:", error);
+// }
 </script>
 
 <template>
   <HoverCardRoot v-model:open="hoverState">
-    <HoverCardTrigger
-      class="ImageTrigger"
-      href="https://twitter.com/radix_ui"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
+    <HoverCardTrigger>
       <SoundWave />
     </HoverCardTrigger>
     <HoverCardPortal>
       <HoverCardContent class="HoverCardContent" :side-offset="5">
-        <div :style="{ display: 'flex', flexDirection: 'column', gap: 7 }">
+        <div :style="{ display: 'flex', gap: 7 }">
           <img
             class="Image large"
-            src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
-            alt="Radix UI"
+            src="https://i.pinimg.com/1200x/b4/06/b1/b406b1696f69fd6852aaddb0255c479a.jpg"
+            alt="Cat"
           />
           <div :style="{ display: 'flex', flexDirection: 'column', gap: 15 }">
             <div>
-              <div class="Text bold">Radix</div>
-              <div class="Text faded">@radix_ui</div>
-            </div>
-            <div class="Text">
-              Components, icons, colors, and templates for building high-quality, accessible UI.
-              Free and open-source.
-            </div>
-            <div :style="{ display: 'flex', gap: 15 }">
-              <div :style="{ display: 'flex', gap: 5 }">
-                <div class="Text bold">0</div>
-                <div class="Text faded">Following</div>
-              </div>
-              <div :style="{ display: 'flex', gap: 5 }">
-                <div class="Text bold">2,900</div>
-                <div class="Text faded">Followers</div>
-              </div>
+              <div class="Text bold">Nome da música</div>
+              <div class="Text faded">Artista</div>
             </div>
           </div>
         </div>
