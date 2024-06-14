@@ -3,7 +3,7 @@ import { ref, defineProps } from "vue";
 
 defineProps<{ tabs: string[] }>();
 
-const selectedTab = ref(0);
+const selectedTab = ref<number>(0);
 
 const selectTab = (index: number) => {
   selectedTab.value = index;

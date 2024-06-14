@@ -2,16 +2,22 @@
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
-const links = ref([
+interface ILinkRef {
+  id: number;
+  name: string;
+  path: string;
+}
+
+const links = ref<ILinkRef[]>([
   { id: 1, name: "Início", path: "/" },
   { id: 2, name: "Sobre", path: "/about" },
   { id: 3, name: "Projetos", path: "/projects" },
   { id: 4, name: "Contato", path: "/contact" }
 ]);
 
-const isOpen = ref(false);
+const isOpen = ref<boolean>(false);
 
-const toggleMenu = () => {
+const toggleMenu = (): void => {
   isOpen.value = !isOpen.value;
 };
 </script>

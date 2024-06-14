@@ -3,7 +3,7 @@ import { ref } from "vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import TabComponent from "@/components/TabComponent.vue";
 
-const tabs = ref(["Bio", "Educação", "Experiência", "Prêmios", "Certificações"]);
+const tabs = ref<string[]>(["Bio", "Educação", "Experiência", "Prêmios", "Certificações"]);
 </script>
 
 <template>
