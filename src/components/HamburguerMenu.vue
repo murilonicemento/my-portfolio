@@ -47,29 +47,17 @@ const toggleMenu = (): void => {
 .bar {
   width: 28px;
   height: 4px;
-  background-color: #333;
+  background-color: var(--color-black-hover);
   margin: 5px 0;
   transition: 0.4s;
 }
-
-/* .change.bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.change.bar2 {
-  opacity: 0;
-}
-
-.change.bar3 {
-  transform: rotate(45deg) translate(-6px, -6px);
-} */
 
 .menu {
   position: absolute;
   top: 50px;
   right: 0;
   width: 200px;
-  background-color: #333;
+  background-color: var(--color-black-hover);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   list-style: none;
   padding: 0;
@@ -83,6 +71,7 @@ const toggleMenu = (): void => {
 }
 
 .nav-link {
+  width: fit-content;
   text-decoration: none;
   color: var(--color-white);
   display: block;
