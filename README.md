@@ -1,39 +1,28 @@
-# vue-project
+# Portfólio
 
-This template should help get you started developing with Vue 3 in Vite.
+Este é o repositório do meu portfólio desenvolvido utilizando Vue.js e TypeScript.
 
-## Recommended IDE Setup
+## Descrição
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Meu portfólio é uma aplicação web desenvolvida para mostrar meus projetos, habilidades e experiências como desenvolvedor FullStack.
 
-## Type Support for `.vue` Imports in TS
+## Tecnologias Utilizadas
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- Vue.js
+- TypeScript
+- Vue Router
+- CSS
+- Radix Vue
+- EmailJS
 
-## Customize configuration
+## Estrutura do Projeto
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+- `/src`: Contém o código fonte da aplicação Vue.js.
+  - `/assets`: Recursos estáticos como imagens e fontes.
+  - `/components`: Componentes reutilizáveis da aplicação.
+  - `/views`: Componentes das páginas da aplicação.
+  - `/router`: Configurações de rotas.
+- `/public`: Arquivos estáticos que serão servidos diretamente (índice HTML, imagens, etc.).
+- `tsconfig.json`: Configurações TypeScript.
+- `package.json`: Lista de dependências e scripts de construção e execução.
+- `README.md`: Este arquivo de documentação.
