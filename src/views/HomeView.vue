@@ -36,11 +36,12 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
 </template>
 
 <style scoped lang="css">
-section {
+section:not(#about) {
   width: 90%;
   height: 100vh;
 
   margin: auto;
+  margin-top: 68px;
 }
 
 #home {
@@ -54,6 +55,9 @@ section {
 }
 
 #about {
+  width: 90%;
+
+  margin: auto;
   margin-top: 68px;
 }
 
@@ -69,10 +73,6 @@ section {
   height: 268px;
 
   border-radius: 50%;
-}
-
-#skills {
-  margin-top: 140px;
 }
 
 #skills h1 {
