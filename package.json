@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^1.7.2",
     "radix-vue": "^1.8.3",
+    "resend": "^3.3.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
