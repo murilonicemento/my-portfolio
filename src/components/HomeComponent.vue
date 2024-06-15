@@ -84,4 +84,24 @@ p {
     font-size: var(--font-size-xl);
   }
 }
+
+@media (min-width: 1280px) {
+  h1 {
+    width: 80%;
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  p {
+    font-size: var(--font-size-md);
+  }
+
+  #home-profile-image {
+    width: 300px;
+    height: 300px;
+  }
+}
 </style>

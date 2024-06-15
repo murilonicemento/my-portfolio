@@ -106,4 +106,20 @@ section:not(#about) {
     height: 260px;
   }
 }
+
+@media (min-width: 1280px) {
+  #about h1,
+  #skills h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  #about-content {
+    justify-content: space-around;
+  }
+
+  #about-profile-image {
+    width: 300px;
+    height: 300px;
+  }
+}
 </style>

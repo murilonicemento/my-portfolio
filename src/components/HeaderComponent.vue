@@ -12,9 +12,13 @@ import HoverCard from "./icons/HoverCard.vue";
 
 <style scoped lang="css">
 header {
+  width: 90%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: auto;
   padding: 16px;
 }
 </style>

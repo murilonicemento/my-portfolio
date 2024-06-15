@@ -19,10 +19,11 @@ h1 {
 }
 
 form {
-  margin-top: 28px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  margin-top: 28px;
 }
 
 form label {
@@ -79,6 +80,31 @@ form button {
 @media (min-width: 768px) {
   h1 {
     font-size: var(--font-size-2xl);
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  form label {
+    font-size: var(--font-size-md);
+  }
+
+  form input {
+    height: 42px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    font-size: var(--font-size-md);
+  }
+
+  form textarea {
+    height: 200px;
+
+    font-size: var(--font-size-md);
   }
 }
 </style>

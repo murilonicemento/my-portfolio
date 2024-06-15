@@ -44,7 +44,7 @@ const technologies = ref<string[]>([
   gap: 16px;
   flex-wrap: wrap;
 
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .tech-img {
@@ -58,5 +58,11 @@ const technologies = ref<string[]>([
 
 .tech-img:hover {
   filter: none;
+}
+
+@media (min-width: 1280px) {
+  .tech-img {
+    width: 100px;
+  }
 }
 </style>
