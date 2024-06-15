@@ -38,6 +38,10 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
 </template>
 
 <style scoped lang="css">
+main {
+  padding: 20px;
+}
+
 section:not(#about) {
   width: 90%;
 
