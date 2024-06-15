@@ -31,7 +31,7 @@ const toggleMenu = (): void => {
     </div>
     <ul v-if="isOpen" class="menu">
       <li v-for="link in links" :key="link.id">
-        <RouterLink :to="link.path">{{ link.name }}</RouterLink>
+        <RouterLink :to="link.path" class="nav-link">{{ link.name }}</RouterLink>
       </li>
     </ul>
   </div>
@@ -41,7 +41,7 @@ const toggleMenu = (): void => {
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  margin: 0px;
+  margin: 0;
 }
 
 .bar {
@@ -82,9 +82,26 @@ const toggleMenu = (): void => {
   padding: 12px 16px;
 }
 
-.menu li a {
+.nav-link {
   text-decoration: none;
   color: var(--color-white);
   display: block;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 </style>
