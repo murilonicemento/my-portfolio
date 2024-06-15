@@ -15,8 +15,8 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: "/projects",
-      name: "projects",
+      path: "/skills",
+      name: "skills",
       component: HomeView
     },
     {
@@ -24,7 +24,15 @@ const router = createRouter({
       name: "contact",
       component: HomeView
     }
-  ]
+  ],
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth"
+      };
+    }
+  }
 });
 
 export default router;
