@@ -6,13 +6,14 @@ interface ILinkRef {
   id: number;
   name: string;
   path: string;
+  hash: string;
 }
 
 const links = ref<ILinkRef[]>([
-  { id: 1, name: "Início", path: "/" },
-  { id: 2, name: "Sobre", path: "/about" },
-  { id: 3, name: "Projetos", path: "/projects" },
-  { id: 4, name: "Contato", path: "/contact" }
+  { id: 1, name: "Início", path: "/", hash: "#home" },
+  { id: 2, name: "Sobre", path: "/about", hash: "#about" },
+  { id: 3, name: "Skills", path: "/skills", hash: "#skills" },
+  { id: 4, name: "Contato", path: "/contact", hash: "#contact" }
 ]);
 
 const isOpen = ref<boolean>(false);
@@ -31,7 +32,9 @@ const toggleMenu = (): void => {
     </div>
     <ul v-if="isOpen" class="menu">
       <li v-for="link in links" :key="link.id">
-        <RouterLink :to="link.path" class="nav-link">{{ link.name }}</RouterLink>
+        <RouterLink :to="{ path: link.path, hash: link.hash }" class="nav-link">{{
+          link.name
+        }}</RouterLink>
       </li>
     </ul>
   </div>
