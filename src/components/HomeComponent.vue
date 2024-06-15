@@ -5,20 +5,22 @@ import home from "@/assets/images/home-profile-image.png";
 </script>
 
 <template>
-  <h1>Olá! Me chamo Murilo sou um</h1>
-  <h2>Desenvolvedor FullStack</h2>
-  <p>
-    Seja bem-vindo(a) ao meu portfólio! Explore meus trabalhos, conheça minhas habilidades e ideias.
-  </p>
-  <div id="social-media">
-    <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank">
-      <img :src="linkedin" alt="LinkedIn Logo" />
-    </a>
-    <a href="https://github.com/murilonicemento" target="_blank">
-      <img :src="github" alt="GitHub Logo" />
-    </a>
+  <div id="presentation">
+    <h1>Olá! Me chamo Murilo sou um</h1>
+    <h2>Desenvolvedor FullStack</h2>
+    <p>
+      Seja bem-vindo(a) ao meu portfólio! Explore meus trabalhos, conheça minhas habilidades e
+      ideias.
+    </p>
+    <div id="social-media">
+      <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank">
+        <img :src="linkedin" alt="LinkedIn Logo" />
+      </a>
+      <a href="https://github.com/murilonicemento" target="_blank">
+        <img :src="github" alt="GitHub Logo" />
+      </a>
+    </div>
   </div>
-
   <img :src="home" alt="Image of a person with black jacket" id="home-profile-image" />
 </template>
 
@@ -27,15 +29,13 @@ h2 {
   color: var(--color-green);
 }
 
-h1,
-h2,
 p {
-  width: 100%;
+  font-size: 14px;
 }
 
 #home-profile-image {
-  width: 268px;
-  height: 268px;
+  width: 260px;
+  height: 260px;
 }
 
 #social-media {
@@ -67,5 +67,21 @@ p {
 #social-media a img {
   width: 20px;
   height: 20px;
+}
+
+@media (min-width: 768px) {
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+  }
 }
 </style>

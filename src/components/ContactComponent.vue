@@ -30,16 +30,19 @@ form label {
 }
 
 form input {
-  background-color: var(--color-black-hover);
-
   height: 38px;
 
-  padding: 4px;
+  background-color: var(--color-black-hover);
+
+  padding: 8px;
+
+  color: var(--color-white);
 }
 
 form input::placeholder,
 form textarea::placeholder {
   color: var(--color-white);
+  font-size: 14px;
 }
 
 form textarea {
@@ -47,9 +50,10 @@ form textarea {
 
   height: 78px;
 
-  padding: 4px;
+  padding: 8px;
 
   font-size: 14px;
+  color: var(--color-white);
 }
 
 form button {
@@ -70,5 +74,11 @@ form button {
   padding: 18px;
 
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
 }
 </style>

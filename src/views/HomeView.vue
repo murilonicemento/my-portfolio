@@ -18,12 +18,14 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
     </section>
     <section id="about">
       <h1>Sobre mim</h1>
-      <img
-        :src="about"
-        alt="Profile Image of a person with branch cyber lines in the head"
-        id="about-profile-image"
-      />
-      <TabComponent :tabs="tabs" />
+      <div id="about-content">
+        <img
+          :src="about"
+          alt="Profile Image of a person with branch cyber lines in the head"
+          id="about-profile-image"
+        />
+        <TabComponent :tabs="tabs" />
+      </div>
     </section>
     <section id="skills">
       <h1>Skills</h1>
@@ -38,7 +40,6 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
 <style scoped lang="css">
 section:not(#about) {
   width: 90%;
-  height: 100vh;
 
   margin: auto;
   margin-top: 68px;
@@ -82,5 +83,27 @@ section:not(#about) {
 #contact {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #home {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  #about-content {
+    display: flex;
+    align-items: start;
+  }
+
+  #about h1,
+  #skills h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  #about-profile-image {
+    width: 260px;
+    height: 260px;
+  }
 }
 </style>

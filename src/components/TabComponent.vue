@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { ref, defineProps } from "vue";
+import computer from "@/assets/images/computer.svg";
+import build from "@/assets/images/build.svg";
+import dateRange from "@/assets/images/date-range.svg";
+import university from "@/assets/images/university.svg";
+import universityBuilding from "@/assets/images/university-building.svg";
 
 defineProps<{ tabs: string[] }>();
 
@@ -35,9 +40,9 @@ const selectTab = (index: number) => {
         </div>
       </div>
       <div v-else-if="selectedTab === 1">
-        <h3>Engenharia de Software</h3>
-        <h4>Estácio de Sá</h4>
-        <p class="education-date">2021 - 2026</p>
+        <h3><img :src="university" alt="University Hat Icon" />Engenharia de Software</h3>
+        <h4><img :src="universityBuilding" alt="University Building Icon" />Estácio de Sá</h4>
+        <p class="education-date"><img :src="dateRange" alt="Date Range Icon" />2021 - 2026</p>
         <p>
           No curso de Engenharia de Software, adquiri habilidades em Lógica da Programação,
           Algoritmos, Estruturas de Dados e Desenvolvimento Web, utilizando tecnologias como Vue.js,
@@ -46,9 +51,9 @@ const selectTab = (index: number) => {
           operacionais no desenvolvimento de software.
         </p>
         <hr />
-        <h3>CS50</h3>
-        <h4>Harvard</h4>
-        <p class="education-date">2023</p>
+        <h3><img :src="university" alt="University Hat Icon" />CS50</h3>
+        <h4><img :src="universityBuilding" alt="University Building Icon" />Harvard</h4>
+        <p class="education-date"><img :src="dateRange" alt="Date Range Icon" />2023</p>
         <p>
           No curso CS50 da Harvard, obtive uma compreensão profunda de conceitos fundamentais da
           ciência da computação, incluindo pensamento algorítmico, estruturas de dados, manipulação
@@ -58,9 +63,11 @@ const selectTab = (index: number) => {
         </p>
       </div>
       <div v-else-if="selectedTab === 2">
-        <h3>Desenvolvedor FullStack Júnior</h3>
-        <h4>Teknisa</h4>
-        <p class="education-date">abr 2024 - momento</p>
+        <h3><img :src="computer" alt="Computer Icon" />Desenvolvedor FullStack Júnior</h3>
+        <h4><img :src="build" alt="Build Icon" />Teknisa</h4>
+        <p class="education-date">
+          <img :src="dateRange" alt="Date Range Icon" />abr 2024 - momento
+        </p>
         <ul>
           <li>Criação de novas telas do sistema;</li>
           <li>Criação de relatórios BIRT;</li>
@@ -81,9 +88,11 @@ const selectTab = (index: number) => {
           </li>
         </ul>
         <hr />
-        <h3>Estagiário em Desenvolvimento FullStack</h3>
-        <h4>Teknisa</h4>
-        <p class="education-date">jul 2023 - abr 2024</p>
+        <h3><img :src="computer" alt="Computer Icon" />Estagiário em Desenvolvimento FullStack</h3>
+        <h4><img :src="build" alt="Build Icon" />Teknisa</h4>
+        <p class="education-date">
+          <img :src="dateRange" alt="Date Range Icon" />jul 2023 - abr 2024
+        </p>
         <ul>
           <li>Auxiliar time na resolução de bugs;</li>
           <li>
@@ -101,9 +110,11 @@ const selectTab = (index: number) => {
           </li>
         </ul>
         <hr />
-        <h3>Estagiário em Business Intelligence</h3>
-        <h4>iLean Gestão de Resultados</h4>
-        <p class="education-date">fev 2023 - mar 2023</p>
+        <h3><img :src="computer" alt="Computer Icon" />Estagiário em Business Intelligence</h3>
+        <h4><img :src="build" alt="Build Icon" />iLean Gestão de Resultados</h4>
+        <p class="education-date">
+          <img :src="dateRange" alt="Date Range Icon" />fev 2023 - mar 2023
+        </p>
         <ul>
           <li>Desenvolvimento de painéis de visualização de dados em Excel e Power Bi;</li>
           <li>
@@ -167,7 +178,20 @@ const selectTab = (index: number) => {
   gap: 12px;
 }
 
-.tab-content h3 {
+.tab-content div img {
+  width: 20px;
+  height: 20px;
+}
+
+.tab-content div h3,
+.tab-content div h4,
+.tab-content div p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tab-content div h3 {
   font-size: var(--font-size-lg);
   font-weight: 800;
 }
