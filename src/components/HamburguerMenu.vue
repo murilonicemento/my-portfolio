@@ -24,23 +24,29 @@ const toggleMenu = (): void => {
 </script>
 
 <template>
-  <div>
+  <nav>
     <div class="hamburger" @click="toggleMenu">
-      <div :class="{ bar: true, bar1: true, change: isOpen }"></div>
-      <div :class="{ bar: true, bar2: true, change: isOpen }"></div>
-      <div :class="{ bar: true, bar3: true, change: isOpen }"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-    <ul v-if="isOpen" class="menu">
+    <ul :class="{ menu: true, open: isOpen }">
       <li v-for="link in links" :key="link.id">
         <RouterLink :to="{ path: link.path, hash: link.hash }" class="nav-link">{{
           link.name
         }}</RouterLink>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <style scoped lang="css">
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -67,6 +73,11 @@ const toggleMenu = (): void => {
   margin: 0;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+}
+
+.menu.open {
+  visibility: visible;
 }
 
 .menu li {
@@ -95,5 +106,32 @@ const toggleMenu = (): void => {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    visibility: visible;
+  }
+
+  .menu li {
+    padding: 0 10px;
+  }
+
+  .menu li a {
+    color: var(--color-white);
+  }
+
+  .nav-link {
+    color: var(--color-black-hover);
+  }
 }
 </style>
