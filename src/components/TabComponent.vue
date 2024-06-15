@@ -30,9 +30,13 @@ const selectTab = (index: number) => {
     <div class="tab-content">
       <div v-if="selectedTab === 0">
         <p>
-          Meu nome é Murilo Nascimento e sou estudante de Engenharia de Software. Atualmente, estou
-          focando meus estudos na área de desenvolvimento de aplicações web, utilizando tecnologias
-          como VueJS e PHP. Além disso, tenho conhecimento em metodologias ágeis, como SCRUM.
+          Me chamo Murilo Nascimento e sou estudante de Engenharia de Software, com um foco dedicado
+          ao desenvolvimento de aplicações web. Minha expertise se estende às tecnologias Vue.js e
+          PHP, nas quais tenho me dedicado para aprimorar minhas habilidades técnicas. Além disso,
+          possuo entendimento das metodologias ágeis, particularmente o SCRUM, o que me permite
+          trabalhar de forma eficiente e colaborativa em equipes de desenvolvimento. Estou sempre em
+          busca de oportunidades para expandir meu conhecimento e contribuir de forma significativa
+          para projetos desafiadores e inovadores.
         </p>
         <div id="bio-information">
           <p><span>Nacionalidade: </span> Brasileiro</p>
@@ -45,10 +49,10 @@ const selectTab = (index: number) => {
         <p class="education-date"><img :src="dateRange" alt="Date Range Icon" />2021 - 2026</p>
         <p>
           No curso de Engenharia de Software, adquiri habilidades em Lógica da Programação,
-          Algoritmos, Estruturas de Dados e Desenvolvimento Web, utilizando tecnologias como Vue.js,
-          TypeScript e PHP. Aprendi a definir e analisar requisitos de um sistemas e explorar os
-          paradigmas das linguagens de programação, além de compreender a importância dos sistemas
-          operacionais no desenvolvimento de software.
+          Algoritmos, Estruturas de Dados e Desenvolvimento Web, utilizando tecnologias como
+          JavaScript, PHP e SQL. Aprendi a definir e analisar requisitos de um sistemas e explorar
+          os paradigmas das linguagens de programação, além de compreender a importância dos
+          sistemas operacionais no desenvolvimento de software.
         </p>
         <hr />
         <h3><img :src="university" alt="University Hat Icon" />CS50</h3>
@@ -58,8 +62,8 @@ const selectTab = (index: number) => {
           No curso CS50 da Harvard, obtive uma compreensão profunda de conceitos fundamentais da
           ciência da computação, incluindo pensamento algorítmico, estruturas de dados, manipulação
           de dados, desenvolvimento web e segurança cibernética. Aprendi a resolver problemas de
-          forma eficiente, desenvolver programas complexos e explorar diversas tecnologias,
-          preparando-me para desafios na área de tecnologia.
+          forma eficiente e explorar diversas tecnologias, preparando-me para desafios na área de
+          tecnologia.
         </p>
       </div>
       <div v-else-if="selectedTab === 2">
@@ -196,7 +200,7 @@ const selectTab = (index: number) => {
   font-weight: 800;
 }
 
-.tab-content h4 {
+.tab-content div h4 {
   font-size: var(--font-size-md);
   font-weight: 600;
 }
@@ -217,5 +221,30 @@ const selectTab = (index: number) => {
 
 hr {
   color: var(--color-pink);
+}
+
+@media (min-width: 1280px) {
+  #tab {
+    width: 60%;
+  }
+
+  .tab-content p,
+  .tab-content ul li {
+    font-size: var(--font-size-md);
+  }
+
+  .tab-button {
+    font-size: var(--font-size-md);
+  }
+
+  .tab-content div h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 800;
+  }
+
+  .tab-content div h4 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+  }
 }
 </style>
