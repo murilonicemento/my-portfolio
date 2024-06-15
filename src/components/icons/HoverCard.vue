@@ -34,7 +34,7 @@ const hoverState = ref(false);
     <HoverCardPortal>
       <HoverCardContent class="HoverCardContent" :side-offset="5">
         <div :style="{ display: 'flex', gap: 7 }">
-          <img
+          <!-- <img
             class="Image large"
             src="https://i.pinimg.com/1200x/b4/06/b1/b406b1696f69fd6852aaddb0255c479a.jpg"
             alt="Cat"
@@ -44,7 +44,7 @@ const hoverState = ref(false);
               <div class="Text bold">Nome da música</div>
               <div class="Text faded">Artista</div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <HoverCardArrow class="HoverCardArrow" :width="8" />
