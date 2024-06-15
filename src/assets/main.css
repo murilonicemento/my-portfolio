@@ -1,1 +1,15 @@
 @import "./base.css";
+
+input,
+textarea,
+button {
+  border: none;
+  border-radius: 4px;
+
+  font-family: "Ubuntu sans", sans-serif, monospace;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-white);
+}
