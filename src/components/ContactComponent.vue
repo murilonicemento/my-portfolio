@@ -1,16 +1,90 @@
+<script setup lang="ts">
+import { ref } from "vue";
+import ok from "@/assets/images/ok.svg";
+import error from "@/assets/images/error.svg";
+import emailjs from "@emailjs/browser";
+
+interface IForm {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+const form = ref<IForm>({ name: "", email: "", subject: "", message: "" });
+const sendForm = ref<{ isSend: boolean; error: boolean }>({ isSend: false, error: false });
+
+const onSubmit = async () => {
+  emailjs
+    .send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.value,
+      { publicKey: "aqwD4KLRowJA467Ef" }
+    )
+    .then((response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      sendForm.value.isSend = true;
+    })
+    .catch((error) => {
+      console.error(error);
+      sendForm.value.isSend = false;
+      sendForm.value.error = true;
+    });
+};
+</script>
+
 <template>
   <h1>Contato</h1>
-  <form>
+  <form v-if="!sendForm.isSend" @submit.prevent="onSubmit">
     <label for="name">Nome Completo</label>
-    <input type="text" name="name" id="name" placeholder="Nome Completo" />
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Nome Completo"
+      v-model="form.name"
+      required
+    />
     <label for="e-mail">E-mail</label>
-    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+    <input
+      type="email"
+      name="e-mail"
+      id="e-mail"
+      placeholder="E-mail"
+      v-model="form.email"
+      required
+    />
     <label for="subject">Assunto</label>
-    <input type="text" name="subject" id="subject" placeholder="Assunto" />
+    <input
+      type="text"
+      name="subject"
+      id="subject"
+      placeholder="Assunto"
+      v-model="form.subject"
+      required
+    />
     <label for="message">Mensagem</label>
-    <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Mensagem"
+      v-model="form.message"
+      required
+    ></textarea>
     <button type="submit">Enviar</button>
   </form>
+  <div v-if="sendForm.isSend" id="confirm-send">
+    <img :src="ok" alt="Success Icon" />
+    <p>Obrigado por entrar em contato! Sua mensagem foi enviada e entrarei em contato em breve.</p>
+  </div>
+  <div v-if="sendForm.error" id="error-send">
+    <img :src="error" alt="Error Icon" />
+    <p>
+      Ops! Parece que houve um problema ao enviar sua mensagem. Por favor, tente novamente mais
+      tarde ou entre em contato diretamente através dos nossos outros canais de comunicação.
+    </p>
+  </div>
 </template>
 
 <style scoped lang="css">
@@ -77,6 +151,39 @@ form button {
   cursor: pointer;
 }
 
+#confirm-send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: justify;
+}
+
+#confirm-send p {
+  width: 400px;
+  text-align: center;
+}
+
+#confirm-send img {
+  width: 268px;
+}
+
+#error-send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: justify;
+}
+
+#error-send img {
+  width: 268px;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: var(--font-size-2xl);
@@ -104,6 +211,10 @@ form button {
   form textarea {
     height: 200px;
 
+    font-size: var(--font-size-md);
+  }
+
+  #confirm-send p {
     font-size: var(--font-size-md);
   }
 }
