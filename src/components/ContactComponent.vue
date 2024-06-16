@@ -3,40 +3,40 @@ import { ref } from "vue";
 import ok from "@/assets/images/ok.svg";
 import error from "@/assets/images/error.svg";
 import emailjs from "@emailjs/browser";
-
-interface IForm {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import type { IForm, ISendForm } from "@/interfaces/interfaces";
 
 const form = ref<IForm>({ name: "", email: "", subject: "", message: "" });
-const sendForm = ref<{ isSend: boolean; error: boolean }>({ isSend: false, error: false });
+const sendForm = ref<ISendForm>({
+  isLoading: false,
+  isSend: false,
+  error: false
+});
 
 const onSubmit = async () => {
-  emailjs
-    .send(
+  sendForm.value.isLoading = true;
+  try {
+    const response = await emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.value,
       { publicKey: "aqwD4KLRowJA467Ef" }
-    )
-    .then((response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      sendForm.value.isSend = true;
-    })
-    .catch((error) => {
-      console.error(error);
-      sendForm.value.isSend = false;
-      sendForm.value.error = true;
-    });
+    );
+    console.log("SUCCESS!", response.status, response.text);
+    sendForm.value.isSend = true;
+    sendForm.value.isLoading = false;
+  } catch (error) {
+    sendForm.value.error = true;
+    sendForm.value.isLoading = false;
+  }
 };
 </script>
 
 <template>
   <h1>Contato</h1>
-  <form v-if="!sendForm.isSend" @submit.prevent="onSubmit">
+  <form
+    v-if="!sendForm.isSend && !sendForm.error && !sendForm.isLoading"
+    @submit.prevent="onSubmit"
+  >
     <label for="name">Nome Completo</label>
     <input
       type="text"
@@ -74,6 +74,9 @@ const onSubmit = async () => {
     ></textarea>
     <button type="submit">Enviar</button>
   </form>
+  <div id="loader-container" v-if="sendForm.isLoading">
+    <div id="loader"></div>
+  </div>
   <div v-if="sendForm.isSend" id="confirm-send">
     <img :src="ok" alt="Success Icon" />
     <p>Obrigado por entrar em contato! Sua mensagem foi enviada e entrarei em contato em breve.</p>
@@ -95,6 +98,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+
   gap: 4px;
 
   margin-top: 28px;
@@ -184,6 +188,38 @@ form button {
   width: 268px;
 }
 
+#loader-container {
+  display: grid;
+  place-items: center;
+}
+
+#loader {
+  width: 268px;
+
+  margin-top: 8px;
+  padding: 8px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: #13fba7;
+
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: var(--font-size-2xl);
@@ -215,6 +251,11 @@ form button {
   }
 
   #confirm-send p {
+    font-size: var(--font-size-md);
+  }
+
+  #error-send p {
+    width: 600px;
     font-size: var(--font-size-md);
   }
 }
