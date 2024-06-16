@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps } from "vue";
+import { ref } from "vue";
 import computer from "@/assets/images/computer.svg";
 import build from "@/assets/images/build.svg";
 import dateRange from "@/assets/images/date-range.svg";
