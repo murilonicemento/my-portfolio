@@ -1,13 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
-
-interface ILinkRef {
-  id: number;
-  name: string;
-  path: string;
-  hash: string;
-}
+import type { ILinkRef } from "@/interfaces/interfaces";
 
 const links = ref<ILinkRef[]>([
   { id: 1, name: "Início", path: "/", hash: "#home" },
