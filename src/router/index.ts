@@ -8,21 +8,6 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: HomeView
-    },
-    {
-      path: "/skills",
-      name: "skills",
-      component: HomeView
-    },
-    {
-      path: "/contact",
-      name: "contact",
-      component: HomeView
     }
   ],
   scrollBehavior(to) {
