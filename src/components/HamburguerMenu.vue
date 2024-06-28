@@ -4,10 +4,10 @@ import { RouterLink } from "vue-router";
 import type { ILinkRef } from "@/interfaces/interfaces";
 
 const links = ref<ILinkRef[]>([
-  { id: 1, name: "Início", path: "/", hash: "#home" },
-  { id: 2, name: "Sobre", path: "/about", hash: "#about" },
-  { id: 3, name: "Skills", path: "/skills", hash: "#skills" },
-  { id: 4, name: "Contato", path: "/contact", hash: "#contact" }
+  { id: 1, name: "Início", hash: "#home" },
+  { id: 2, name: "Sobre", hash: "#about" },
+  { id: 3, name: "Skills", hash: "#skills" },
+  { id: 4, name: "Contato", hash: "#contact" }
 ]);
 
 const isOpen = ref<boolean>(false);
@@ -26,7 +26,7 @@ const toggleMenu = (): void => {
     </div>
     <ul :class="{ menu: true, open: isOpen }">
       <li v-for="link in links" :key="link.id">
-        <RouterLink :to="{ path: link.path, hash: link.hash }" class="nav-link">{{
+        <RouterLink :to="{ path: '/', hash: link.hash }" class="nav-link">{{
           link.name
         }}</RouterLink>
       </li>
