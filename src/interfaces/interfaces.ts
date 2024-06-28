@@ -14,6 +14,5 @@ export interface ISendForm {
 export interface ILinkRef {
   id: number;
   name: string;
-  path: string;
   hash: string;
 }
