@@ -26,3 +26,5 @@ Meu portfólio é uma aplicação web desenvolvida para mostrar meus projetos, h
 - `tsconfig.json`: Configurações TypeScript.
 - `package.json`: Lista de dependências e scripts de construção e execução.
 - `README.md`: Este arquivo de documentação.
+
+<img src="./.github/portfolio-interface.png" />
