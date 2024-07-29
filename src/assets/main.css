@@ -13,3 +13,7 @@ input::placeholder,
 textarea::placeholder {
   color: var(--color-white);
 }
+
+img {
+  position: relative;
+}
