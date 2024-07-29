@@ -102,6 +102,7 @@ form {
   gap: 4px;
 
   margin-top: 28px;
+  position: relative;
 }
 
 form label {
