@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@tsparticles/vue3": "^3.0.1",
     "axios": "^1.7.2",
     "radix-vue": "^1.8.3",
     "vue": "^3.4.21",

@@ -11,6 +11,9 @@ importers:
       '@emailjs/browser':
         specifier: ^4.3.3
         version: 4.3.3
+      '@tsparticles/vue3':
+        specifier: ^3.0.1
+        version: 3.0.1(typescript@5.4.5)
       axios:
         specifier: ^1.7.2
         version: 1.7.2
@@ -392,6 +395,12 @@ packages:
 
   '@tsconfig/node20@20.1.4':
     resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
+
+  '@tsparticles/engine@3.5.0':
+    resolution: {integrity: sha512-RCwrJ2SvSYdhXJ24oUCjSUKEZQ9lXwObOWMvfMC9vS6/bk+Qo0N7Xx8AfumqzP/LebB1YJdlCvuoJMauAon0Pg==}
+
+  '@tsparticles/vue3@3.0.1':
+    resolution: {integrity: sha512-BxaSZ0wtxq33SDsrqLkLWoV88Jd5BnBoYjyVhKSNzOLOesCiG8Z5WQC1QZGTez79l/gBe0xaCDF0ng1e2iKJvA==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1482,6 +1491,15 @@ snapshots:
       vue: 3.4.27(typescript@5.4.5)
 
   '@tsconfig/node20@20.1.4': {}
+
+  '@tsparticles/engine@3.5.0': {}
+
+  '@tsparticles/vue3@3.0.1(typescript@5.4.5)':
+    dependencies:
+      '@tsparticles/engine': 3.5.0
+      vue: 3.4.27(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
 
   '@types/estree@1.0.5': {}
 
