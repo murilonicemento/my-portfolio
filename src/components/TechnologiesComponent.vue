@@ -24,6 +24,7 @@ const technologies = ref<string[]>([
   git
 ]);
 </script>
+
 <template>
   <div id="technologies">
     <img
