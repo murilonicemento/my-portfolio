@@ -30,13 +30,12 @@ const selectTab = (index: number) => {
     <div class="tab-content">
       <div v-if="selectedTab === 0">
         <p>
-          Me chamo Murilo Nascimento e sou estudante de Engenharia de Software, com um foco dedicado
-          ao desenvolvimento de aplicações web. Minha expertise se estende às tecnologias Vue.js e
-          PHP, nas quais tenho me dedicado para aprimorar minhas habilidades técnicas. Além disso,
-          possuo entendimento das metodologias ágeis, particularmente o SCRUM, o que me permite
-          trabalhar de forma eficiente e colaborativa em equipes de desenvolvimento. Estou sempre em
-          busca de oportunidades para expandir meu conhecimento e contribuir de forma significativa
-          para projetos desafiadores e inovadores.
+          Me chamo Murilo Nascimento e sou estudante de Engenharia de Software, com foco no
+          desenvolvimento de aplicações web. Tenho experiência com TypeScript e PHP, e atualmente
+          estou estudando C# e ASP.NET Core. Também conheço metodologias ágeis, especialmente o
+          SCRUM, o que me permite trabalhar de forma eficiente e colaborativa em equipes. Estou
+          sempre em busca de oportunidades para expandir meu conhecimento e contribuir
+          significativamente para projetos desafiadores e inovadores.
         </p>
         <div id="bio-information">
           <p><span>Nacionalidade: </span> Brasileiro</p>
