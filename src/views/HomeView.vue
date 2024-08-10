@@ -4,6 +4,7 @@ import HeaderComponent from "@/components/HeaderComponent.vue";
 import HomeComponent from "@/components/HomeComponent.vue";
 import TabComponent from "@/components/TabComponent.vue";
 import TechnologiesComponent from "@/components/TechnologiesComponent.vue";
+import ProjectComponent from "@/components/ProjectComponent.vue";
 import ContactComponent from "@/components/ContactComponent.vue";
 import about from "@/assets/images/about-profile-image.png";
 
@@ -31,6 +32,11 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
       <h1>Skills</h1>
       <TechnologiesComponent />
     </section>
+    <section id="projects">
+      <h1>Projetos</h1>
+      <ProjectComponent />
+    </section>
+
     <section id="contact">
       <ContactComponent />
     </section>
@@ -81,6 +87,10 @@ section:not(#about) {
 }
 
 #skills h1 {
+  text-align: center;
+}
+
+#projects h1 {
   text-align: center;
 }
 
