@@ -7,32 +7,29 @@ import javascript from "@/assets/images/javascript.svg";
 import vuejs from "@/assets/images/vuejs.svg";
 import tailwindcss from "@/assets/images/tailwindcss.svg";
 import php from "@/assets/images/php.svg";
-import linux from "@/assets/images/linux.svg";
-import vscode from "@/assets/images/visual-studio-code.svg";
-import git from "@/assets/images/git.svg";
+import SkillImage from "./icons/SkillImage.vue";
 
-const technologies = ref<string[]>([
-  html,
-  css,
-  sass,
-  javascript,
-  vuejs,
-  tailwindcss,
-  php,
-  linux,
-  vscode,
-  git
+const technologies = ref([
+  { name: "HTML", description: "Linguagem de Marcação de Hipertexto", img: html },
+  { name: "CSS", description: "Linguagem de Marcação de Hipertexto", img: css },
+  { name: "SASS", description: "Linguagem de Marcação de Hipertexto", img: sass },
+  { name: "JavaScript", description: "Linguagem de Marcação de Hipertexto", img: javascript },
+  { name: "TypeScript", description: "Linguagem de Marcação de Hipertexto", img: "" },
+  { name: "Vue", description: "Linguagem de Marcação de Hipertexto", img: vuejs },
+  { name: "Tailwind CSS", description: "Linguagem de Marcação de Hipertexto", img: tailwindcss },
+  { name: "PHP", description: "Linguagem de Marcação de Hipertexto", img: php }
 ]);
 </script>
 <template>
   <div id="technologies">
-    <img
+    <SkillImage :tech="technologies" />
+    <!-- <img
       :src="technology"
       alt=""
       v-for="(technology, index) in technologies"
       :key="index"
       class="tech-img"
-    />
+    /> -->
   </div>
 </template>
 
