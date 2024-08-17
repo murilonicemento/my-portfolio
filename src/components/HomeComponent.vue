@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import github from "@/assets/images/github.svg";
-import linkedin from "@/assets/images/linkedin.svg";
 import home from "@/assets/images/home-profile-image.png";
+import SocialMedia from "./icons/SocialMedia.vue";
 </script>
 
 <template>
@@ -13,12 +12,7 @@ import home from "@/assets/images/home-profile-image.png";
       ideias.
     </p>
     <div id="social-media">
-      <a href="https://www.linkedin.com/in/murilonicemento/" target="_blank">
-        <img :src="linkedin" alt="LinkedIn Logo" />
-      </a>
-      <a href="https://github.com/murilonicemento" target="_blank">
-        <img :src="github" alt="GitHub Logo" />
-      </a>
+      <SocialMedia />
     </div>
   </div>
   <img :src="home" alt="Image of a person with black jacket" id="home-profile-image" />
