@@ -3,7 +3,18 @@ import CardComponent from "./CardComponent.vue";
 </script>
 
 <template>
-  <CardComponent />
+  <div class="cards">
+    <CardComponent />
+  </div>
 </template>
 
-<style scoped lang="css"></style>
+<style scoped lang="css">
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+
+  margin-top: 68px;
+}
+</style>
