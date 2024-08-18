@@ -2,11 +2,9 @@
 import { ref } from "vue";
 import ok from "@/assets/images/ok.svg";
 import error from "@/assets/images/error.svg";
+import FormLoader from "./icons/FormLoader.vue";
 import emailjs from "@emailjs/browser";
 import type { IForm, ISendForm } from "@/interfaces/interfaces";
-import FormButton from "./icons/FormButton.vue";
-import FormLoader from "./icons/FormLoader.vue";
-import ContactForm from "./ContactForm.vue";
 
 const form = ref<IForm>({ name: "", email: "", subject: "", message: "" });
 const sendForm = ref<ISendForm>({
@@ -36,7 +34,11 @@ const onSubmit = async () => {
 
 <template>
   <div class="form-container">
-    <form class="form">
+    <form
+      v-if="!sendForm.isSend && !sendForm.error && !sendForm.isLoading"
+      class="form"
+      @submit.prevent="onSubmit"
+    >
       <div class="form-group">
         <label for="name">Nome Completo</label>
         <input
@@ -82,6 +84,22 @@ const onSubmit = async () => {
       </div>
       <button type="submit" class="form-submit-btn">Enviar</button>
     </form>
+    <div id="loader-container" v-if="sendForm.isLoading">
+      <FormLoader />
+    </div>
+    <div v-if="sendForm.isSend" id="confirm-send">
+      <img :src="ok" alt="Success Icon" />
+      <p>
+        Obrigado por entrar em contato! Sua mensagem foi enviada e entrarei em contato em breve.
+      </p>
+    </div>
+    <div v-if="sendForm.error" id="error-send">
+      <img :src="error" alt="Error Icon" />
+      <p>
+        Ops! Parece que houve um problema ao enviar sua mensagem. Por favor, tente novamente mais
+        tarde ou entre em contato diretamente através de outros canais de comunicação.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -212,5 +230,54 @@ const onSubmit = async () => {
   background-color: var(--color-white);
   border-color: var(--color-white);
   transition: all ease 0.4s;
+}
+
+#confirm-send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: justify;
+}
+
+#confirm-send p {
+  width: 400px;
+  text-align: center;
+}
+
+#confirm-send img {
+  width: 268px;
+}
+
+#error-send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: justify;
+}
+
+#error-send img {
+  width: 268px;
+}
+
+#loader-container {
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 1280px) {
+  #confirm-send p {
+    font-size: var(--font-size-md);
+  }
+
+  #error-send p {
+    width: 600px;
+    font-size: var(--font-size-md);
+  }
 }
 </style>
