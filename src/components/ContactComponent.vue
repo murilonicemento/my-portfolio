@@ -4,6 +4,9 @@ import ok from "@/assets/images/ok.svg";
 import error from "@/assets/images/error.svg";
 import emailjs from "@emailjs/browser";
 import type { IForm, ISendForm } from "@/interfaces/interfaces";
+import FormButton from "./icons/FormButton.vue";
+import FormLoader from "./icons/FormLoader.vue";
+import ContactForm from "./ContactForm.vue";
 
 const form = ref<IForm>({ name: "", email: "", subject: "", message: "" });
 const sendForm = ref<ISendForm>({
@@ -33,7 +36,7 @@ const onSubmit = async () => {
 
 <template>
   <h1>Contato</h1>
-  <form
+  <!-- <form
     v-if="!sendForm.isSend && !sendForm.error && !sendForm.isLoading"
     @submit.prevent="onSubmit"
   >
@@ -72,10 +75,11 @@ const onSubmit = async () => {
       v-model="form.message"
       required
     ></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+    <FormButton type="submit" />
+  </form> -->
+  <ContactForm />
   <div id="loader-container" v-if="sendForm.isLoading">
-    <div id="loader"></div>
+    <FormLoader />
   </div>
   <div v-if="sendForm.isSend" id="confirm-send">
     <img :src="ok" alt="Success Icon" />
@@ -85,7 +89,7 @@ const onSubmit = async () => {
     <img :src="error" alt="Error Icon" />
     <p>
       Ops! Parece que houve um problema ao enviar sua mensagem. Por favor, tente novamente mais
-      tarde ou entre em contato diretamente através dos nossos outros canais de comunicação.
+      tarde ou entre em contato diretamente através de outros canais de comunicação.
     </p>
   </div>
 </template>
@@ -95,7 +99,7 @@ h1 {
   text-align: center;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
 
@@ -133,27 +137,7 @@ form textarea {
 
   font-size: 14px;
   color: var(--color-white);
-}
-
-form button {
-  width: 80px;
-  height: 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--color-pink);
-
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-white);
-
-  margin-top: 8px;
-  padding: 18px;
-
-  cursor: pointer;
-}
+} */
 
 #confirm-send {
   display: flex;
@@ -191,33 +175,7 @@ form button {
 #loader-container {
   display: grid;
   place-items: center;
-}
-
-#loader {
-  width: 268px;
-
-  margin-top: 8px;
-  padding: 8px;
-
-  aspect-ratio: 1;
-
-  border-radius: 50%;
-
-  background: #13fba7;
-
-  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
-  mask: var(--_m);
-  -webkit-mask-composite: source-out;
-  mask-composite: subtract;
-
-  animation: l3 1s infinite linear;
-}
-
-@keyframes l3 {
-  to {
-    transform: rotate(1turn);
-  }
+  margin-top: 150px;
 }
 
 @media (min-width: 768px) {
@@ -231,7 +189,7 @@ form button {
     font-size: var(--font-size-3xl);
   }
 
-  form label {
+  /* form label {
     font-size: var(--font-size-md);
   }
 
@@ -248,7 +206,7 @@ form button {
     height: 200px;
 
     font-size: var(--font-size-md);
-  }
+  } */
 
   #confirm-send p {
     font-size: var(--font-size-md);
