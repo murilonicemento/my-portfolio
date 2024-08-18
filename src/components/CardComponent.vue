@@ -17,7 +17,7 @@ const cards = ref([
     categories: ["PHP", "MySQL", "Bootstrap"]
   },
   {
-    type: "Front-end",
+    type: "Front end",
     heading: "Empresa 360",
     description: "",
     categories: ["Vue", "Bootstrap"]
