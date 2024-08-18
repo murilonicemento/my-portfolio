@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import type { ICardsProps } from "@/interfaces/interfaces";
 import { ref } from "vue";
 
-const cards = ref([
+const cards = ref<ICardsProps[]>([
   {
     type: "Front end",
     heading: "Napped",
