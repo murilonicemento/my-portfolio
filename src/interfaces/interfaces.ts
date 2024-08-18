@@ -16,3 +16,10 @@ export interface ILinkRef {
   name: string;
   hash: string;
 }
+
+export interface ICardsProps {
+  type: string;
+  heading: string;
+  description: string;
+  categories: string[];
+}
