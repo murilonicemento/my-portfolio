@@ -86,10 +86,7 @@ section:not(#about) {
   border-radius: 50%;
 }
 
-#skills h1 {
-  text-align: center;
-}
-
+#skills h1,
 #projects h1 {
   text-align: center;
 }
@@ -111,7 +108,8 @@ section:not(#about) {
   }
 
   #about h1,
-  #skills h1 {
+  #skills h1,
+  #projects h1 {
     font-size: var(--font-size-2xl);
   }
 
@@ -123,7 +121,8 @@ section:not(#about) {
 
 @media (min-width: 1280px) {
   #about h1,
-  #skills h1 {
+  #skills h1,
+  #projects h1 {
     font-size: var(--font-size-3xl);
   }
 
