@@ -19,11 +19,12 @@ const toggleMenu = (): void => {
 
 <template>
   <nav>
-    <div class="hamburger" @click="toggleMenu">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
+    <input type="checkbox" id="checkbox" @click="toggleMenu" />
+    <label for="checkbox" class="toggle">
+      <div class="bars" id="bar1"></div>
+      <div class="bars" id="bar2"></div>
+      <div class="bars" id="bar3"></div>
+    </label>
     <ul :class="{ menu: true, open: isOpen }">
       <li v-for="link in links" :key="link.id">
         <RouterLink :to="{ path: '/', hash: link.hash }" class="nav-link">{{
@@ -41,33 +42,88 @@ nav {
   justify-content: space-between;
 }
 
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
-  margin: 0;
+#checkbox {
+  display: none;
 }
 
-.bar {
-  width: 28px;
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
   height: 4px;
-  background-color: var(--color-black-hover);
-  margin: 5px 0;
-  transition: 0.4s;
+  background-color: var(--color-blue);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
 }
 
 .menu {
   position: absolute;
   top: 50px;
-  right: 0;
+  right: 35px;
+
   width: 200px;
+
   background-color: var(--color-black-hover);
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
   list-style: none;
+
   padding: 0;
   margin: 0;
+
   display: flex;
   flex-direction: column;
+
   visibility: hidden;
+
+  border-radius: 10px;
 }
 
 .menu.open {
@@ -80,10 +136,14 @@ nav {
 
 .nav-link {
   width: fit-content;
+
   text-decoration: none;
   color: var(--color-white);
+
   display: block;
+
   position: relative;
+
   padding-bottom: 2px;
 }
 
@@ -103,7 +163,8 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .hamburger {
+  .toggle,
+  #checkbox {
     display: none;
   }
 
