@@ -22,4 +22,5 @@ export interface ICardsProps {
   heading: string;
   description: string;
   categories: string[];
+  route: string;
 }
