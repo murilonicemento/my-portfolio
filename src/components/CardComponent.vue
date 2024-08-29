@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ICardsProps } from "@/interfaces/interfaces";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 const cards = ref<ICardsProps[]>([
   {
@@ -8,26 +9,34 @@ const cards = ref<ICardsProps[]>([
     heading: "Napped",
     description:
       "O Napped é uma fonte de informações sobre o mundo nerd, abrangendo séries, filmes, animes e jogos.",
-    categories: ["React", "TypeScript", "Tailwind CSS"]
+    categories: ["React", "TypeScript", "Tailwind CSS"],
+    route: "napped"
   },
   {
     type: "Full Stack",
     heading: "Twitter Clone",
     description:
       " Este é um clone simples do Twitter desenvolvido em PHP, utilizando a arquitetura MVC e um miniframework criado para facilitar o desenvolvimento da aplicação. ",
-    categories: ["PHP", "MySQL", "Bootstrap"]
+    categories: ["PHP", "MySQL", "Bootstrap"],
+    route: "twitter-clone"
   },
   {
     type: "Front end",
     heading: "Empresa 360",
     description: "",
-    categories: ["Vue", "Bootstrap"]
+    categories: ["Vue", "Bootstrap"],
+    route: "company-360"
   }
 ]);
+const router = useRouter();
+
+const redirect = (route: string) => {
+  router.push({ name: "project", params: { projectName: route } });
+};
 </script>
 
 <template>
-  <div v-for="(card, index) in cards" :key="index" class="card">
+  <div v-for="(card, index) in cards" :key="index" class="card" @click="redirect(card.route)">
     <div class="main-content">
       <div class="header">
         <span>{{ card.type }}</span>
