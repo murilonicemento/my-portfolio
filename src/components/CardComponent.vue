@@ -1,42 +1,59 @@
 <script setup lang="ts">
-import type { ICardsProps } from "@/interfaces/interfaces";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import type { ICardsProps } from "@/interfaces/interfaces";
 
 const cards = ref<ICardsProps[]>([
   {
     type: "Front end",
     heading: "Napped",
+    img: "",
     description:
       "O Napped é uma fonte de informações sobre o mundo nerd, abrangendo séries, filmes, animes e jogos.",
-    categories: ["React", "TypeScript", "Tailwind CSS"],
+    features: "",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    github: "",
+    deploy: "",
     route: "napped"
   },
   {
     type: "Full Stack",
     heading: "Twitter Clone",
+    img: "",
     description:
       " Este é um clone simples do Twitter desenvolvido em PHP, utilizando a arquitetura MVC e um miniframework criado para facilitar o desenvolvimento da aplicação. ",
-    categories: ["PHP", "MySQL", "Bootstrap"],
+    features: "",
+    technologies: ["PHP", "MySQL", "Bootstrap"],
+    github: "",
+    deploy: "",
     route: "twitter-clone"
   },
   {
     type: "Front end",
-    heading: "Empresa 360",
-    description: "",
-    categories: ["Vue", "Bootstrap"],
-    route: "company-360"
+    heading: "Multi Step Form",
+    img: "",
+    description:
+      "Este projeto é um exemplo de um Multi-Step Form criado utilizando as tecnologias React, Typescript, Styled Components, Context API e Hook Form. O objetivo deste formulário é capturar informações dos usuários em várias etapas, tornando o processo mais fácil e intuitivo. ",
+    features: "",
+    technologies: ["React", "TypeScript", "CSS in JS"],
+    github: "",
+    deploy: "",
+    route: "multi-step-form"
   }
 ]);
 const router = useRouter();
+const emit = defineEmits<{
+  (e: "redirect", card: ICardsProps): void;
+}>();
 
-const redirect = (route: string) => {
-  router.push({ name: "project", params: { projectName: route } });
+const redirect = (card: ICardsProps): void => {
+  router.push({ name: "project", params: { projectName: card.route } });
+  emit("redirect", card);
 };
 </script>
 
 <template>
-  <div v-for="(card, index) in cards" :key="index" class="card" @click="redirect(card.route)">
+  <div v-for="(card, index) in cards" :key="index" class="card" @click="redirect(card)">
     <div class="main-content">
       <div class="header">
         <span>{{ card.type }}</span>
@@ -44,7 +61,7 @@ const redirect = (route: string) => {
       <p class="heading">{{ card.heading }}</p>
       <p class="description">{{ card.description }}</p>
       <div class="categories">
-        <span v-for="(category, index) in card.categories" :key="index">{{ category }}</span>
+        <span v-for="(technology, index) in card.technologies" :key="index">{{ technology }}</span>
       </div>
     </div>
     <div class="footer">Murilo Nascimento</div>
