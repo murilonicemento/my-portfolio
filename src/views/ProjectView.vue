@@ -1,12 +1,21 @@
 <script setup lang="ts">
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import SocialMedia from "@/components/icons/SocialMedia.vue";
+import type { ICardsProps } from "@/interfaces/interfaces";
+import { ref } from "vue";
+
+const fields = ref<ICardsProps>();
+
+const setFields = (card: ICardsProps) => {
+  console.log(card);
+  fields.value = card;
+};
 </script>
 
 <template>
   <HeaderComponent />
-  <main>
-    <h1>Título</h1>
+  <main @redirect="setFields">
+    <h1>{{ fields?.heading }}</h1>
     <img
       src="https://images.prismic.io/trustedhousesitters/Zk7iYyol0Zci9YD0_typesofbrowncats.png?auto=format%2Ccompress&rect=0%2C0%2C1920%2C800&w=960&h=400"
       alt=""
