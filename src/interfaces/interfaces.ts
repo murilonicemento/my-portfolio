@@ -21,10 +21,11 @@ export interface ICardsProps {
   type: string;
   heading: string;
   img: string;
+  title: string;
   description: string;
-  features: string;
+  features: string[];
   technologies: string[];
   github: string;
-  deploy: string;
+  deploy: string | null;
   route: string;
 }
