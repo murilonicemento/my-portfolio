@@ -1,54 +1,68 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { setCard } from "@/services/cardService";
 import type { ICardsProps } from "@/interfaces/interfaces";
+import napped from "@/assets/images/napped.png";
 
 const cards = ref<ICardsProps[]>([
   {
     type: "Front end",
     heading: "Napped",
-    img: "",
+    img: napped,
+    title: "Site de notícias geek",
     description:
-      "O Napped é uma fonte de informações sobre o mundo nerd, abrangendo séries, filmes, animes e jogos.",
-    features: "",
+      "Napped é uma plataforma dedicada a fornecer informações detalhadas e atualizadas sobre o universo nerd, abrangendo uma ampla gama de tópicos como séries, filmes, animes e jogos. O objetivo principal é oferecer um ponto central para entusiastas e fãs do mundo nerd, permitindo acesso a notícias, novidades e conteúdos relacionados.",
+    features: [
+      "Registro e Login: O Napped permite que os usuários se registrem criando uma conta com informações básicas como nome, email e senha. Após o registro, é possível fazer login para acessar a conta e todas as funcionalidades da plataforma.",
+      "Gerenciamento de Perfil: Uma vez logado, o usuário pode atualizar suas informações pessoais, como nome, email e preferências, através de uma interface amigável. Isso facilita a personalização da experiência de uso.",
+      "Acesso a Notícias: A plataforma oferece um feed de notícias atualizado sobre séries, filmes, animes e jogos. Os usuários podem filtrar as notícias por categorias específicas para encontrar facilmente informações que lhes interessam."
+    ],
     technologies: ["React", "TypeScript", "Tailwind CSS"],
-    github: "",
-    deploy: "",
+    github: "https://github.com/murilonicemento/napped",
+    deploy: null,
     route: "napped"
   },
   {
     type: "Full Stack",
     heading: "Twitter Clone",
     img: "",
+    title: "Clone da rede social Twitter",
     description:
-      " Este é um clone simples do Twitter desenvolvido em PHP, utilizando a arquitetura MVC e um miniframework criado para facilitar o desenvolvimento da aplicação. ",
-    features: "",
+      "Este projeto é um clone básico do Twitter, desenvolvido em PHP, com o objetivo de criar uma aplicação que simula algumas das funcionalidades principais da plataforma de redes sociais. Utiliza a arquitetura MVC (Model-View-Controller) para organizar e estruturar o código de maneira eficiente, promovendo uma separação clara entre a lógica de aplicação, a interface do usuário e a manipulação de dados.",
+    features: [
+      "Criação de Conta e Login: O projeto permite que os usuários criem uma conta fornecendo informações básicas, como nome e email, e uma senha. Após o registro, os usuários podem fazer login para acessar suas contas e interagir com a aplicação.",
+      "Postagem de Mensagens: Os usuários podem criar e publicar mensagens, semelhantes aos tweets do Twitter. Essas postagens são exibidas no feed principal e podem ser visualizadas por outros usuários.",
+      "Visualização de Postagens: O feed principal da aplicação exibe as postagens de todos os usuários, permitindo que eles acompanhem as atualizações e interações dentro da plataforma.",
+      "Gerenciamento de Perfil: Cada usuário pode gerenciar seu perfil, incluindo a atualização de informações pessoais e a visualização de suas próprias postagens."
+    ],
     technologies: ["PHP", "MySQL", "Bootstrap"],
-    github: "",
-    deploy: "",
+    github: "https://github.com/murilonicemento/twitter-clone",
+    deploy: null,
     route: "twitter-clone"
   },
   {
     type: "Front end",
     heading: "Multi Step Form",
     img: "",
+    title: "Formulário de múltiplas etapas",
     description:
-      "Este projeto é um exemplo de um Multi-Step Form criado utilizando as tecnologias React, Typescript, Styled Components, Context API e Hook Form. O objetivo deste formulário é capturar informações dos usuários em várias etapas, tornando o processo mais fácil e intuitivo. ",
-    features: "",
+      "Este projeto é um exemplo de formulário de múltiplas etapas criado com o objetivo de estudar e aplicar tecnologias modernas de desenvolvimento web. Utiliza React, TypeScript, Styled Components, Context API e Hook Form para oferecer uma experiência prática e aprofundada na construção de interfaces e gerenciamento de formulários.",
+    features: [],
     technologies: ["React", "TypeScript", "CSS in JS"],
-    github: "",
-    deploy: "",
+    github: "https://github.com/murilonicemento/multi-step-form",
+    deploy: "https://multi-step-form-xi-snowy.vercel.app/",
     route: "multi-step-form"
   }
 ]);
 const router = useRouter();
-const emit = defineEmits<{
-  (e: "redirect", card: ICardsProps): void;
-}>();
 
 const redirect = (card: ICardsProps): void => {
-  router.push({ name: "project", params: { projectName: card.route } });
-  emit("redirect", card);
+  setCard(card);
+  router.push({
+    name: "project",
+    params: { projectName: card.route }
+  });
 };
 </script>
 
@@ -59,8 +73,8 @@ const redirect = (card: ICardsProps): void => {
         <span>{{ card.type }}</span>
       </div>
       <p class="heading">{{ card.heading }}</p>
-      <p class="description">{{ card.description }}</p>
-      <div class="categories">
+      <p class="title">{{ card.title }}</p>
+      <div class="tech">
         <span v-for="(technology, index) in card.technologies" :key="index">{{ technology }}</span>
       </div>
     </div>
@@ -102,17 +116,17 @@ const redirect = (card: ICardsProps): void => {
   font-weight: 600;
 }
 
-.card .description {
-  margin-bottom: 20px;
+.card .title {
   height: 100px;
+  margin-bottom: 20px;
 }
 
-.card .categories {
+.card .tech {
   display: flex;
   gap: 8px;
 }
 
-.card .categories span {
+.card .tech span {
   background-color: var(--color-pink);
   padding: 4px 8px;
   font-weight: 600;
