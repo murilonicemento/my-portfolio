@@ -20,7 +20,11 @@ export interface ILinkRef {
 export interface ICardsProps {
   type: string;
   heading: string;
+  img: string;
   description: string;
-  categories: string[];
+  features: string;
+  technologies: string[];
+  github: string;
+  deploy: string;
   route: string;
 }
