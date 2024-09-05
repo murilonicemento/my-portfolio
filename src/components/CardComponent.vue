@@ -4,6 +4,8 @@ import { useRouter } from "vue-router";
 import { setCard } from "@/services/cardService";
 import type { ICardsProps } from "@/interfaces/interfaces";
 import napped from "@/assets/images/napped.png";
+import twitter from "@/assets/images/twitter.png";
+import pomodoro from "@/assets/images/pomodoro.jpeg";
 
 const cards = ref<ICardsProps[]>([
   {
@@ -26,7 +28,7 @@ const cards = ref<ICardsProps[]>([
   {
     type: "Full Stack",
     heading: "Twitter Clone",
-    img: "",
+    img: twitter,
     title: "Clone da rede social Twitter",
     description:
       "Este projeto é um clone básico do Twitter, desenvolvido em PHP, com o objetivo de criar uma aplicação que simula algumas das funcionalidades principais da plataforma de redes sociais. Utiliza a arquitetura MVC (Model-View-Controller) para organizar e estruturar o código de maneira eficiente, promovendo uma separação clara entre a lógica de aplicação, a interface do usuário e a manipulação de dados.",
@@ -43,16 +45,18 @@ const cards = ref<ICardsProps[]>([
   },
   {
     type: "Front end",
-    heading: "Multi Step Form",
-    img: "",
-    title: "Formulário de múltiplas etapas",
+    heading: "Pomodoro",
+    img: pomodoro,
+    title: "App de Temporizador Pomodoro",
     description:
-      "Este projeto é um exemplo de formulário de múltiplas etapas criado com o objetivo de estudar e aplicar tecnologias modernas de desenvolvimento web. Utiliza React, TypeScript, Styled Components, Context API e Hook Form para oferecer uma experiência prática e aprofundada na construção de interfaces e gerenciamento de formulários.",
-    features: [],
-    technologies: ["React", "TypeScript", "CSS in JS"],
-    github: "https://github.com/murilonicemento/multi-step-form",
-    deploy: "https://multi-step-form-xi-snowy.vercel.app/",
-    route: "multi-step-form"
+      "Este projeto é uma aplicação de temporizador baseada na técnica Pomodoro, desenvolvida para ajudar na gestão de tempo e produtividade. O sistema permite que os usuários configurem ciclos de trabalho e descanso, acompanhem suas sessões e façam ajustes conforme necessário para otimizar sua rotina.",
+    features: [
+      "Temporizador com Alerta: O temporizador exibe o tempo restante de cada sessão e emite um alerta sonoro quando o ciclo de trabalho ou descanso termina."
+    ],
+    technologies: ["React", "TypeScript", "Husky"],
+    github: "https://github.com/murilonicemento/pomodoro",
+    deploy: "https://pomodoro-lac-one.vercel.app/",
+    route: "pomodoro"
   }
 ]);
 const router = useRouter();
