@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import HeaderComponent from "@/components/HeaderComponent.vue";
 import HomeComponent from "@/components/HomeComponent.vue";
 import TabComponent from "@/components/TabComponent.vue";
 import TechnologiesComponent from "@/components/TechnologiesComponent.vue";
@@ -12,7 +11,6 @@ const tabs = ref<string[]>(["Bio", "Educação", "Experiência"]);
 </script>
 
 <template>
-  <HeaderComponent />
   <main>
     <section id="home">
       <HomeComponent />

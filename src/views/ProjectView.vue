@@ -2,14 +2,11 @@
 import { ref } from "vue";
 import { getCard } from "@/services/cardService";
 import type { ICardsProps } from "@/interfaces/interfaces";
-import HeaderComponent from "@/components/HeaderComponent.vue";
-import SocialMedia from "@/components/icons/SocialMedia.vue";
 
 const card = ref<ICardsProps>(getCard());
 </script>
 
 <template>
-  <HeaderComponent />
   <main>
     <h1>{{ card.title }}</h1>
     <img :src="card.img" alt="Project Image" />
@@ -27,7 +24,7 @@ const card = ref<ICardsProps>(getCard());
       <div class="aside-group">
         <h2>Links</h2>
         <a :href="card.github" target="_blank" class="menu__link">GitHub</a>
-        <a :href="card.deploy" target="_blank" v-if="card.deploy">Deploy</a>
+        <a :href="card.deploy" target="_blank" class="menu__link" v-if="card.deploy">Deploy</a>
       </div>
     </aside>
     <section id="description">
