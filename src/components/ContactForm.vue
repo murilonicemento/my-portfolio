@@ -195,6 +195,10 @@ const onSubmit = async () => {
   opacity: 0.5;
 }
 
+.form-container .form-group textarea::placeholder {
+  color: #717171;
+}
+
 .form-container .form-group input:focus {
   outline: none;
   border-color: var(--color-pink);
