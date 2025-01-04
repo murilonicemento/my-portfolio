@@ -67,7 +67,7 @@ const selectTab = (index: number) => {
         </p>
       </div>
       <div v-else-if="selectedTab === 2">
-        <h3><img :src="computer" alt="Computer Icon" />Desenvolvedor FullStack Júnior</h3>
+        <h3><img :src="computer" alt="Computer Icon" />Desenvolvedor Full Stack Júnior</h3>
         <h4><img :src="build" alt="Build Icon" />Teknisa</h4>
         <p class="education-date">
           <img :src="dateRange" alt="Date Range Icon" />abr 2024 - momento
@@ -92,7 +92,7 @@ const selectTab = (index: number) => {
           </li>
         </ul>
         <hr />
-        <h3><img :src="computer" alt="Computer Icon" />Estagiário em Desenvolvimento FullStack</h3>
+        <h3><img :src="computer" alt="Computer Icon" />Estagiário em Desenvolvimento Full Stack</h3>
         <h4><img :src="build" alt="Build Icon" />Teknisa</h4>
         <p class="education-date">
           <img :src="dateRange" alt="Date Range Icon" />jul 2023 - abr 2024
