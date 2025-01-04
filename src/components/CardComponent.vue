@@ -4,8 +4,7 @@ import { useRouter } from "vue-router";
 import { setCard } from "@/services/cardService";
 import type { ICardsProps } from "@/interfaces/interfaces";
 import napped from "@/assets/images/napped.png";
-import twitter from "@/assets/images/twitter.png";
-import pomodoro from "@/assets/images/pomodoro.jpeg";
+import defaultProject from "@/assets/images/default-project.jpg";
 
 const cards = ref<ICardsProps[]>([
   {
@@ -27,42 +26,48 @@ const cards = ref<ICardsProps[]>([
   },
   {
     type: "Full Stack",
-    heading: "Twitter Clone",
-    img: twitter,
-    title: "Clone da rede social Twitter",
+    heading: "Contact Manager",
+    img: defaultProject,
+    title: "Gerenciador de Contatos",
     description:
-      "Este projeto é um clone básico do Twitter, desenvolvido em PHP, com o objetivo de criar uma aplicação que simula algumas das funcionalidades principais da plataforma de redes sociais. Utiliza a arquitetura MVC (Model-View-Controller) para organizar e estruturar o código de maneira eficiente, promovendo uma separação clara entre a lógica de aplicação, a interface do usuário e a manipulação de dados.",
+      "Contact Manager, é um aplicativo web desenvolvido com ASP.NET Core MVC para gerenciar contatos. Este projeto foi criado para praticar os conceitos aprendidos com ASP.NET Core MVC.",
     features: [
-      "Criação de Conta e Login: O projeto permite que os usuários criem uma conta fornecendo informações básicas, como nome e email, e uma senha. Após o registro, os usuários podem fazer login para acessar suas contas e interagir com a aplicação.",
-      "Postagem de Mensagens: Os usuários podem criar e publicar mensagens, semelhantes aos tweets do Twitter. Essas postagens são exibidas no feed principal e podem ser visualizadas por outros usuários.",
-      "Visualização de Postagens: O feed principal da aplicação exibe as postagens de todos os usuários, permitindo que eles acompanhem as atualizações e interações dentro da plataforma.",
-      "Gerenciamento de Perfil: Cada usuário pode gerenciar seu perfil, incluindo a atualização de informações pessoais e a visualização de suas próprias postagens."
+      "Cadastro de Contatos: Adicione novos contatos com informações como nome, telefone, e-mail e endereço.",
+      "Listagem de Contatos: Veja todos os seus contatos cadastrados em uma tabela organizada.",
+      "Edição de Contatos: Atualize as informações de um contato existente.",
+      "Remoção de Contatos: Exclua contatos que não são mais necessários.",
+      "Busca por Contatos: Pesquise contatos rapidamente pelo nome ou outros critérios."
     ],
-    technologies: ["PHP", "MySQL", "Bootstrap"],
-    github: "https://github.com/murilonicemento/twitter-clone",
+    technologies: ["ASP.NET Core MVC", "EF Core", "XUnit", "SQL Server"],
+    github: "https://github.com/murilonicemento/contact-manager",
     deploy: null,
-    route: "twitter-clone"
+    route: "contact-manager"
   },
   {
-    type: "Front end",
-    heading: "Pomodoro",
-    img: pomodoro,
-    title: "App de Temporizador Pomodoro",
+    type: "Back end",
+    heading: "Cities Manager",
+    img: defaultProject,
+    title: "Gerenciador de Cidades",
     description:
-      "Este projeto é uma aplicação de temporizador baseada na técnica Pomodoro, desenvolvida para ajudar na gestão de tempo e produtividade. O sistema permite que os usuários configurem ciclos de trabalho e descanso, acompanhem suas sessões e façam ajustes conforme necessário para otimizar sua rotina.",
+      "Cities Manager é uma API desenvolvida com ASP.NET Core Web API para gerenciar informações de cidades. Este projeto foi criado para aplicar os conceitos aprendidos em ASP.NET Core Web API.",
     features: [
-      "Temporizador com Alerta: O temporizador exibe o tempo restante de cada sessão e emite um alerta sonoro quando o ciclo de trabalho ou descanso termina."
+      "Cadastro de Cidades: Crie novos registros de cidades com informações como nome, estado e população.",
+      "Listagem de Cidades: Consulte todas as cidades cadastradas ou filtre por critérios específicos.",
+      "Atualização de Cidades: Altere informações de uma cidade já cadastrada.",
+      "Remoção de Cidades: Exclua cidades do sistema.",
+      "Paginação e Ordenação: Suporte a paginação e ordenação nos endpoints de listagem."
     ],
-    technologies: ["React", "TypeScript", "Husky"],
-    github: "https://github.com/murilonicemento/pomodoro",
-    deploy: "https://pomodoro-lac-one.vercel.app/",
-    route: "pomodoro"
+    technologies: ["ASP.NET Core Web API", "EF Core", "Swagger", "JWT", "SQL Server"],
+    github: "https://github.com/murilonicemento/cities-manager",
+    deploy: null,
+    route: "cities-manager"
   }
 ]);
 const router = useRouter();
 
 const redirect = (card: ICardsProps): void => {
   setCard(card);
+
   router.push({
     name: "project",
     params: { projectName: card.route }
@@ -90,16 +95,21 @@ const redirect = (card: ICardsProps): void => {
 .card {
   width: 320px;
   height: 350px;
+
   padding: 20px;
+
   color: var(--color-white);
-  background:
-    linear-gradient(var(--color-black), var(--color-black-hover)) padding-box,
-    linear-gradient(145deg, transparent 35%, var(--color-pink), var(--color-blue)) border-box;
-  border: 2px solid transparent;
+  background-color: var(--color-black-hover);
+
   border-radius: 8px;
+
+  box-shadow: 30px -16px 3px var(--color-green);
+
   display: flex;
   flex-direction: column;
+
   cursor: pointer;
+
   transform-origin: right bottom;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -127,6 +137,7 @@ const redirect = (card: ICardsProps): void => {
 
 .card .tech {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
