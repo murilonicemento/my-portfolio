@@ -107,11 +107,7 @@ const onSubmit = async () => {
 .form-container {
   width: 100%;
 
-  background:
-    linear-gradient(var(--color-black-hover), var(--color-black-hover)) padding-box,
-    linear-gradient(145deg, transparent 35%, var(--color-green), var(--color-blue)) border-box;
-
-  border: 2px solid transparent;
+  background: var(--color-black-hover);
 
   margin-top: 28px;
   padding: 32px 24px;
