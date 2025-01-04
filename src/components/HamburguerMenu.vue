@@ -7,7 +7,8 @@ const links = ref<ILinkRef[]>([
   { id: 1, name: "Início", hash: "#home" },
   { id: 2, name: "Sobre", hash: "#about" },
   { id: 3, name: "Skills", hash: "#skills" },
-  { id: 4, name: "Contato", hash: "#contact" }
+  { id: 4, name: "Projects", hash: "#projects" },
+  { id: 5, name: "Contato", hash: "#contact" }
 ]);
 
 const isOpen = ref<boolean>(false);
