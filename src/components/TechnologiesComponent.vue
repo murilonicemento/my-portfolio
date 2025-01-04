@@ -1,45 +1,39 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import html from "@/assets/images/html.svg";
-import css from "@/assets/images/css.svg";
-import sass from "@/assets/images/sass.svg";
 import javascript from "@/assets/images/javascript.svg";
 import typescript from "@/assets/images/typescript.svg";
 import vuejs from "@/assets/images/vuejs.svg";
-import tailwindcss from "@/assets/images/tailwindcss.svg";
 import php from "@/assets/images/php.svg";
-import tag from "@/assets/images/tag.svg";
-import brackets from "@/assets/images/brackets.svg";
-import s from "@/assets/images/s.svg";
 import js from "@/assets/images/js.svg";
 import ts from "@/assets/images/ts.svg";
+import csharp from "@/assets/images/csharp.svg";
+import dotnet from "@/assets/images/dotnet.svg";
 import elephant from "@/assets/images/elephant.svg";
 import SkillImage from "./icons/SkillImage.vue";
 
 const techs = ref([
-  { name: "HTML", description: "Linguagem de Marcação de Hipertexto", codeImg: tag, img: html },
-  { name: "CSS", description: "Linguagem de Marcação de Hipertexto", codeImg: brackets, img: css },
-  { name: "SASS", description: "Linguagem de Marcação de Hipertexto", codeImg: s, img: sass },
+  { name: "Vue", codeImg: vuejs, img: vuejs },
   {
     name: "JavaScript",
-    description: "Linguagem de Marcação de Hipertexto",
     codeImg: js,
     img: javascript
   },
   {
     name: "TypeScript",
-    description: "Linguagem de Marcação de Hipertexto",
     codeImg: ts,
     img: typescript
   },
-  { name: "Vue", description: "Linguagem de Marcação de Hipertexto", codeImg: vuejs, img: vuejs },
+  { name: "PHP", codeImg: elephant, img: php },
   {
-    name: "Tailwind CSS",
-    description: "Linguagem de Marcação de Hipertexto",
-    codeImg: tailwindcss,
-    img: tailwindcss
+    name: "C#",
+    codeImg: csharp,
+    img: csharp
   },
-  { name: "PHP", description: "Linguagem de Marcação de Hipertexto", codeImg: elephant, img: php }
+  {
+    name: ".NET",
+    codeImg: dotnet,
+    img: dotnet
+  }
 ]);
 </script>
 <template>
