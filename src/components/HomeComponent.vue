@@ -6,7 +6,7 @@ import SocialMedia from "./icons/SocialMedia.vue";
 <template>
   <div id="presentation">
     <h1>Olá! Me chamo Murilo sou um</h1>
-    <h2>Desenvolvedor FullStack</h2>
+    <h2>Desenvolvedor Full Stack</h2>
     <p>
       Seja bem-vindo(a) ao meu portfólio! Explore meus trabalhos, conheça minhas habilidades e
       ideias.
