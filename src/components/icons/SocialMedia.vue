@@ -3,7 +3,12 @@
 <template>
   <ul class="example-2">
     <li class="icon-content">
-      <a href="https://www.github.com/murilonicemento" aria-label="GitHub" data-social="github">
+      <a
+        href="https://www.github.com/murilonicemento"
+        target="_blank"
+        aria-label="GitHub"
+        data-social="github"
+      >
         <div class="filled"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +28,12 @@
       <div class="tooltip">GitHub</div>
     </li>
     <li class="icon-content">
-      <a href="https://linkedin.com/in/murilnicemento" aria-label="LinkedIn" data-social="linkedin">
+      <a
+        href="https://linkedin.com/in/murilonicemento"
+        target="_blank"
+        aria-label="LinkedIn"
+        data-social="linkedin"
+      >
         <div class="filled"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
