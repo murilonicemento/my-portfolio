@@ -38,29 +38,29 @@ const cards = ref<ICardsProps[]>([
       "Remoção de Contatos: Exclua contatos que não são mais necessários.",
       "Busca por Contatos: Pesquise contatos rapidamente pelo nome ou outros critérios."
     ],
-    technologies: ["ASP.NET Core MVC", "EF Core", "XUnit", "SQL Server"],
+    technologies: ["ASP.NET Core MVC", "EF Core", "xUnit", "SQL Server"],
     github: "https://github.com/murilonicemento/contact-manager",
     deploy: null,
     route: "contact-manager"
   },
   {
     type: "Back end",
-    heading: "Cities Manager",
+    heading: "Sanki",
     img: defaultProject,
-    title: "Gerenciador de Cidades",
+    title: "Gerenciador de resumos e flashcards",
     description:
-      "Cities Manager é uma API desenvolvida com ASP.NET Core Web API para gerenciar informações de cidades. Este projeto foi criado para aplicar os conceitos aprendidos em ASP.NET Core Web API.",
+      "Esta API tem como objetivo gerenciar resumos e flashcards para auxiliar no aprendizado e revisão de conteúdo. Com ela, é possível criar, listar, atualizar e deletar resumos e flashcards, além de possibilitar a revisão baseada em espaçamento (Spaced Repetition). Os flashcards são gerados automaticamente por inteligência artificial com base nos resumos fornecidos pelo usuário, garantindo uma experiência de estudo otimizada e personalizada.",
     features: [
-      "Cadastro de Cidades: Crie novos registros de cidades com informações como nome, estado e população.",
-      "Listagem de Cidades: Consulte todas as cidades cadastradas ou filtre por critérios específicos.",
-      "Atualização de Cidades: Altere informações de uma cidade já cadastrada.",
-      "Remoção de Cidades: Exclua cidades do sistema.",
-      "Paginação e Ordenação: Suporte a paginação e ordenação nos endpoints de listagem."
+      "Criação de Resumos: Registre novos resumos de estudo.",
+      "Gerenciamento de Flashcards: Geração automática de flashcards baseados nos resumos.",
+      "Listagem e Filtros: Consulte resumos e flashcards cadastrados com suporte a filtros.",
+      "Revisão Baseada em Espaçamento: Controle inteligente das revisões para um aprendizado eficiente.",
+      "Autenticação JWT: Controle de acesso seguro com autenticação via JSON Web Token."
     ],
-    technologies: ["ASP.NET Core Web API", "EF Core", "Swagger", "JWT", "SQL Server"],
-    github: "https://github.com/murilonicemento/cities-manager",
+    technologies: ["ASP.NET Core Web API", "EF Core", "PostgreSQL", "Docker", "xUnit"],
+    github: "https://github.com/murilonicemento/sanki",
     deploy: null,
-    route: "cities-manager"
+    route: "sanki"
   }
 ]);
 const router = useRouter();
