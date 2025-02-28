@@ -25,6 +25,25 @@ const cards = ref<ICardsProps[]>([
     route: "napped"
   },
   {
+    type: "Back end",
+    heading: "Sanki",
+    img: defaultProject,
+    title: "Gerenciador de resumos e flashcards automatizados com IA",
+    description:
+      "Esta API tem como objetivo gerenciar resumos e flashcards para auxiliar no aprendizado e revisão de conteúdo. Com ela, é possível criar, listar, atualizar e deletar resumos e flashcards, além de possibilitar a revisão baseada em espaçamento (Spaced Repetition). Os flashcards são gerados automaticamente por inteligência artificial com base nos resumos fornecidos pelo usuário, garantindo uma experiência de estudo otimizada e personalizada.",
+    features: [
+      "Criação de Resumos: Registre novos resumos de estudo.",
+      "Gerenciamento de Flashcards: Geração automática de flashcards baseados nos resumos.",
+      "Listagem e Filtros: Consulte resumos e flashcards cadastrados com suporte a filtros.",
+      "Revisão Baseada em Espaçamento: Controle inteligente das revisões para um aprendizado eficiente.",
+      "Autenticação JWT: Controle de acesso seguro com autenticação via JSON Web Token."
+    ],
+    technologies: ["ASP.NET Core Web API", "EF Core", "PostgreSQL", "Docker", "xUnit"],
+    github: "https://github.com/murilonicemento/sanki",
+    deploy: null,
+    route: "sanki"
+  },
+  {
     type: "Full Stack",
     heading: "Contact Manager",
     img: defaultProject,
@@ -42,25 +61,6 @@ const cards = ref<ICardsProps[]>([
     github: "https://github.com/murilonicemento/contact-manager",
     deploy: null,
     route: "contact-manager"
-  },
-  {
-    type: "Back end",
-    heading: "Sanki",
-    img: defaultProject,
-    title: "Gerenciador de resumos e flashcards",
-    description:
-      "Esta API tem como objetivo gerenciar resumos e flashcards para auxiliar no aprendizado e revisão de conteúdo. Com ela, é possível criar, listar, atualizar e deletar resumos e flashcards, além de possibilitar a revisão baseada em espaçamento (Spaced Repetition). Os flashcards são gerados automaticamente por inteligência artificial com base nos resumos fornecidos pelo usuário, garantindo uma experiência de estudo otimizada e personalizada.",
-    features: [
-      "Criação de Resumos: Registre novos resumos de estudo.",
-      "Gerenciamento de Flashcards: Geração automática de flashcards baseados nos resumos.",
-      "Listagem e Filtros: Consulte resumos e flashcards cadastrados com suporte a filtros.",
-      "Revisão Baseada em Espaçamento: Controle inteligente das revisões para um aprendizado eficiente.",
-      "Autenticação JWT: Controle de acesso seguro com autenticação via JSON Web Token."
-    ],
-    technologies: ["ASP.NET Core Web API", "EF Core", "PostgreSQL", "Docker", "xUnit"],
-    github: "https://github.com/murilonicemento/sanki",
-    deploy: null,
-    route: "sanki"
   }
 ]);
 const router = useRouter();
