@@ -71,22 +71,26 @@ const selectTab = (index: number) => {
           <img :src="dateRange" alt="Date Range Icon" />abr 2024 - momento
         </p>
         <ul>
-          <li>Criação de novas telas do sistema;</li>
-          <li>Criação de relatórios BIRT;</li>
-          <li>Implementar novas funcionalidades ao sistema;</li>
-          <li>Auxiliar time na resolução de bugs;</li>
           <li>
-            Participar de treinamentos e reuniões voltadas para melhoria de produtos e das técnicas
-            de trabalho;
+            Realizei a migração de telas do sistema de gestão de alimentação coletiva legado para
+            uma nova versão, otimizando processos e melhorando a usabilidade para atender às
+            necessidades dos clientes.
           </li>
           <li>
-            Executar teste padrão, resultado e funcionalidade dos sistemas desenvolvidos pela
-            equipe;
+            Implementei melhorias no sistema de gestão de compras e cadeia de suprimentos,
+            utilizando boas práticas e padrões de projeto da empresa para aprimorar desempenho e
+            escalabilidade.
           </li>
-          <li>Auxiliar na documentação dos sistemas;</li>
           <li>
-            Adaptar conhecimentos de lógica de programação aos padrões de desenvolvimento da Teknisa
-            e aplicá-los na manutenção e melhoria contínua de produtos de software;
+            Contribui para o desenvolvimento do módulo de suprimentos do TecFood, responsável pelo
+            gerenciamento de toda a cadeia de abastecimento, desde o controle de estoques até
+            compras e fornecimento, otimizando custos e reduzindo desperdícios de centenas de
+            clientes.
+          </li>
+          <li>
+            Fui responsável pela criação de relatórios BIRT, proporcionando análises profundas que
+            contribuíram para as tomadas de decisões e o monitoramento de processos de precificação
+            e negociações.
           </li>
         </ul>
         <hr />
@@ -96,19 +100,16 @@ const selectTab = (index: number) => {
           <img :src="dateRange" alt="Date Range Icon" />jul 2023 - abr 2024
         </p>
         <ul>
-          <li>Auxiliar time na resolução de bugs;</li>
           <li>
-            Participar de treinamentos e reuniões voltadas para melhoria de produtos e das técnicas
-            de trabalho;
+            Contribui para o desenvolvimento do módulo de suprimentos do TecFood, responsável pelo
+            gerenciamento de toda a cadeia de abastecimento, desde o controle de estoques até
+            compras e fornecimento, otimizando custos e reduzindo desperdícios de centenas de
+            clientes.
           </li>
           <li>
-            Executar teste padrão, resultado e funcionalidade dos sistemas desenvolvidos pela
-            equipe;
-          </li>
-          <li>Auxiliar na documentação dos sistemas;</li>
-          <li>
-            Adaptar conhecimentos de lógica de programação aos padrões de desenvolvimento da Teknisa
-            e aplicá-los na manutenção e melhoria contínua de produtos de software;
+            Fui responsável pela criação de relatórios BIRT, proporcionando análises profundas que
+            contribuíram para as tomadas de decisões e o monitoramento de processos de precificação
+            e negociações.
           </li>
         </ul>
         <hr />
@@ -118,12 +119,21 @@ const selectTab = (index: number) => {
           <img :src="dateRange" alt="Date Range Icon" />fev 2023 - mar 2023
         </p>
         <ul>
-          <li>Desenvolvimento de painéis de visualização de dados em Excel e Power Bi;</li>
           <li>
-            Desenvolvimento das competências técnicas e comportamentais para as atividades que serão
-            desenvolvidas;
+            Fui responsável pela criação de paineis de visualização de dados utilizando Excel e
+            Power BI, otimizando a análise de dados para fornecer insights claros e úteis para a
+            empresa.
           </li>
-          <li>Extração, Tratamento e Limpeza de fontes de dados de diversas origens;</li>
+          <li>
+            Realizei a extração, tratamento e limpeza de dados provenientes de diversas fontes,
+            garantindo a integridade e qualidade das informações utilizadas em projetos
+            estratégicos.
+          </li>
+          <li>
+            Contribui para o desenvolvimento de competências técnicas e comportamentais necessárias
+            para as atividades de Business Intelligence, ajudando na melhoria contínua dos processos
+            de análise de dados da empresa.
+          </li>
         </ul>
       </div>
     </div>
