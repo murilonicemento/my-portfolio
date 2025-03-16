@@ -9,7 +9,6 @@ const card = ref<ICardsProps>(getCard());
 <template>
   <main>
     <h1>{{ card.title }}</h1>
-    <img :src="card.img" alt="Project Image" />
     <aside>
       <div class="aside-group">
         <h2>Nome</h2>
@@ -43,13 +42,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 
   margin-top: 20px;
-}
-
-img {
-  width: 100%;
 }
 
 aside {
