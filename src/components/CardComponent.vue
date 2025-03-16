@@ -44,23 +44,23 @@ const cards = ref<ICardsProps[]>([
     route: "sanki"
   },
   {
-    type: "Full Stack",
-    heading: "Contact Manager",
+    type: "Back end",
+    heading: "Log Analyser",
     img: defaultProject,
-    title: "Gerenciador de Contatos",
+    title: "Sistema de análise de logs",
     description:
-      "Contact Manager, é um aplicativo web desenvolvido com ASP.NET Core MVC para gerenciar contatos. Este projeto foi criado para praticar os conceitos aprendidos com ASP.NET Core MVC.",
+      "Este projeto consiste em uma API para armazenamento e análise de logs com base em agregações utilizando C#/.NET e MongoDB. O objetivo é centralizar os logs de diferentes serviços, permitindo consultas para análise de desempenho, erros e comportamentos suspeitos.",
     features: [
-      "Cadastro de Contatos: Adicione novos contatos com informações como nome, telefone, e-mail e endereço.",
-      "Listagem de Contatos: Veja todos os seus contatos cadastrados em uma tabela organizada.",
-      "Edição de Contatos: Atualize as informações de um contato existente.",
-      "Remoção de Contatos: Exclua contatos que não são mais necessários.",
-      "Busca por Contatos: Pesquise contatos rapidamente pelo nome ou outros critérios."
+      "Armazenamento de Logs: Centralize os logs de diferentes serviços em um único repositório.",
+      "Consultas e Agregações: Realize consultas com base em agregações para identificar padrões e anomalias.",
+      "Análise de Desempenho: Avalie o desempenho dos serviços e identifique possíveis gargalos.",
+      "Detecção de Erros: Identifique e monitore erros que ocorrem nos serviços.",
+      "Monitoramento de Comportamentos Suspeitos: Realize a detecção de comportamentos anormais ou inseguros a partir dos logs."
     ],
-    technologies: ["ASP.NET Core MVC", "EF Core", "xUnit", "SQL Server"],
-    github: "https://github.com/murilonicemento/contact-manager",
+    technologies: ["ASP.NET Core Minimal API", "MongoDB"],
+    github: "https://github.com/murilonicemento/log-analyser",
     deploy: null,
-    route: "contact-manager"
+    route: "log-analyser"
   }
 ]);
 const router = useRouter();
