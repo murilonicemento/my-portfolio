@@ -20,7 +20,6 @@ export interface ILinkRef {
 export interface ICardsProps {
   type: string;
   heading: string;
-  img: string;
   title: string;
   description: string;
   features: string[];

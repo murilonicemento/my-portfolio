@@ -3,14 +3,11 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { setCard } from "@/services/cardService";
 import type { ICardsProps } from "@/interfaces/interfaces";
-import napped from "@/assets/images/napped.png";
-import defaultProject from "@/assets/images/default-project.jpg";
 
 const cards = ref<ICardsProps[]>([
   {
     type: "Front end",
     heading: "Napped",
-    img: napped,
     title: "Site de notícias geek",
     description:
       "Napped é uma plataforma dedicada a fornecer informações detalhadas e atualizadas sobre o universo nerd, abrangendo uma ampla gama de tópicos como séries, filmes, animes e jogos. O objetivo principal é oferecer um ponto central para entusiastas e fãs do mundo nerd, permitindo acesso a notícias, novidades e conteúdos relacionados.",
@@ -27,7 +24,6 @@ const cards = ref<ICardsProps[]>([
   {
     type: "Back end",
     heading: "Sanki",
-    img: defaultProject,
     title: "Gerenciador de resumos e flashcards automatizados com IA",
     description:
       "Esta API tem como objetivo gerenciar resumos e flashcards para auxiliar no aprendizado e revisão de conteúdo. Com ela, é possível criar, listar, atualizar e deletar resumos e flashcards, além de possibilitar a revisão baseada em espaçamento (Spaced Repetition). Os flashcards são gerados automaticamente por inteligência artificial com base nos resumos fornecidos pelo usuário, garantindo uma experiência de estudo otimizada e personalizada.",
@@ -46,7 +42,6 @@ const cards = ref<ICardsProps[]>([
   {
     type: "Back end",
     heading: "Log Analyser",
-    img: defaultProject,
     title: "Sistema de análise de logs",
     description:
       "Este projeto consiste em uma API para armazenamento e análise de logs com base em agregações utilizando C#/.NET e MongoDB. O objetivo é centralizar os logs de diferentes serviços, permitindo consultas para análise de desempenho, erros e comportamentos suspeitos.",
