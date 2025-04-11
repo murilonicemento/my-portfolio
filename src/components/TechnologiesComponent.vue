@@ -12,6 +12,9 @@ import js from "@/assets/images/js.svg";
 import ts from "@/assets/images/ts.svg";
 import csharp from "@/assets/images/csharp.svg";
 import dotnet from "@/assets/images/dotnet.svg";
+import docker from "@/assets/images/docker.svg";
+import sqlServer from "@/assets/images/microsoft-sql-server.svg";
+import git from "@/assets/images/git.svg";
 import elephant from "@/assets/images/elephant.svg";
 import SkillImage from "./icons/SkillImage.vue";
 
@@ -40,8 +43,11 @@ const techs = ref([
     codeImg: dotnet,
     img: dotnet
   },
+  { name: "SQL Server", codeImg: sqlServer, img: sqlServer },
   { name: "PostgreSQL", codeImg: postgresql, img: postgresql },
-  { name: "MongoDB", codeImg: mongodb, img: mongodb }
+  { name: "MongoDB", codeImg: mongodb, img: mongodb },
+  { name: "Docker", codeImg: docker, img: docker },
+  { name: "Git", codeImg: git, img: git }
 ]);
 </script>
 <template>
