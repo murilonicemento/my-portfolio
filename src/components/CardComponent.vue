@@ -41,7 +41,7 @@ const cards = ref<ICardsProps[]>([
   },
   {
     type: "Back end",
-    heading: "Log Analyser",
+    heading: "Log Analyzer",
     title: "Sistema de análise de logs",
     description:
       "Este projeto consiste em uma API para armazenamento e análise de logs com base em agregações utilizando C#/.NET e MongoDB. O objetivo é centralizar os logs de diferentes serviços, permitindo consultas para análise de desempenho, erros e comportamentos suspeitos.",
@@ -52,7 +52,7 @@ const cards = ref<ICardsProps[]>([
       "Detecção de Erros: Identifique e monitore erros que ocorrem nos serviços.",
       "Monitoramento de Comportamentos Suspeitos: Realize a detecção de comportamentos anormais ou inseguros a partir dos logs."
     ],
-    technologies: ["ASP.NET Core Minimal API", "MongoDB"],
+    technologies: ["ASP.NET Core Minimal API", "MongoDB", "Docker"],
     github: "https://github.com/murilonicemento/log-analyser",
     deploy: null,
     route: "log-analyser"
