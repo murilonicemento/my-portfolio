@@ -73,19 +73,32 @@ const selectTab = (index: number) => {
         <ul>
           <li>
             Realizei a migração de telas do sistema de gestão de alimentação coletiva legado para
-            uma nova versão, otimizando processos e melhorando a usabilidade para atender às
-            necessidades dos clientes.
+            uma nova versão, <strong>otimizando processos e melhorando a usabilidade</strong> com
+            foco nas necessidades dos clientes. Durante esse processo, apliquei
+            <strong>princípios SOLID</strong>, estruturando o sistema de forma desacoplada, modular
+            e com alta coesão. Além disso, utilizei práticas de <strong>Clean Code</strong>,
+            promovendo manutenibilidade a longo prazo. Trabalhei colaborativamente dentro do
+            framework <strong>SCRUM</strong>, garantindo entregas iterativas e dentro do prazo.
           </li>
           <li>
             Implementei melhorias no sistema de gestão de compras e cadeia de suprimentos,
-            utilizando boas práticas e padrões de projeto da empresa para aprimorar desempenho e
-            escalabilidade.
+            utilizando <strong>boas práticas e princípios/padrões de projeto</strong> para promover
+            fácil evolução.
           </li>
           <li>
-            Contribui para o desenvolvimento do módulo de suprimentos do TecFood, responsável pelo
-            gerenciamento de toda a cadeia de abastecimento, desde o controle de estoques até
-            compras e fornecimento, otimizando custos e reduzindo desperdícios de centenas de
+            Participei ativamente das cerimônias <strong>SCRUM</strong>, como planejamento de sprint, revisões e
+            retrospectivas, sempre focado na melhoria contínua dos processos.
+          </li>
+          <li>
+            Contribuí para o desenvolvimento do módulo de suprimentos do TecFood, responsável pelo
+            gerenciamento de toda a cadeia de abastecimento — desde o controle de estoques até
+            compras e fornecimento — otimizando custos e reduzindo desperdícios para centenas de
             clientes.
+          </li>
+          <li>
+            Trabalhei em um <strong>ambiente Docker</strong> configurado com uma imagem personalizada, o que permitiu
+            uma abordagem mais ágil e eficiente para a construção, execução e depuração de serviços
+            em um ambiente isolado.
           </li>
           <li>
             Fui responsável pela criação de relatórios BIRT, proporcionando análises profundas que
