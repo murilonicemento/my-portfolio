@@ -30,6 +30,8 @@ const Projects: React.FC = () => {
         "Testes automatizados e pipeline de CI/CD",
       ],
       gradient: "from-purple-500 to-pink-500",
+      codeUrl: "https://github.com/murilonicemento/microservices",
+      liveDemoUrl: "",
     },
     {
       title: "Motor de Busca de Documentos com OCR",
@@ -52,6 +54,8 @@ const Projects: React.FC = () => {
         "Machine learning para maior precisão no reconhecimento de texto",
       ],
       gradient: "from-blue-500 to-cyan-500",
+      codeUrl: "https://github.com/murilonicemento/ocr-search",
+      liveDemoUrl: "",
     },
   ];
 
@@ -122,14 +126,22 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-4 pt-4">
-                  <button className="flex items-center px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-purple-600 hover:text-white transition-colors duration-200">
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-purple-600 hover:text-white transition-colors duration-200"
+                  >
                     <Github size={16} className="mr-2" />
                     Ver Código
-                  </button>
-                  <button className="flex items-center px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                  </a>
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    className="flex items-center px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                  >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
