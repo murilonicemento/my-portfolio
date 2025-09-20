@@ -22,10 +22,9 @@ import {
   Server,
   Activity,
   Rabbit,
-  BarChart3,
-  FileSpreadsheet,
   FileJson,
-  FileCode2
+  FileCode2,
+  Code,
 } from "lucide-react";
 
 const TechStack: React.FC = () => {
@@ -173,7 +172,7 @@ const TechStack: React.FC = () => {
       category: "Database",
       color: "from-orange-500 to-orange-600",
       icon: Rabbit,
-    }
+    },
   ];
 
   const categories = ["Backend", "Frontend", "Database", "DevOps"];
@@ -235,7 +234,7 @@ const TechStack: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="bg-gradient-to-r from-purple-500 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🏗️</span>
+                <Code className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
                 Desenvolvimento Front end
@@ -247,7 +246,7 @@ const TechStack: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-r from-green-500 to-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
+                <Server className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
                 Desenvolvimento Back end
@@ -259,7 +258,7 @@ const TechStack: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-r from-orange-500 to-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔧</span>
+                <Settings className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
                 Modernização de Sistemas
