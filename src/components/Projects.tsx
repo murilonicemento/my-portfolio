@@ -1,25 +1,27 @@
 import React from "react";
-import { ExternalLink, Github, ShoppingCart, Search } from "lucide-react";
+import { ExternalLink, Github, Search, Radar } from "lucide-react";
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Plataforma de Microserviços para E-Commerce",
+      title: "Sentinel",
       description:
-        "Uma solução escalável de e-commerce construída com arquitetura de microserviços, com serviços distribuídos para gerenciamento de estoque, pagamentos, usuários e processamento de pedidos.",
-      icon: ShoppingCart,
+        "Plataforma distribuída para detecção, análise e alerta de eventos naturais (chuvas extremas, enchentes, deslizamentos, incêndios, sismos), com arquitetura baseada em microsserviços, CQRS, DDD e Clean Architecture.",
+      icon: Radar,
       technologies: [
         "C#",
         "ASP.NET Core",
         "PostgreSQL",
-        "MySQL",
+        "MinIO",
         "MongoDB",
         "Redis",
-        "RabbitMQ",
+        "Kafka",
+        "Grafana",
+        "Loki",
+        "Elasticsearch",
+        "xUnit",
         "Docker",
         "Kubernetes",
-        "Azure",
-        "Azure DevOps",
         "Microserviços",
       ],
       features: [
@@ -27,10 +29,10 @@ const Projects: React.FC = () => {
         "Comunicação orientada a eventos entre serviços",
         "Cache distribuído e gerenciamento de sessões",
         "API Gateway com autenticação e autorização",
-        "Testes automatizados e pipeline de CI/CD",
+        "Testes automatizados",
       ],
       gradient: "from-purple-500 to-pink-500",
-      codeUrl: "https://github.com/murilonicemento/microservices",
+      codeUrl: "https://github.com/murilonicemento/sentinel",
       liveDemoUrl: "",
     },
     {
